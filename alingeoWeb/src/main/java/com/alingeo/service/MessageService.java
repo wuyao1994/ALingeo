@@ -1,8 +1,8 @@
 package com.alingeo.service;
 
-import com.alingeo.domin.Message;
-
 import java.util.List;
+
+import com.alingeo.domin.Message;
 
 public interface MessageService {
 	List<Message> findAll();

@@ -1,4 +1,13 @@
 spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/alingeoAdmin
+    username: root
+    password: password
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
   thymeleaf:
     mode: HTML5
     encoding: UTF-8
