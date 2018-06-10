@@ -1,5 +1,6 @@
 package com.alingeo.controller;
 
+import com.alingeo.util.MailManager;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -31,9 +32,10 @@ public class HomeController {
 
 
 
-	@RequestMapping(value = "/join", method = RequestMethod.POST)
+	@RequestMapping(value = "/join/create", method = RequestMethod.POST)
 	public String join(@ModelAttribute Join join, Model model) {
 		joinService.create(join);
-		return "join";
+		MailManager.SendEmail();
+		return "redirect:/";
 	}
 }

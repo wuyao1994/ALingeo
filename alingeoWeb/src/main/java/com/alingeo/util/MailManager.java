@@ -11,13 +11,13 @@ import javax.mail.internet.MimeMessage;
 public class MailManager {
 
 	public static String	myEmailAccount		= "wuyaoiot@163.com";
-	public static String	myEmailPassword		= "xxxxxxxxx";
+	public static String	myEmailPassword		= "wuyao8023";
 	public static String	myEmailSMTPHost		= "smtp.163.com";
-	public static String	receiveMailAccount	= "xxxxxxxxx@qq.com";
+	public static String	receiveMailAccount	= "757181190@qq.com";
 
 
 
-	public void SendEmail() {
+	public static void  SendEmail() {
 		Properties props = new Properties();
 		props.setProperty("mail.transport.protocol", "smtp");
 		props.setProperty("mail.smtp.host", myEmailSMTPHost);
@@ -53,9 +53,9 @@ public class MailManager {
 		message.setRecipient(MimeMessage.RecipientType.TO,
 				new InternetAddress(receiveMail, "wuyuoiot@163.com", "UTF-8"));
 
-		message.setSubject("alingeo", "UTF-8");
+		message.setSubject("join message confirm", "UTF-8");
 
-		message.setContent("alingeo email test", "text/html;charset=UTF-8");
+		message.setContent("join message confirm", "text/html;charset=UTF-8");
 
 		message.setSentDate(new Date());
 
