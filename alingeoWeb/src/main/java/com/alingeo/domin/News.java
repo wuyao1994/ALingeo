@@ -6,14 +6,12 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
-import javax.validation.constraints.NotNull;
 
 @Entity
 @Table(name = "t_news")
 public class News {
-    @Id
-    @GeneratedValue
-    @NotNull
+	@Id
+	@GeneratedValue
 	private Long	id;
 	private String	title;
 	private Date	date;
@@ -41,7 +39,7 @@ public class News {
 
 
 	public void setTitle(String title) {
-        title = title;
+		this.title = title;
 	}
 
 

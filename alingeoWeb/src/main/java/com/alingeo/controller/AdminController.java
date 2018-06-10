@@ -12,12 +12,16 @@ import com.alingeo.service.JoinService;
 import com.alingeo.service.NewsService;
 import com.alingeo.util.FileUtil;
 
+import java.util.Date;
+
 @Controller
 public class AdminController {
 	@Autowired
 	private JoinService	joinService;
+
 	@Autowired
 	private NewsService	newsService;
+
 	@Value("${img.location}")
 	private String		location;
 
@@ -81,7 +85,21 @@ public class AdminController {
 
 
 	@RequestMapping(value = "/admin/addNews", method = RequestMethod.POST)
-	public String addNews(Model model, @ModelAttribute News news) {
+	public String addNews(Model model, @RequestParam("file") MultipartFile file, @RequestParam("content") String content, @RequestParam("title") String title) {
+	    News news = new News();
+	    news.setContent(content);
+	    news.setTitle(title);
+	    news.setDate(new Date());
+	    if (!file.isEmpty()) {
+            String fileName = file.getOriginalFilename();
+            try {
+                FileUtil.uploadFile(file.getBytes(), location, fileName);
+                String iamgePath = location + fileName;
+                news.setImagePath(iamgePath);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
 		newsService.createNews(news);
 		return "redirect:/admin/news";
 	}
