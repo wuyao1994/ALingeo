@@ -17,5 +17,9 @@ public interface NewsService {
 
 
 
+	News findNewsById(Long id);
+
+
+
 	List<News> findAll();
 }

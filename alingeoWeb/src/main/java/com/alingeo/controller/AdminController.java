@@ -2,6 +2,7 @@ package com.alingeo.controller;
 
 import javax.servlet.http.HttpServletRequest;
 
+import com.alingeo.domin.News;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
@@ -57,6 +58,9 @@ public class AdminController {
 		try {
 			FileUtil.uploadFile(file.getBytes(), location, fileName);
 			String iamgePath = location+fileName;
+			News news = newsService.findNewsById(id);
+			news.setImagePath(iamgePath);
+			newsService.udpateNews(news);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
