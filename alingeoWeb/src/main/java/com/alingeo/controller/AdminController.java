@@ -124,6 +124,7 @@ public class AdminController {
 
 	@RequestMapping(value = "/admin/teacher/", method = RequestMethod.GET)
 	private String adminTeacherPage(Model model) {
+		model.addAttribute("teacherList", mTeacherService.findAll());
 		return "teacher";
 	}
 
@@ -133,6 +134,13 @@ public class AdminController {
 	private String deleteTeacherById(@PathVariable("id") Long id, Model model) {
 		mTeacherService.deleteTeacherById(id);
 		return "redirect:/admin/teacher";
+	}
+
+
+
+	@RequestMapping(value = "/admin/addTeacher", method = RequestMethod.GET)
+	private String addTeacherPage(Model model) {
+		return "addTeacher";
 	}
 
 
@@ -166,6 +174,7 @@ public class AdminController {
 
 	@RequestMapping(value = "/admin/center/", method = RequestMethod.GET)
 	private String adminCenterPage(Model model) {
+		model.addAttribute("centerList", mCenterService.findAll());
 		return "center";
 	}
 
@@ -175,6 +184,13 @@ public class AdminController {
 	private String deleteCenterById(@PathVariable("id") Long id, Model model) {
 		mCenterService.deleteCenterById(id);
 		return "redirect:/admin/center";
+	}
+
+
+
+	@RequestMapping(value = "/admin/addCenter", method = RequestMethod.GET)
+	private String addCenterPage(Model model) {
+		return "addCenter";
 	}
 
 

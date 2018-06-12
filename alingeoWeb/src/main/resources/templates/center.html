@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<script src="../static/js/jquery-3.3.1.min.js"></script>
+<script src="../static/js/admin.js"></script>
+<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<head>
+    <title>alingeoAdmin</title>
+</head>
+<body>
+<nav class="navbar navbar-dark bg-dark flex-md-nowrap p-0 shadow">
+    <a class="navbar-brand col-sm-1 col-md-1 mr-0" href="#">Alingeo</a>
+    <ul class="navbar-nav px-3">
+        <li class="nav-item text-nowrap">
+            <form th:action="@{/logout}" method="post">
+                <button type="submit" class="btn btn-primary nav-link">Sign Out</button>
+            </form>
+        </li>
+    </ul>
+</nav>
+<div class="container-fluid">
+    <div class="row">
+        <nav class="col-md-1 d-none d-md-block bg-light sidebar">
+            <div class="sidebar-sticky">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/admin/message">
+                            <span data-feather="home"></span>
+                            留言管理 <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/admin/news">
+                            <span data-feather="file"></span>
+                            新闻管理
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/admin/teacher">
+                            <span data-feather="file"></span>
+                            老师管理
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/admin/center">
+                            <span data-feather="file"></span>
+                            中心管理
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <main role="main" class="col-md-11 ml-sm-auto px-4">
+            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                <h1 class="h2">中心列表</h1>
+                <button class="btn"><a href="/admin/addCenter">添加</a></button>
+            </div>
+            <div class="table-responsive">
+                <table class="table table-striped table-sm">
+                    <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>名称</th>
+                        <th>电话</th>
+                        <th>地址</th>
+                        <th>城市</th>
+                        <th>背景图片路径</th>
+                        <th>action</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr th:each="center : ${centerList}">
+                        <td th:each="entry : ${center}" th:text="${center.id}" ></td>
+                        <td th:each="entry : ${center}" th:text="${center.name}"></td>
+                        <td th:each="entry : ${center}" th:text="${center.telephone}"></td>
+                        <td th:each="entry : ${center}" th:text="${center.address}"></td>
+                        <td th:each="entry : ${center}" th:text="${center.city}"></td>
+                        <td th:each="entry : ${center}" th:text="${center.imagePath}"></td>
+                        <td><a th:href="'/admin/deleteCenter/' + ${center.id}">删除</a></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+</div>
+</body>
+</html>
