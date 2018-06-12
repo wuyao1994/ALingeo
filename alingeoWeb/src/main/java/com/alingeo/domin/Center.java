@@ -14,8 +14,8 @@ public class Center {
 	private String	name;
 	private String	telephone;
 	private String	address;
-	private String  city;
-	private String	iamgePath;
+	private String	city;
+	private String	imagePath;
 
 
 
@@ -67,25 +67,25 @@ public class Center {
 
 
 
-    public String getCity() {
-        return city;
-    }
-
-
-
-    public void setCity(String pCity) {
-        city = pCity;
-    }
-
-
-
-    public String getIamgePath() {
-		return iamgePath;
+	public String getCity() {
+		return city;
 	}
 
 
 
-	public void setIamgePath(String iamgePath) {
-		this.iamgePath = iamgePath;
+	public void setCity(String pCity) {
+		city = pCity;
+	}
+
+
+
+	public String getImagePath() {
+		return imagePath;
+	}
+
+
+
+	public void setImagePath(String imagePath) {
+		this.imagePath = imagePath;
 	}
 }

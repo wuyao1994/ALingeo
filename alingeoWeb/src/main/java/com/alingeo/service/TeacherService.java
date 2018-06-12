@@ -10,4 +10,6 @@ public interface TeacherService {
     List<Teacher> findByNameLike(String name);
 
 	List<Teacher> findAll();
+
+	void deleteTeacherById(Long id);
 }

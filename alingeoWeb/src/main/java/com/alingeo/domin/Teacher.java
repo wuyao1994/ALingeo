@@ -18,6 +18,7 @@ public class Teacher {
 	private Date	joinTime;
 	private String	serviceCenter;
 	private String	introduce;
+	private String	imagePath;
 
 
 
@@ -89,5 +90,17 @@ public class Teacher {
 
 	public void setIntroduce(String introduce) {
 		this.introduce = introduce;
+	}
+
+
+
+	public String getImagePath() {
+		return imagePath;
+	}
+
+
+
+	public void setImagePath(String imagePath) {
+		this.imagePath = imagePath;
 	}
 }
