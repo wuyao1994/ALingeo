@@ -1,5 +1,7 @@
 package com.alingeo.controller;
 
+import java.text.ParsePosition;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,9 +33,10 @@ public class AdminController {
 
 	@Autowired
 	private CenterService	mCenterService;
+
 	@Autowired
 	private TeacherService	mTeacherService;
-	@Value("${img.newsImagelocation}")
+	@Value("${img.newsImageLocation}")
 	private String			newsImageLocation;
 	@Value("${img.centerImageLocation}")
 	private String			centerImageLocation;
@@ -122,7 +125,7 @@ public class AdminController {
 
 
 
-	@RequestMapping(value = "/admin/teacher/", method = RequestMethod.GET)
+	@RequestMapping(value = "/admin/teacher", method = RequestMethod.GET)
 	private String adminTeacherPage(Model model) {
 		model.addAttribute("teacherList", mTeacherService.findAll());
 		return "teacher";
@@ -148,13 +151,16 @@ public class AdminController {
 	@RequestMapping(value = "/admin/addTeacher", method = RequestMethod.POST)
 	private String addTeacher(Model model, @RequestParam("chineseName") String chineseName,
 			@RequestParam("englishName") String englishName, @RequestParam("serviceCenter") String serviceCenter,
-			@RequestParam("introduce") String introduce, @RequestParam("joinTime") Date joinTime,
+			@RequestParam("introduce") String introduce, @RequestParam("joinTime") String joinTime,
 			@RequestParam("file") MultipartFile file) {
 		Teacher teacher = new Teacher();
 		teacher.setChineseName(chineseName);
 		teacher.setEnglishName(englishName);
 		teacher.setIntroduce(introduce);
-		teacher.setJoinTime(joinTime);
+        SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        ParsePosition pos = new ParsePosition(0);
+        Date strtodate = formatter.parse(joinTime, pos);
+		teacher.setJoinTime(strtodate);
 		teacher.setServiceCenter(serviceCenter);
 		if (!file.isEmpty()) {
 			String fileName = file.getOriginalFilename();
@@ -172,7 +178,7 @@ public class AdminController {
 
 
 
-	@RequestMapping(value = "/admin/center/", method = RequestMethod.GET)
+	@RequestMapping(value = "/admin/center", method = RequestMethod.GET)
 	private String adminCenterPage(Model model) {
 		model.addAttribute("centerList", mCenterService.findAll());
 		return "center";

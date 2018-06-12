@@ -40,7 +40,7 @@ xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
                     <li class="nav-item">
                         <a class="nav-link" href="/admin/teacher">
                             <span data-feather="file"></span>
-                            老师管理
+                            讲师管理
                         </a>
                     </li>
                     <li class="nav-item">
@@ -54,7 +54,7 @@ xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
         </nav>
         <main role="main" class="col-md-11 ml-sm-auto px-4">
             <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                <h1 class="h2">老师列表</h1>
+                <h1 class="h2">讲师列表</h1>
                 <button class="btn"><a href="/admin/addTeacher">添加</a></button>
             </div>
             <div class="table-responsive">
@@ -78,7 +78,7 @@ xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
                         <td th:each="entry : ${teacher}" th:text="${teacher.englishName}"></td>
                         <td th:each="entry : ${teacher}" th:text="${teacher.joinTime}"></td>
                         <td th:each="entry : ${teacher}" th:text="${teacher.serviceCenter}"></td>
-                        <td th:each="entry : ${teacher}" th:text="${teacher.serviceCenter}"></td>
+                        <td th:each="entry : ${teacher}" th:text="${teacher.imagePath}"></td>
                         <td th:each="entry : ${teacher}" th:text="${teacher.introduce}"></td>
                         <td><a th:href="'/admin/deleteTeacher/' + ${teacher.id}">删除</a></td>
                     </tr>

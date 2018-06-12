@@ -1,26 +1,47 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
 <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="../static/css/bootstrap-datetimepicker.min.css" media="screen">
+<script src="../static/js/jquery-3.3.1.min.js"></script>
+<script src="../static/js/teacher.js"></script>
 <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
+<script src="../static/js/bootstrap-datetimepicker.js"></script>
+<script src="../static/js/locales/bootstrap-datetimepicker.fr.js"></script>
 <head>
     <meta charset="UTF-8">
     <title>alingeo</title>
 </head>
 <body>
-<h2>添加新闻</h2>
-<form name="addNews" action="" th:action="@{/admin/addNews}" th:method="post" class="from-box" style="width: 100%;max-width: 330px;padding: 15px;" enctype="multipart/form-data">
+<h2>添加讲师</h2>
+<form name="addTeacher" action="" th:action="@{/admin/addTeacher}" th:method="post" class="from-box" style="width: 100%;max-width: 330px;padding: 15px;" enctype="multipart/form-data">
     <div class="form-group">
-        <label for="title">标题</label>
-        <input type="title" name="title" id="title" class="form-control" required/>
+        <label for="chineseName">中文姓名</label>
+        <input type="chineseName" name="chineseName" id="chineseName" class="form-control" required/>
     </div>
     <div class="form-group">
-        <label for="content">内容</label>
-        <textarea class="form-control" rows="3" name="content" id="content" required></textarea>
+        <label for="englishName">英文姓名</label>
+        <input type="englishName" name="englishName" id="englishName" class="form-control" required/>
     </div>
     <div class="form-group">
-        <label for="uploadImage">上传图片</label>
+        <label for="serviceCenter">服务中心</label>
+        <input type="serviceCenter" name="serviceCenter" id="serviceCenter" class="form-control" required/>
+    </div>
+    <div class="form-group">
+        <label for="joinTime">加入时间</label>
+        <div class="input-group date form_datetime" data-date="1979-09-16T05:25:07Z" data-date-format="yyyy MM dd HH:mm:ss" data-link-field="dtp_input1">
+            <input class="form-control" size="16" type="text" value="" readonly>
+            <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+            <span class="input-group-addon"><span class="glyphicon glyphicon-th"></span></span>
+            <input type="hidden" id="joinTime" name="joinTime" value="" /><br/>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="introduce">自我介绍</label>
+        <textarea class="form-control" rows="3" name="introduce" id="introduce" required></textarea>
+    </div>
+    <div class="form-group">
+        <label for="uploadImage">上传头像</label>
         <input type="file" name="file" id="uploadImage">
     </div>
     <button type="submit" class="btn btn-lg btn-primary btn-block">提交</button>
