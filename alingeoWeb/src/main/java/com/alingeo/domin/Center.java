@@ -14,6 +14,7 @@ public class Center {
 	private String	name;
 	private String	telephone;
 	private String	address;
+	private String  city;
 	private String	iamgePath;
 
 
@@ -66,7 +67,19 @@ public class Center {
 
 
 
-	public String getIamgePath() {
+    public String getCity() {
+        return city;
+    }
+
+
+
+    public void setCity(String pCity) {
+        city = pCity;
+    }
+
+
+
+    public String getIamgePath() {
 		return iamgePath;
 	}
 
