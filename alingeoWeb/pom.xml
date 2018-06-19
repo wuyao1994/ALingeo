@@ -38,7 +38,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
                     <outputDirectory>${basedir}/jar</outputDirectory>
-                    <mainClass>com.upms.Application</mainClass>
+                    <mainClass>com.alingeo.Application</mainClass>
                 </configuration>
             </plugin>
         </plugins>

@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50717
 File Encoding         : 65001
 
-Date: 2018-06-05 23:08:47
+Date: 2018-06-20 01:21:24
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -26,25 +26,78 @@ CREATE TABLE `hibernate_sequence` (
 -- ----------------------------
 -- Records of hibernate_sequence
 -- ----------------------------
-INSERT INTO `hibernate_sequence` VALUES ('1');
+INSERT INTO `hibernate_sequence` VALUES ('5');
+INSERT INTO `hibernate_sequence` VALUES ('5');
+INSERT INTO `hibernate_sequence` VALUES ('5');
+INSERT INTO `hibernate_sequence` VALUES ('5');
 
 -- ----------------------------
--- Table structure for t_message
+-- Table structure for t_center
 -- ----------------------------
-DROP TABLE IF EXISTS `t_message`;
-CREATE TABLE `t_message` (
+DROP TABLE IF EXISTS `t_center`;
+CREATE TABLE `t_center` (
   `id` bigint(20) NOT NULL,
-  `email` varchar(255) DEFAULT NULL,
-  `message` text,
+  `address` varchar(255) DEFAULT NULL,
+  `city` varchar(255) DEFAULT NULL,
+  `image_path` varchar(255) DEFAULT NULL,
   `name` varchar(255) DEFAULT NULL,
+  `telephone` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- ----------------------------
--- Records of t_message
+-- Records of t_center
 -- ----------------------------
-INSERT INTO `t_message` VALUES ('1', 'wuyaoiot@163.com', '中国家长最舍得为孩子投资教育：据《2016中国家庭教育消费者图谱》显示，约65%的家庭每年教育产品支出大于3000元，38.6%的家庭大于6000元！中国家长最舍得为孩子投资教育：据《2016中国家庭教育消费者图谱》显示，约65%的家庭每年教育产品支出大于3000元，38.6%的家庭大于6000元！中国家长最舍得为孩子投资教育：据《2016中国家庭教育消费者图谱》显示，约65%的家庭每年教育产品支出大于3000元，38.6%的家庭大于6000元！中国家长最舍得为孩子投资教育：据《2016中国家庭教育消费者图谱》显示，约65%的家庭每年教育产品支出大于3000元，38.6%的家庭大于6000元！', 'wuyao');
-INSERT INTO `t_message` VALUES ('2', 'wuyaoiot@163.com', '中国家长最舍得为孩子投资教育：据《2016中国家庭教育消费者图谱》显示，约65%的家庭每年教育产品支出大于3000元，38.6%的家庭大于6000元！', 'wuyao');
-INSERT INTO `t_message` VALUES ('3', 'wuyaoiot@163.com', '中国家长最舍得为孩子投资教育：据《2016中国家庭教育消费者图谱》显示，约65%的家庭每年教育产品支出大于3000元，38.6%的家庭大于6000元！', 'wuyao');
-INSERT INTO `t_message` VALUES ('4', 'wuyaoiot@163.com', '中国家长最舍得为孩子投资教育：据《2016中国家庭教育消费者图谱》显示，约65%的家庭每年教育产品支出大于3000元，38.6%的家庭大于6000元！', 'wuyao');
+
+-- ----------------------------
+-- Table structure for t_join
+-- ----------------------------
+DROP TABLE IF EXISTS `t_join`;
+CREATE TABLE `t_join` (
+  `id` bigint(20) NOT NULL,
+  `content` varchar(255) DEFAULT NULL,
+  `name` varchar(255) DEFAULT NULL,
+  `telephone` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of t_join
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for t_news
+-- ----------------------------
+DROP TABLE IF EXISTS `t_news`;
+CREATE TABLE `t_news` (
+  `id` bigint(20) NOT NULL,
+  `content` varchar(255) DEFAULT NULL,
+  `date` datetime DEFAULT NULL,
+  `image_path` varchar(255) DEFAULT NULL,
+  `title` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of t_news
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for t_teacher
+-- ----------------------------
+DROP TABLE IF EXISTS `t_teacher`;
+CREATE TABLE `t_teacher` (
+  `id` bigint(20) NOT NULL,
+  `chinese_name` varchar(255) DEFAULT NULL,
+  `english_name` varchar(255) DEFAULT NULL,
+  `image_path` varchar(255) DEFAULT NULL,
+  `introduce` varchar(255) DEFAULT NULL,
+  `join_time` datetime DEFAULT NULL,
+  `service_center` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of t_teacher
+-- ----------------------------
 SET FOREIGN_KEY_CHECKS=1;
