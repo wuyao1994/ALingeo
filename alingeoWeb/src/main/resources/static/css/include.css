@@ -1,0 +1,175 @@
+/*头部*/
+.b_header{
+	width: 100%;
+	background: #00a4b4;
+	height: 120px;
+}
+.s_header{
+	width: 1200px;
+	margin: 0 auto;
+}
+.b_header .s_header .logo{
+	display: inline-block;
+	line-height: 120px;
+}
+.b_header .s_header .logo img{
+	width: 100%;
+	vertical-align: middle;
+}
+.b_header .s_header .nav{
+	float: right;
+    padding: 60px 0px 0 0;
+    position: relative;
+}
+.b_header .s_header .nav ul li{
+	float: left;
+}
+.b_header .s_header .nav ul li a{
+	padding: 0 0.77em;
+    display: block;
+    font-size: 16px;
+    line-height: 35px;
+    color: #fff;
+}
+.b_header .s_header .phone{
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 22px;
+    color: #fff;
+    font-weight: bold;
+    text-align: right;
+    padding-right: 0px;
+    background: url(../../static/images/index/call-icon.png) no-repeat left center;
+    padding-left: 35px;
+}
+.b_header .s_header .phone .call img{
+	width: 100%;
+}
+
+/*尾部*/
+.b_footer{
+    /*position: fixed;
+    bottom: 0;*/
+    height: 330px;
+    width: 100%;
+    background: url(../../static/images/index/footer-bg.png) no-repeat center top;
+}
+.s_footer{
+	width: 1200px;
+	margin: 0 auto;
+}
+.b_footer .s_footer .menu{
+    width: 135px;
+    position: fixed;
+    top: 50px;
+    padding-top: 82px;
+    left: 50%;
+    margin-left: 600px;
+    z-index: 999;
+}
+.b_footer .s_footer .menu ul li{
+	width: 64px;
+    height: 64px;
+    background: url(../../static/images/icon/btn-icon.png) no-repeat 0 0;
+    background: #9a5aa4;
+    border-radius: 4px;
+    text-align: center;
+    margin: 0 0 2px 30px;
+    position: relative;
+}
+.b_footer .s_footer .menu ul li a{
+	color: #fff;
+}
+
+.b_footer .s_footer .write{
+	padding: 155px 0 0;
+    height: 172px;
+    /*background: url(../../static/images/index/footer-bg.png) no-repeat center top;*/
+	/*background:#00a4b4 ;*/
+}
+.b_footer .s_footer .write .code{
+	float: right;
+}
+.b_footer .s_footer .write .code dl{
+	float: left;
+    margin: 15px 5px 0 12px;
+    width: 115px;
+    line-height: 1.5;
+    text-align: center;
+}
+.b_footer .s_footer .write .code dl dt{
+	height: 88px;
+    text-align: center;
+    line-height: 88px;
+}
+.b_footer .s_footer .write .code dl dt img{
+  	max-width: 88px;
+    max-height: 88px;
+    vertical-align: middle;
+} 
+.b_footer .s_footer .write .code dl dd{
+	text-align: center;
+    padding-top: 15px;
+    color: #fff;
+    font-size: 12px;
+}  
+.b_footer .s_footer .write .more{
+    width: 675px;
+    height: 170px;
+    border-radius: 15px;
+    float: left;
+    font-family: "宋体";
+}
+.b_footer .s_footer .write .more dl{
+    float: left;
+    width: 80px;
+    padding: 15px 0 0 30px;
+    color: #fff;
+}
+.b_footer .s_footer .write .more dl dt{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+}
+.b_footer .s_footer .write .more dl dd{
+	font-size: 12px;
+	line-height: 24px;
+    width: 100%;
+}
+.b_footer .s_footer .write .more dl a{
+    color: #fff;
+    font-family: "宋体";
+}
+.b_footer .s_footer .write .call{
+    width: 210px;
+    height: 112px;
+    float: left;
+    margin-left: 20px;
+    /*background: url(../../static/images/f-ph-bg.png) no-repeat;*/
+    font-weight: bold;
+}
+.b_footer .s_footer .write .call dt{
+	line-height: 40px;
+    padding-left: 62px;
+    padding-top: 15px;
+}
+.b_footer .s_footer .write .call dd{
+    font-size: 26px;
+    color: #9a5aa4;
+    padding: 8px 0 0 12px;
+}
+
+/*楼层图标*/
+.sy-icon,.zx-icon,.jm-icon,.gz-icon,.xz-icon,.zj-icon,.re-back,.st-icon,.cx-icon{width:30px; height:30px; background:url(../../static/images/icon.png) no-repeat; display:inline-block; margin-top:8px;}
+.sy-icon{background-position: 0 -40px;}
+.zx-icon{background-position: 0 -70px;}
+.jm-icon{background-position: 0 -100px;}
+.gz-icon{background-position: 0 -130px;}
+.xz-icon{background-position: 0 -160px;}
+.zj-icon{background-position: 0 -190px;}
+.re-back{background-position: 0 -220px;}
+.st-icon{background-position:-4px -280px;}
+.cx-icon{background-position: -44px  -280px;}

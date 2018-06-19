@@ -1,0 +1,25 @@
+@charset "utf-8";
+/*reset*/
+html,body, div, dl, dt, dd, ul, ol, li, 
+h1, h2, h3, h4, h5, h6, pre, code, form, 
+fieldset,legend, input, button, textarea, p, blockquote,
+ th, td,section,header,footer{ margin: 0;padding: 0;}
+ 
+ul li{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+}
+img{
+	border: none;
+}
+html{
+	width: 100%;
+}
+body{
+	width: 100%;
+	min-width: 1200px;
+	font-size: 12px;
+}

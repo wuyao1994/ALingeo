@@ -1,0 +1,262 @@
+/*body{
+	position: absolute;	
+}*/
+.main{
+	width: 100%;
+	position: relative;
+}
+.main .screen{
+	width: 100%;
+	height: 320px;
+}
+.main .screen img{
+	width: 100%;
+	height: 100%;
+}
+.main .information{
+    width: 564px;
+    height: 72px;
+    line-height: 72px;
+    margin: 50px auto 0;
+    position: relative;
+    background: url(../../static/images/index/information.png) no-repeat 0 0;
+}
+.main .information ul li{
+    width: 50%;
+    float: left;
+    font-size: 20px;
+    color: #fff;
+    text-align: left;
+}
+.main .information .a-icon{
+    width: 80px;
+    height: 98px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -44px 0 0 -40px;
+}
+.main .classroom-til .name{
+	font-size: 42px;
+    color: #222;
+    padding-top: 60px;
+    text-align: center;
+    font-weight: bold;
+}
+.main .classroom-til .e-name {
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+    margin: 15px auto;
+    /*width: 365px;*/
+    border-bottom: 1px solid #ceccd1;
+    padding-bottom: 28px;
+}
+.main .classroom-til .txt {
+   /* color: #d96ea7;*/
+    text-align: center;
+    font-size: 30px;
+    color: #31a7bd;
+    padding-top: 20px;
+    position: relative;
+}
+
+.main .classroom-til .txt:before {
+    background: #d96ea7;
+    width: 248px;
+    height: 4px;
+    top: -18px;
+    margin-left: -124px;
+    content: '';
+    display: inline-block;
+    background: #31a7bd;
+    position: absolute;
+    top: -18px;
+    left: 50%;
+}
+.main .classroom-mn{
+    padding-top: 10px;
+    margin-top: 40px;
+    height: 1950px;
+}
+
+.main .clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+.main .classroom-mn .big-pic{
+    height: 650px;
+    overflow: hidden;
+}
+.main .classroom-mn .fr, .classroom-mn .fl {
+    float: right;
+    width: 50%;
+    min-width: 600px;
+}
+.main .classroom-mn .big-pic img {
+    max-width: 100%;
+    height: 650px;
+    transition: all 0.5s ease-out 0s;
+    -webkit-transition: all 0.5s ease-out 0s;
+}
+.main .classroom-mn .fl {
+    background: #9fcf61;
+    height: 650px;
+    float: left;
+}
+.main .classroom-mn .content{
+    float: right;
+    width: 600px;
+    height: 650px;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+.main .classroom-mn .e-name {
+    padding: 85px 0 10px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 36px;
+}
+.main .classroom-mn .name {
+	width: 365px;
+    height: 50px;
+    line-height: 30px;
+    border-bottom: 2px solid rgba(255,255,255,.15);
+    font-size: 30px;
+    font-weight: bold;
+    display: inline-block;
+}
+.main .classroom-mn .txt {
+    padding: 10px 30px;
+    font-size: 16px;
+    line-height: 26px;
+}
+.main .classroom-mn .btn {
+    width: 194px;
+    height: 62px;
+    line-height: 62px;
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    font-size: 19px;
+    color: #ed65b1;
+    background: url(../../static/images/icon/btn-icon.png) no-repeat -346px -69px;
+    left: 50%;
+    bottom: 62px;
+    margin-left: -97px;
+}
+ .main .classroom-mn dl.ybyl .content {
+    float: left;
+}
+.main .classroom-mn dl.ybyl .content {
+    float: left;
+}
+.main .classroom-mn .content {
+    float: right;
+    width: 600px;
+    height: 650px;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+.main .classroom-mn dl.ybyl .fr{
+	background: #01a4b5;
+}
+.main .classroom-mn .btn{
+    width: 194px;
+    height: 62px;
+    line-height: 62px;
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    font-size: 19px;
+    color: #ed65b1;
+    background: url(../../static/images/course/dqbtn.png) no-repeat 0 0;
+    left: 50%;
+    bottom: 200px;
+    margin-left: -97px;
+}
+.main .classroom-mn .xq{
+	margin-right: 50px;
+}
+.main .banner{
+	width: 100%;
+	height: 1000px;
+	background: url(../../static/images/course/3D.png) no-repeat 0 0;
+    padding-top: 20px;
+}
+.main .banner .banner-box{
+	width: 1200px;
+    margin: 0 auto;
+}
+.main .banner .banner-box .environment-mn{
+    width: 1160px;
+    height: 636px;
+    position: relative;
+    background: url(../../static/images/course/class-new-bg.png) no-repeat;
+    margin-top: 160px;
+}
+.main .banner .banner-box .environment-mn .big-img{
+	width: 725px;
+    height: 545px;
+    position: absolute;
+    z-index: 10;
+    top: 45px;
+    left: 45px;
+    overflow: hidden;
+    box-shadow: 0 0 5px #0086C6;
+}
+.main .banner .banner-box .environment-mn .big-img img{
+	width: 100%;
+    height: auto;
+    transition: all 0.5s ease-out 0s;
+    -webkit-transition: all 0.5s ease-out 0s;
+}
+
+.main .banner .banner-box .environment-mn .desc {
+    position: absolute;
+    top: 50px;
+    right: 48px;
+    width: 290px;
+    height: 42px;
+    line-height: 21px;
+    font-size: 16px;
+    color: #333;
+}
+.main .banner .banner-box .environment-mn .fr {
+    float: right;
+    width: 290px;
+    margin: 100px 45px 0 0;
+}
+
+.main .banner .banner-box .environment-mn .btn {
+    float: left;
+    margin-top: 40px;
+    width: 290px;
+    text-align: left;
+}
+.main .banner .banner-box .environment-mn .btn a:nth-child(1){
+    display: inline-block;
+    width: 72px;
+    height: 72px;
+    background: url(../../static/images/course/btn-l.png) no-repeat 0 0;
+    margin-right: 10px;
+}
+.main .banner .banner-box .environment-mn .btn a:nth-child(2){
+    display: inline-block;
+    width: 72px;
+    height: 72px;
+    background: url(../../static/images/course/btn-r.png) no-repeat 0 0;
+    margin-right: 10px;
+    margin-bottom: 3px;
+}
+.main .banner .banner-box .environment-mn .icon {
+    width: 550px;
+    height: 366px;
+    background: url(../../static/images/course/girl.png) no-repeat;
+    position: absolute;
+    right: -42px;
+    bottom: -40px;
+    opacity: 1;
+}
