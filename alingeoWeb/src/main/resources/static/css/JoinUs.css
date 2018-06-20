@@ -142,7 +142,7 @@
 }
 .main .screen6 .screen6-box .up{
 	height: 520px;
-	background: url(../../static/images/join/9.png) no-repeat 0 0;
+	background: url(../images/join/9.png) no-repeat 0 0;
 	background-size: 100% 100%;
 }
 .main .screen6 .screen6-box .np{
@@ -260,7 +260,7 @@
     margin: 0 auto;
 }
 .main .join .join-box .content{
-   /* background: url(../../static/images/floor/join-from-bg.jpg) no-repeat;*/
+   /* background: url(../images/floor/join-from-bg.jpg) no-repeat;*/
     background:oldlace ;
     height: 520px;
     padding-top: 30px;

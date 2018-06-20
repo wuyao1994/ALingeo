@@ -90,7 +90,7 @@
   	color: #9ba2a8;
     font-size: 14px;
     padding-left: 20px;
-    background: url(../../static/images/news/time.png) no-repeat left center;
+    background: url(../images/news/time.png) no-repeat left center;
 }
 .main .many{
 	text-align: center;

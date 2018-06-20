@@ -18,7 +18,7 @@
     bottom: 0;
     right: 0;
     z-index: 10;
-    background: url(../../static/images/center/2.png) no-repeat 0 0;
+    background: url(../images/center/2.png) no-repeat 0 0;
     background-size: 100% 100%;
 }
 .main .screen .city-til{

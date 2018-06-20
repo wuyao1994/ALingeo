@@ -42,7 +42,7 @@
     font-weight: bold;
     text-align: right;
     padding-right: 0px;
-    background: url(../../static/images/index/call-icon.png) no-repeat left center;
+    background: url(../images/index/call-icon.png) no-repeat left center;
     padding-left: 35px;
 }
 .b_header .s_header .phone .call img{
@@ -55,7 +55,7 @@
     bottom: 0;*/
     height: 330px;
     width: 100%;
-    background: url(../../static/images/index/footer-bg.png) no-repeat center top;
+    background: url(../images/index/footer-bg.png) no-repeat center top;
 }
 .s_footer{
 	width: 1200px;
@@ -73,7 +73,7 @@
 .b_footer .s_footer .menu ul li{
 	width: 64px;
     height: 64px;
-    background: url(../../static/images/icon/btn-icon.png) no-repeat 0 0;
+    background: url(../images/icon/btn-icon.png) no-repeat 0 0;
     background: #9a5aa4;
     border-radius: 4px;
     text-align: center;
@@ -87,7 +87,7 @@
 .b_footer .s_footer .write{
 	padding: 155px 0 0;
     height: 172px;
-    /*background: url(../../static/images/index/footer-bg.png) no-repeat center top;*/
+    /*background: url(../images/index/footer-bg.png) no-repeat center top;*/
 	/*background:#00a4b4 ;*/
 }
 .b_footer .s_footer .write .code{
@@ -148,7 +148,7 @@
     height: 112px;
     float: left;
     margin-left: 20px;
-    /*background: url(../../static/images/f-ph-bg.png) no-repeat;*/
+    /*background: url(../images/f-ph-bg.png) no-repeat;*/
     font-weight: bold;
 }
 .b_footer .s_footer .write .call dt{
@@ -163,7 +163,7 @@
 }
 
 /*楼层图标*/
-.sy-icon,.zx-icon,.jm-icon,.gz-icon,.xz-icon,.zj-icon,.re-back,.st-icon,.cx-icon{width:30px; height:30px; background:url(../../static/images/icon.png) no-repeat; display:inline-block; margin-top:8px;}
+.sy-icon,.zx-icon,.jm-icon,.gz-icon,.xz-icon,.zj-icon,.re-back,.st-icon,.cx-icon{width:30px; height:30px; background:url(../images/icon.png) no-repeat; display:inline-block; margin-top:8px;}
 .sy-icon{background-position: 0 -40px;}
 .zx-icon{background-position: 0 -70px;}
 .jm-icon{background-position: 0 -100px;}
