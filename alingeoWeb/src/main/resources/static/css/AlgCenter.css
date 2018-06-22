@@ -105,6 +105,7 @@
 	overflow: hidden;
     padding-top: 35px;
     padding-bottom: 50px;
+    background: url(../images/contact/6.png) no-repeat bottom center;
 }
 .main .many .many-box .mode .show li .mode-info h3{
     font-size: 20px;
@@ -119,4 +120,164 @@
     font-family: "arial";
     display: block;
 }
+/*更多爱灵格*/
+.main .center-proli{
+	background: #fff;
+    width: 100%;
+}
+.main .center-proli .ct{
+	width: 1200px;
+    margin: 0 auto;
+}
+.main .center-proli .ct .proli-mn{
+	 padding-top: 25px;   
+}
+.main .center-proli .ct .proli-mn h3{
+	font-size: 100%;
+    font-weight: normal;
+}
+.main .center-proli .ct .proli-mn h3 .title {
+    width: 180px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    font-size: 22px;
+    color: #fff;
+    margin-bottom: 22px;
+    background: lightskyblue;
+}
+.main .center-proli .ct .proli-mn h3 .search{
+    float: right;
+    width: 490px;
+    height: 54px;
+    padding: 2px;
+    background: #7bbbe7;
+}
+.main .center-proli .ct .proli-mn h3 .search-inp {
+    height: 54px;
+    border: none;
+    background: #fff;
+    line-height: 54px;
+    width: 360px;
+    padding: 0 10px;
+    font-size: 16px;
+    color: #333;
+    vertical-align: top;
+}
+.main .center-proli .ct .proli-mn h3 .search-btn {
+    display: inline-block;
+    width: 100px;
+    height: 54px;
+    line-height: 54px;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+.main .center-proli .ct .proli-mn h3 .search-btn-icon {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background: url(../images/icon.png) no-repeat -45px -282px;
+    margin: -5px 5px 0 0;
+    vertical-align: middle;
+}
+.main .center-proli .ct .proli-mn ul{
+    width: 110%; 
+}
+.main .center-proli .ct .proli-mn ul li {
+    float: left;
+    width: 285px;
+    height: 265px;
+    text-align: center;
+    margin: 20px 20px 0 0;
+}  
+.main .center-proli .ct  .proli-mn ul li .name {
+    font-size: 16px;
+    color: #444;
+    font-weight: bold;
+    line-height: 50px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.main .center-proli .ct .proli-mn ul li .pic{
+    height: 214px;
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 0 0 5px #0086C6;
+    position: relative;
+}
+.main .center-proli .ct .proli-mn ul li .pic img {
+    width: 285px;
+    height: 214px;
+    transition: all 0.5s ease-out 0s;
+    -webkit-transition: all 0.5s ease-out 0s;
+    display: table-cell;
+}
 
+.main .center-proli .ct .proli-mn ul li .mask {
+    position: absolute;
+    left: -1px;
+    top: -1px;
+    right: -1px;
+    bottom: -1px;
+    background: url(../images/center/mask-bg.png);
+    color: #fff;
+    text-align: center;
+    text-align: center;
+}
+.main .center-proli .ct .proli-mn ul li .add-icon {
+    padding-top: 28px;
+    display: inline-block;
+}
+.main .center-proli .ct .proli-mn ul li .pic .add-icon img {
+    height: auto;
+    width: auto;
+}
+.main .center-proli .ct .proli-mn ul li .add-name, .proli-mn ul li .add-ph {
+    font-weight: bold;
+    font-size: 16px;
+    color: #fff;
+    line-height: 28px;
+}
+.main .center-proli .ct .proli-mn ul li .add-ph {
+	padding-top: 18px;
+}
+.main .center-proli .ct .proli-mn ul li .ph-icon {
+    width: 20px;
+    height: 20px;
+    background: url(../images/center/ph-icon.png) no-repeat;
+    vertical-align: middle;
+    margin-right: 5px;
+    display: inline-block;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+    content: "";
+    display: block;
+    font-size: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+/*.main .center-proli .ct .center-page {
+    text-align: center;
+    margin-top: 40px;
+} 
+.main .center-proli .ct .center-page .pagination {
+    display: inline-block;
+}  
+.main .center-proli .ct .center-page .pagination > li {
+    float: left;
+} 
+.main .center-proli .ct .center-page a.prve {
+    background-position: -38px 3px;
+}*/

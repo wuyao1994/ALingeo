@@ -7,7 +7,7 @@
 		<link rel="stylesheet" type="text/css" href="../css/common.css" />
 		<link rel="stylesheet" type="text/css" href="../css/include.css" />
 		<link rel="stylesheet" type="text/css" href="../css/AlgCenter.css" />
-		
+		<link rel="stylesheet" type="text/css" href="../css/animate.min.css" />
 		<script type="text/javascript" src="../js/jquery.min.js" ></script>
 		
 	</head>
@@ -24,7 +24,6 @@
 			<ul>
 				<li><a href="/index">首页</a></li>
 				<li><a href="##">企业入口</a></li>
-				<li><a href="/AboutUs">关于我们</a></li>
 				<li><a href="/AlgCourse">爱灵格课程</a></li>
 				<li><a href="/Teacher">专家师资</a></li>
 				<li><a href="/News">新闻动态</a></li>
@@ -44,7 +43,7 @@
     	 <!-- 巨幕图-->
 	    <div class="screen">
 	    	<img src="../images/center/1.png" >
-	    	<div class="city-mn">
+	    	<div class="city-mn wow animated fadeInUp">
 	                
 	                <div class="city-li">
 	                	<div class="city-til">请选择您的城市</div>
@@ -84,7 +83,185 @@
 	            </div>
 	    </div>
 	    <!--更多地址-->
-	    <div class="">
+	    <div class="center-proli">
+		    <div class="ct">
+		        <div class="proli-mn">
+		            <h3>
+		                <form id="form1">
+		                    <div class="search">
+		                        <input type="hidden" name="pro" value="北京市">
+		                        <input type="hidden" id="DistributorId">
+		                        <input type="text" name="centername" class="search-inp" id="centername" placeholder="请输入中心名称或关键字" value="" autocomplete="off">
+		                        <a id="btnserch" style="cursor: pointer" class="search-btn"><span class="search-btn-icon"></span>搜索</a>
+		                    </div>
+		                </form>
+		                <div class="title" id="pro">北京</div>
+		            </h3>
+		            <ul class="clearfix" id="centerlist">
+		                <li>
+		                    <a href="#">
+		                        <div class="pic show-mask" style="overflow: hidden;">
+		                            <span><img src="../images/center/center-img.png"></span>
+		                            <span class="mask" style="position: absolute; width: 285px; height: 214px; top: 214px; left: 0px; z-index: 1; opacity: 1;">
+		                                <p class="add-icon"><img src="../images/center/add-icon.png"></p>
+		                                <p class="add-name">北京市太阳宫爱琴海购物中心三层</p>
+		                                <p class="add-ph"><span class="ph-icon"></span>010-57458852</p>
+		                            </span>
+		                        </div>
+		                        <p class="name">北京太阳宫早教中心</p>
+		                    </a>
+		                </li>
+		                <li>
+		                    <a href="#">
+		                        <div class="pic show-mask" style="overflow: hidden;">
+		                            <span><img src="../images/center/center-img.png"></span>
+		                            <span class="mask" style="position: absolute; width: 285px; height: 214px; top: 0px; left: -285px; z-index: 1; opacity: 1;">
+		                                <p class="add-icon"><img src="../images/center/add-icon.png"></p>
+		                                <p class="add-name">北京市朝阳朝阳区湖景东路9号新奥购物中心H2-07</p>
+		                                <p class="add-ph"><span class="ph-icon"></span>010-84377989</p>
+		                            </span>
+		                        </div>
+		                        <p class="name">北京亚运村早教中心</p>
+		                    </a>
+		                </li>
+		                <li>
+		                    <a href="#">
+		                        <div class="pic show-mask" style="overflow: hidden;">
+		                            <span><img src="../images/center/center-img.png"></span>
+		                            <span class="mask" style="position: absolute; width: 285px; height: 214px; top: 214px; left: 0px; z-index: 1; opacity: 1;">
+		                                <p class="add-icon"><img src="../images/center/add-icon.png"></p>
+		                                <p class="add-name">北京市昌平区回龙观西大街美国悦宝园早教中心（上品折扣三层西侧）</p>
+		                                <p class="add-ph"><span class="ph-icon"></span>010-60728989</p>
+		                            </span>
+		                        </div>
+		                        <p class="name">北京回龙观早教中心</p>
+		                    </a>
+		                </li>
+		                <li>
+		                    <a href="#">
+		                        <div class="pic show-mask" style="overflow: hidden;">
+		                            <span><img src="../images/center/center-img.png"></span>
+		                            <span class="mask" style="position: absolute; width: 285px; height: 214px; top: 214px; left: 0px; z-index: 1; opacity: 1;">
+		                                <p class="add-icon"><img src="../images/center/add-icon.png"></p>
+		                                <p class="add-name">北京市昌平昌平区天通中苑F区华联购物中心三层F3-23</p>
+		                                <p class="add-ph"><span class="ph-icon"></span>010-57859868</p>
+		                            </span>
+		                        </div>
+		                        <p class="name">北京天通苑早教中心</p>
+		                    </a>
+		                </li>
+		                <li>
+		                    <a href="#">
+		                        <div class="pic show-mask" style="overflow: hidden;">
+		                            <span><img src="../images/center/center-img.png"></span>
+		                            <span class="mask" style="position: absolute; width: 285px; height: 214px; top: 214px; left: 0px; z-index: 1; opacity: 1;">
+		                                <p class="add-icon"><img src="../images/center/add-icon.png"></p>
+		                                <p class="add-name">北京市顺义顺义金街华联购物中心3F南侧</p>
+		                                <p class="add-ph"><span class="ph-icon"></span>010-53672955</p>
+		                            </span>
+		                        </div>
+		                        <p class="name">北京顺义早教中心</p>
+		                    </a>
+		                </li>
+		                <li>
+		                    <a href="#">
+		                        <div class="pic show-mask" style="overflow: hidden;">
+		                            <span><img src="../images/center/center-img.png"></span>
+		                            <span class="mask" style="position: absolute; width: 285px; height: 214px; top: 214px; left: 0px; z-index: 1; opacity: 1;">
+		                                <p class="add-icon"><img src="../images/center/add-icon.png"></p>
+		                                <p class="add-name">北京市朝阳区青年路甘露园南里尚街购物中心2层</p>
+		                                <p class="add-ph"><span class="ph-icon"></span>010-85590058</p>
+		                            </span>
+		                        </div>
+		                        <p class="name">北京甘露园早教中心</p>
+		                    </a>
+		                </li>
+		                <li>
+		                    <a href="#">
+		                        <div class="pic show-mask" style="overflow: hidden;">
+		                            <span><img src="../images/center/center-img.png"></span>
+		                            <span class="mask" style="position: absolute; width: 285px; height: 214px; top: 214px; left: 0px; z-index: 1; opacity: 1;">
+		                                <p class="add-icon"><img src="../images/center/add-icon.png"></p>
+		                                <p class="add-name">北京市朝阳区东坝中路金隅嘉品Mall三层L3/17/19</p>
+		                                <p class="add-ph"><span class="ph-icon"></span>010-65766011</p>
+		                            </span>
+		                        </div>
+		                        <p class="name">北京东坝早教中心</p>
+		                    </a>
+		                </li>
+		                <li>
+		                    <a href="#">
+		                        <div class="pic show-mask" style="overflow: hidden;">
+		                            <span><img src="../images/center/center-img.png"></span>
+		                            <span class="mask" style="position: absolute; width: 285px; height: 214px; top: 214px; left: 0px; z-index: 1; opacity: 1;">
+		                                <p class="add-icon"><img src="../images/center/add-icon.png"></p>
+		                                <p class="add-name">北京市大兴区亦庄经济技术开发区科创五街经海二路北京城乡世纪广场三层</p>
+		                                <p class="add-ph"><span class="ph-icon"></span>010-67851196</p>
+		                            </span>
+		                        </div>
+		                        <p class="name">北京大兴城乡世纪早教中心</p>
+		                    </a>
+		                </li>
+		                <li>
+		                    <a href="#">
+		                        <div class="pic show-mask" style="overflow: hidden;">
+		                            <span><img src="../images/center/center-img.png"></span>
+		                            <span class="mask" style="position: absolute; width: 285px; height: 214px; top: 214px; left: 0px; z-index: 1; opacity: 1;">
+		                                <p class="add-icon"><img src="../images/center/add-icon.png"></p>
+		                                <p class="add-name">北京市丰台区大成路6号院1号楼物美大卖场一层</p>
+		                                <p class="add-ph"><span class="ph-icon"></span>57115358</p>
+		                            </span>
+		                        </div>
+		                        <p class="name">北京丰台大成物美早教中心</p>
+		                    </a>
+		                </li>
+		                <li>
+		                    <a href="#">
+		                        <div class="pic show-mask" style="overflow: hidden;">
+		                            <span><img src="../images/center/center-img.png"></span>
+		                            <span class="mask" style="position: absolute; width: 285px; height: 214px; top: 214px; left: 0px; z-index: 1; opacity: 1;">
+		                                <p class="add-icon"><img src="../images/center/add-icon.png"></p>
+		                                <p class="add-name">北京市丰台区草桥东路上品折扣三层</p>
+		                                <p class="add-ph"><span class="ph-icon"></span>01067560508</p>
+		                            </span>
+		                        </div>
+		                        <p class="name">北京丰台草桥上品早教中心</p>
+		                    </a>
+		                </li>
+		                <li>
+		                    <a href="#">
+		                        <div class="pic show-mask" style="overflow: hidden;">
+		                            <span><img src="../images/center/center-img.png"></span>
+		                            <span class="mask" style="position: absolute; width: 285px; height: 214px; top: 214px; left: 0px; z-index: 1; opacity: 1;">
+		                                <p class="add-icon"><img src="../images/center/add-icon.png"></p>
+		                                <p class="add-name">北京市石景山区苹果园南路9号乐活美汇三层</p>
+		                                <p class="add-ph"><span class="ph-icon"></span>010-68860030､68863510</p>
+		                            </span>
+		                        </div>
+		                        <p class="name">北京苹果园早教中心</p>
+		                    </a>
+		                </li>
+		                <li>
+		                    <a href="#">
+		                        <div class="pic show-mask" style="overflow: hidden;">
+		                            <span><img src="../images/center/center-img.png"></span>
+		                            <span class="mask" style="position: absolute; width: 285px; height: 214px; top: 214px; left: 0px; z-index: 1; opacity: 1;">
+		                                <p class="add-icon"><img src="../images/center/add-icon.png"></p>
+		                                <p class="add-name">北京市通州区新华西街61号怡佳家园2层8-1-15</p>
+		                                <p class="add-ph"><span class="ph-icon"></span>010-60530122</p>
+		                            </span>
+		                        </div>
+		                        <p class="name">北京通州北苑早教中心</p>
+		                    </a>
+		                </li>
+		
+		            </ul>
+		        </div>
+		        <!--<div class="center-page">
+		            <ul class="pagination"><li><a class="prve" href="http://www.rompy.cn:80/Center/Index?pageindex=1">  </a></li><li><a style="color:black;border:none;" href="http://www.rompy.cn:80/Center/Index?pageindex=1"> 1</a></li><li><a href="http://www.rompy.cn:80/Center/Index?pageindex=2"> 2 </a></li><li><a href="http://www.rompy.cn:80/Center/Index?pageindex=3"> 3 </a></li><li><a class="next" href="http://www.rompy.cn:80/Center/Index?pageindex=2">  </a></li></ul>
+		        </div>-->
+		    </div>
+		</div>
 	    <!--更多功能-->
 		<div class="many">
 		    <div class="many-box">
@@ -92,9 +269,9 @@
 		        <div class="name">更多爱灵格</div>
 		        <div class="txt">了解更多关于爱灵格的内容</div>
 		        <div class="mode">
-		            <ul class="show">
+		            <ul class="show wow flipInX animated">
 		                <li>
-		                    <a href="http://www.rompy.cn/ClassRoom/Index">
+		                    <a href="AlgCourse.html">
 		                        <span class="icon"><img src="../images/contact/1.png"></span>
 		                        <div class="mode-info">
 		                            <h3>爱灵格课程</h3>
@@ -106,7 +283,7 @@
 		                </li>
 		
 		                <li>
-		                    <a href="http://www.rompy.cn/Center/Index">
+		                    <a href="AlgCenter.html">
 		                        <span class="icon"><img src="../images/contact/2.png"></span>
 		                        <div class="mode-info">
 		                            <h3>中心查询</h3>
@@ -117,7 +294,7 @@
 		                </li>
 		
 		                <li>
-		                    <a href="http://www.rompy.cn/Apply/Index">
+		                    <a href="JoinUs.html">
 		                        <span class="icon"><img src="../images/contact/3.png"></span>
 		                        <div class="mode-info">
 		                            <h3>免费试听</h3>
@@ -130,28 +307,29 @@
 		        </div>
 		    </div>
 		</div>
-	</div>    
-	     <!--footer-->
-    <div class="b_footer">
+	</div> 
+	
+<div class="b_footer">
 	<div class="s_footer">
 		<div class="menu">
+			<div class="icons"></div>
 			<ul>
 	            <li>
-	                <a href="http://www.rompy.cn/Apply/Index">
+	                <a href="JoinUs.html">
 	                    <p class="st-icon"></p>
 	                    <p class="txt">免费试听</p>
 	                </a>
 	            </li>
 	
 	            <li style="margin-left: 30px;">
-	                <a id="zixun1" style="cursor:pointer">
+	                <a id="zixun1" style="cursor:pointer" href="tencent://message/?uin=2810037561&Site=Sambow&Menu=yes">
 	                    <p class="jm-icon"></p>
 	                    <p class="txt">加盟咨询</p>
 	                </a>
 	            </li>
 	
 	            <li>
-	                <a href="http://www.rompy.cn/Center/Index">
+	                <a href="html/AlgCenter.html">
 	                    <p class="cx-icon"></p>
 	                    <p class="txt">门店查找</p>
 	                </a>
@@ -163,7 +341,7 @@
 	                    <p class="txt">关注微信</p>
 	                </a>
 	                <p class="pop-img">
-	                    <img src="images/codes.png">
+	                    <img src="../images/codes.png">
 	                    <span class="roow"></span>
 	                </p>
 	            </li>
@@ -174,16 +352,16 @@
 	                    <p class="txt">APP下载</p>
 	                </a>
 	                <p class="pop-img">
-	                    <img src="images/codes.png">
+	                    <img src="../images/code.png">
 	                    <span class="roow"></span>
 	                </p>
 	            </li>
-	            <li>
-	                <a href="http://www.rompykids.cn" target="_blank">
+	            <!--<li>
+	                <a href="#" target="_blank">
 	                    <p class="zj-icon"></p>
 	                    <p class="txt">幼儿园</p>
 	                </a>
-	            </li>
+	            </li>-->
 	            <li>
 	                <a href="javascript:" class="return_top">
 	                    <p class="re-back"></p>
@@ -197,58 +375,80 @@
 				<dl>
                     <dt><img src="../images/codes.png"></dt>
                     
-                    <dd>关注“悦宝园教育”美式早教get起来</dd>
+                    <dd>扫描二维码，关注“爱灵格”公众号</dd>
                 </dl>
                 <dl>
-                    <dt><img src="../images/codes.png"></dt>
+                    <dt><img src="../images/code.png"></dt>
                     
-                    <dd>关注“悦宝园教育”美式早教get起来</dd>
+                    <dd>扫描二维码，下载“爱灵格”APP</dd>
                 </dl>
 			</div>
 			<div class="more">
                 <dl>
-                    <dt><a href="http://www.rompy.cn/AboutUs/Index">关于我们</a></dt>
-                    <dd><a onclick="location.href='http://www.rompy.cn/AboutUs/Index#jieshao'" style="cursor: pointer">公司介绍</a></dd>
-                    <dd><a onclick="location.href='http://www.rompy.cn/AboutUs/Index#pingpai'" style="cursor: pointer">爱灵格特色</a></dd>
-                    <dd><a onclick="location.href='http://www.rompy.cn/AboutUs/Index#zhexue'" style="cursor: pointer">科学早教</a></dd>
-                    <dd><a onclick="location.href='http://www.rompy.cn/AboutUs/Index#jiangxiang'" style="cursor: pointer">荣誉奖项</a></dd>
+                    <dt><a href="ContactUs.html">关于我们</a></dt>
+                    <dd><a onclick="location.href='ContactUs.html'" style="cursor: pointer">公司介绍</a></dd>
+                    <dd><a onclick="location.href='ContactUs.html'" style="cursor: pointer">爱灵格特色</a></dd>
+                    <dd><a onclick="location.href='ContactUs.html'" style="cursor: pointer">科学早教</a></dd>
+                    <dd><a onclick="location.href='ContactUs.html'" style="cursor: pointer">荣誉奖项</a></dd>
                 </dl>
                 <dl>
-                    <dt><a href="http://www.rompy.cn/ClassRoom/Index">爱灵格特色</a></dt>
-                    <dd><a href="http://www.rompy.cn/ClassRoom/lingdong">ETAR多语</a></dd>
-                    <dd><a href="http://www.rompy.cn/ClassRoom/yunlv">ETAR汉语</a></dd>
-                    <dd><a href="http://www.rompy.cn/ClassRoom/chuangyi">ETAR英语</a></dd>
+                    <dt><a href="AlgCourse.html">爱灵格特色</a></dt>
+                    <dd><a href="AlgCourse.html">ETAR多语</a></dd>
+                    <dd><a href="AlgCourse.html">ETAR汉语</a></dd>
+                    <dd><a href="AlgCourse.html">ETAR英语</a></dd>
                 </dl>
                 <dl>
-                    <dt><a href="http://www.rompy.cn/Teacher/Index">专家师资</a></dt>
-                    <dd><a href="http://www.rompy.cn/Teacher/Index">专家团队</a></dd>
-                    <dd><a onclick="location.href='http://www.rompy.cn/Teacher/Index#tea-renzhen'" style="cursor: pointer">认证教师</a></dd>
+                    <dt><a href="Teacher.html">专家师资</a></dt>
+                    <dd><a href="Teacher.html">专家团队</a></dd>
+                    <dd><a onclick="location.href='Teacher.html'" style="cursor: pointer">认证教师</a></dd>
                 </dl>
                 <dl>
-                    <dt><a href="http://www.rompy.cn/News/Index">新闻动态</a></dt>
-                    <dd><a href="http://www.rompy.cn/News/Index">早教新闻</a></dd>
-                    <dd><a href="http://www.rompy.cn/News/XuZhi">行业动态</a></dd>
-                    <dd><a href="http://www.rompy.cn/News/MeiTi">企业动态</a></dd>
-                    <dd><a href="http://www.rompy.cn/News/BoShi">精彩博文</a></dd>
+                    <dt><a href="News.html">新闻动态</a></dt>
+                    <dd><a href="News.html">早教新闻</a></dd>
+                    <dd><a href="News.html">行业动态</a></dd>
+                    <dd><a href="News.html">企业动态</a></dd>
+                    <dd><a href="News.html">精彩博文</a></dd>
                 </dl>
                 <dl>
-                    <dt><a href="http://www.rompy.cn/Join/Index">加盟我们</a></dt>
-                    <dd><a onclick="location.href='http://www.rompy.cn/Join/Index#qianjing'" style="cursor: pointer">市场前景</a></dd>
-                    <dd><a onclick="location.href='http://www.rompy.cn/Join/Index#youshi'" style="cursor: pointer">品牌优势</a></dd>
-                    <dd><a onclick="location.href='http://www.rompy.cn/Join/Index#yunying'" style="cursor: pointer">运营支持</a></dd>
-                    <dd><a onclick="location.href='http://www.rompy.cn/Join/Index#zixun'" style="cursor: pointer">加盟资讯</a></dd>
+                    <dt><a href="JoinUs.html">加盟我们</a></dt>
+                    <dd><a onclick="location.href='JoinUs.html'" style="cursor: pointer">市场前景</a></dd>
+                    <dd><a onclick="location.href='JoinUs.html'" style="cursor: pointer">品牌优势</a></dd>
+                    <dd><a onclick="location.href='JoinUs.html'" style="cursor: pointer">运营支持</a></dd>
+                    <dd><a onclick="location.href='JoinUs.html'" style="cursor: pointer">加盟资讯</a></dd>
                 </dl>
                 <dl>
-                    <dt><a href="http://www.rompy.cn/Contact/Index">联系我们</a></dt>
-                    <dd><a href="http://www.rompy.cn/Contact/Index">联系方式</a></dd>
-                    <dd><a href="http://www.rompy.cn/Center/Index">中心查询</a></dd>
-                    <dd><a href="http://www.rompy.cn/Recruite/Index">招聘信息</a></dd>
-                    <dd><a href="http://www.rompy.cn/Apply/Index">免费试听</a></dd>
+                    <dt><a href="ContactUs.html">联系我们</a></dt>
+                    <dd><a href="ContactUs.html">联系方式</a></dd>
+                    <dd><a href="ContactUs.html">中心查询</a></dd>
+                    <dd><a href="ContactUs.html">招聘信息</a></dd>
+                    <dd><a href="ContactUs.html">免费试听</a></dd>
                 </dl>
          </div>
 		</div>
 	</div>
 </div>
 </body>
+<script type="text/javascript" src="../js/common.js" ></script>
+<script type="text/javascript" src="../js/wow.min.js" ></script>
+<script>
+	new WOW().init();
+</script>
+<script type="text/javascript" src="../js/jquery.slides.min.js" ></script>
+<script type="text/javascript" src="../js/sHover.min.js" ></script>
+<script type="text/javascript">
+//插件调用
+    $('#city').slidesjs({
+        width: 530,
+        height: 200,
+        navigation: false,
+        play: {
+            active: false,
+            auto: true,
+            interval: 4000,
+            swap: true
+        }
+    });
+    var pic = new sHover("show-mask", "mask");
+</script>
 </html>
 

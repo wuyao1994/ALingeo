@@ -1,0 +1,60 @@
+.main{
+	width: 100%;
+	position: relative;
+}
+.main .box{
+	width: 80%;
+	margin: 0 auto;
+	background: url(../images/1.png);
+	background-size:100% 100% ;
+}
+.main .box .boxs{
+	padding: 65px 50px 50px 180px;
+}
+.main .box span{
+	font-size: 24px;
+	color:#00a4b4;
+	line-height: 60px;
+}
+.main .box p{
+	font-size: 20px;
+	color: goldenrod;
+	border-radius: 5px;
+	font-family: cursive;
+}
+.main .box .a1{
+	font-size: 70px;
+	position: absolute;
+	top: 120px;
+	left: 200px;
+	color: deepskyblue;
+	
+}
+.main .box .a2{
+	font-size: 70px;
+	position: absolute;
+	top: 240px;
+	left: 200px;
+	color: deepskyblue;
+}
+.main .box .a3{
+	font-size: 70px;
+	position: absolute;
+	top: 360px;
+	left: 200px;
+	color: deepskyblue;
+}
+.main .box .a4{
+	font-size: 70px;
+	position: absolute;
+	top: 480px;
+	left: 200px;
+	color: deepskyblue;
+}
+.main .box .a5{
+	font-size: 70px;
+	position: absolute;
+	top: 600px;
+	left: 200px;
+	color: deepskyblue;	
+}

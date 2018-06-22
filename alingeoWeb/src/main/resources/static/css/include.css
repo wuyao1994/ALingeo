@@ -64,11 +64,19 @@
 .b_footer .s_footer .menu{
     width: 135px;
     position: fixed;
-    top: 50px;
+    top: 30%;
     padding-top: 82px;
     left: 50%;
-    margin-left: 600px;
+    margin-left: 650px;
     z-index: 999;
+}
+.b_footer .s_footer .menu .icons{
+    width: 100px;
+    height: 88px;
+    background: url(../images/index/ball.png) no-repeat center top;
+    position: absolute;
+    top: 0;
+    left: 14px;
 }
 .b_footer .s_footer .menu ul li{
 	width: 64px;
@@ -83,7 +91,13 @@
 .b_footer .s_footer .menu ul li a{
 	color: #fff;
 }
-
+.b_footer .s_footer .menu ul li .pop-img img{
+	position: absolute;
+    left: -110px;
+    width: 100px;
+    height: 100px;
+    top: -15px;
+}
 .b_footer .s_footer .write{
 	padding: 155px 0 0;
     height: 172px;

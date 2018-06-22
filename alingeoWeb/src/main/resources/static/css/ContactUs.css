@@ -30,15 +30,33 @@
     padding: 100px 0 80px;
     z-index: 1;
     display: inline-block;
-    width: 100%
+    width: 100%;
+    background: url(../images/contact/7.png) no-repeat 0 0;
+    background-size: 100% 100%;
 }
 .main .join .join-box{	
 	width: 1200px;
     margin: 0 auto;
+    position: relative;
+}
+.main .join .join-box .sun{
+	position: absolute;
+    top: -90px;
+    left: 83%;
+    z-index: 1;
+    width: 150px;
+    height: 150px;
+}
+.main .join .join-box .umbrella{
+	position: absolute;
+	top: 330px;
+	left:0;
+	z-index: 1;
+	width: 150px;
+	height: 150px;
 }
 .main .join .join-box .content{
-   /* background: url(../images/floor/join-from-bg.jpg) no-repeat;*/
-    background:oldlace ;
+    background: oldlace;
     height: 520px;
     padding-top: 30px;
     position: relative;
@@ -154,6 +172,7 @@
 	overflow: hidden;
     padding-top: 35px;
     padding-bottom: 50px;
+    background: url(../images/contact/6.png) no-repeat bottom center;
 }
 .main .many .many-box .mode .show li .mode-info h3{
     font-size: 20px;

@@ -9,9 +9,10 @@
 	<link rel="stylesheet" type="text/css" href="css/common.css" />
 	<link rel="stylesheet" type="text/css" href="css/include.css" />
 	<link rel="stylesheet" type="text/css" href="css/index.css" />
-	
+	<link rel="stylesheet" href="css/swiper/swiper.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/animate.min.css" />
 	<script type="text/javascript" src="js/jquery.min.js" ></script>
-
+	
 </head>
 <body>
 	
@@ -27,7 +28,6 @@
 			<ul>
 				<li><a href="/index">首页</a></li>
 				<li><a href="##">企业入口</a></li>
-				<li><a href="/AboutUs">关于我们</a></li>
 				<li><a href="/AlgCourse">爱灵格课程</a></li>
 				<li><a href="/Teacher">专家师资</a></li>
 				<li><a href="/News">新闻动态</a></li>
@@ -46,8 +46,37 @@
     <div class="main">
     	 <!-- 巨幕图-->
 	    <div class="screen">
-	    	<img src="images/index/screen.png" >
-	    </div>
+	    		<div class="swiper-container swiper-container-horizontal">
+				    <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;">
+				      <div class="swiper-slide swiper-slide-active" style="width: 1200px; margin-right: 30px;"><img src="images/index/screen.png" ></div>
+				      <div class="swiper-slide swiper-slide-next" style="width: 1200px; margin-right: 30px;"><img src="images/index/6 (1).jpg" ></div>
+				      <div class="swiper-slide" style="width: 1200px; margin-right: 30px;"><img src="images/index/6 (2).jpg" ></div>
+				      <div class="swiper-slide" style="width: 1200px; margin-right: 30px;"><img src="images/index/6 (3).jpg" ></div>
+				      <div class="swiper-slide" style="width: 1200px; margin-right: 30px;"><img src="images/index/screen.png" ></div>
+				      <div class="swiper-slide" style="width: 1200px; margin-right: 30px;"><img src="images/index/screen.png" ></div>
+				      <div class="swiper-slide" style="width: 1200px; margin-right: 30px;"><img src="images/index/6 (6).jpg" ></div>
+				      <div class="swiper-slide" style="width: 1200px; margin-right: 30px;"><img src="images/index/6 (4).jpg" ></div>
+				      <div class="swiper-slide" style="width: 1200px; margin-right: 30px;"><img src="images/index/screen.png" ></div>
+				      <div class="swiper-slide" style="width: 1200px; margin-right: 30px;"><img src="images/index/6 (5).jpg" ></div>
+				    </div>
+				    <!-- Add Pagination -->
+				    <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets">
+				    	<span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 1"></span>
+				    	<span class="swiper-pagination-bullet"></span>
+				    	<span class="swiper-pagination-bullet"></span>
+				    	<span class="swiper-pagination-bullet"></span>
+				    	<span class="swiper-pagination-bullet"></span>
+				    	<span class="swiper-pagination-bullet"></span>
+				    	<span class="swiper-pagination-bullet"></span>
+				    	<span class="swiper-pagination-bullet"></span>
+				    	<span class="swiper-pagination-bullet"></span>
+				    	<span class="swiper-pagination-bullet"></span>
+				    </div>
+				    <!-- Add Arrows -->
+				    <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide" aria-disabled="false"></div>
+				    <div class="swiper-button-prev swiper-button-disabled" tabindex="0" role="button" aria-label="Previous slide" aria-disabled="true"></div>
+				  	<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+	   			</div>
 	     <!-- 第一层-->
 	    <div class="floor-one">
 	    	<div class="floor-one-box">
@@ -55,15 +84,15 @@
 	    			<img src="images/index/ask1.png" >
 	    			<img src="images/index/ask2.png" >
 	    		</div>
-	    		<div class="floor-one-box2">
+	    		<div class="floor-one-box2 wow animated pulse">
 	    			<img src="images/index/chlid.png" >
 	    		</div>
 	    		<div class="floor-one-box3">
 	    			<img src="images/index/line.png" >
-	    			<p>孩子讨厌学习，没兴趣和积极性，做事效率底下，</p>
-	    			<p>东西记得慢，记不牢，理解也不深刻。</p>
-	    			<p>对新鲜事物缺乏学习热情，缺少想象力和创造力。</p>
-	    			<p>如何帮助孩子度过各个敏感期，让孩子更好的成长？</p>
+	    			<p class="wow animated fadeInDown p1">孩子讨厌学习，没兴趣和积极性，做事效率底下，</p>
+	    			<p class="wow animated fadeInDown p2">东西记得慢，记不牢，理解也不深刻。</p>
+	    			<p class="wow animated fadeInDown p3">对新鲜事物缺乏学习热情，缺少想象力和创造力。</p>
+	    			<p class="wow animated fadeInDown p4">如何帮助孩子度过各个敏感期，让孩子更好的成长？</p>
 	    			<img src="images/index/line.png" >
 	    		</div>
 	    	</div>
@@ -71,7 +100,7 @@
 	   <!-- 第二层-->
 	    <div class="floor-two">
 	    	<div class="floor-two-box">
-	    		<h2 class="caption">
+	    		<h2 class="caption wow animated fadeInUp">
 		            <div class="caption-img"><img src="images/index/Lesson.png"></div>
 		            <div class="name">爱灵格课程</div>
 		            <div class="tips">挖掘潜能，培养天才</div>
@@ -79,12 +108,12 @@
 		        <div class="lesson-box">
 		            <div class="lesson-left">
 		                <ul>
-		                    <li class="lesson1"><img src="images/index/lesson1.png"></li>
-		                    <li class="lesson2"><img src="images/index/lesson2.png"></li>
-		                    <li class="lesson3"><img src="images/index/lesson3.png"></li>
+		                    <li class="lesson1 wow animated rotateInUpLeft"><img src="images/index/lesson1.png"></li>
+		                    <li class="lesson2 wow animated rotateInUpLeft"><img src="images/index/lesson2.png"></li>
+		                    <li class="lesson3 wow animated rotateInUpLeft"><img src="images/index/lesson3.png"></li>
 		                </ul>
 		            </div>
-		            <div class="lesson-right">
+		            <div class="lesson-right wow animated bounceInRight">
 		                <div class="name">
 		                    <p>爱灵格</p>
 		                    <p>帮父母解决培养难题</p>
@@ -94,7 +123,7 @@
 		                    <p>习，孩子门需要用到所有的感官，全</p>
 		                    <p>方位的感知万事万物</p>
 		                </div>
-		                <a href="#" class="lesson-btn"></a>
+		                <a href="html/AlgCourse.html" class="lesson-btn" ></a>
 		            </div>
 		        </div>
 		        <div class="server-title">
@@ -115,15 +144,15 @@
 		                        	家中心持续增长
 		                    </li>
 		                    <li>
-		                        	<span class="strong"></span> 近百万家庭的优先选择
+		                        <span class="strong"></span> 近百万家庭的优先选择
 		                    </li>
 		                </ul>
 		            </div>
 		
 		            <div class="information">
 		                <ul>
-		                    <li><a target="view_window" href="#"></a></li>
-		                    <li class="server-line"><a href="#"></a></li>
+		                    <li><a id="zixun1" style="cursor:pointer;display: block;height: 72px;" href="tencent://message/?uin=2810037561&Site=Sambow&Menu=yes"></a></li>
+		                    <li class="server-line"><a style="cursor:pointer;display: block;height: 72px;" href="html/JoinUs.html"></a></li>
 		
 		                </ul>
 		                <div class="a-icon animated "><img src="images/index/floor-two-aicon.png"></div>
@@ -135,211 +164,211 @@
 	     	
 	    <!-- 第三层-->
 	    <div class="floor-three">
-		    <div class="floor-three-box">
+		    <div class="floor-three-box wow animated flipInY">
 		    	<img src="images/index/sgirl.png" />
 		    	<img src="images/index/ask3.png" />
 		    	<img src="images/index/ask4.png" />
 		        <div class="girl">
-		            <a href="#" class="lesson-btn">了解更多</a>
+		            <a href="html/AboutUs.html" class="lesson-btn">了解更多</a>
 		        </div>
 		    </div>
 		</div>
 	   <!--第四层-->
-	   <!--<div class="floor-news">
+	   <div class="floor-news">
 	    <div class="ct clearfix">
 	        <h2 class="animated" date-class="rubberBand">
-	            <div class="title-img"><img src="../../Content/images/floor/new-title.png"></div>
-	            <div class="name">悦宝动态</div>
-	            <div class="tips">爱的成长是一点一滴的积累，教育的力量是一代代的传承</div>
+	            <div class="title-img"><img src="images/index/Dynamic.png"></div>
+	            <div class="name">学习动态</div>
+	            <div class="tips">用所有的感官，全方位的感知万事万物</div>
 	        </h2>
 	        <div class="news-bigpic animated" date-class="bounce">
 	            <ul id="news-bigpic" style="overflow: hidden;">
-	                            <div class="slidesjs-container" style="overflow: hidden; position: relative; width: 598px; height: 500px;"><div class="slidesjs-control" style="position: relative; left: 0px; width: 598px; height: 500px;"><li class="slidesjs-slide" slidesjs-index="0" style="position: absolute; top: 0px; left: -598px; width: 100%; z-index: 0; backface-visibility: hidden; display: block;">
-	                                <a href="/News/NewsAllDetail?siteid=6168">
-	                                    <img src="http://website.rompy.cn/images/rompycenter/2018/06/13/598x464_20180613102609051.jpg" date-class="animated pulse" width="598" height="464" class="">
-	                                    <div class="date">
-	                                        <p class="day">13</p>
-	                                        <p class="week">Jun</p>
-	                                        <p class="month" style="margin-top:-2px;">2018</p>
-	                                    </div>
-	                                    <div class="big-txt">悦宝园子品牌芭迪熊亲幼馆再获“全国优秀早教（托育）机构”大奖|</div>
-	                                </a>
-	                            </li><li class="slidesjs-slide" slidesjs-index="1" style="position: absolute; top: 0px; left: 0px; width: 100%; z-index: 10; display: block; backface-visibility: hidden;">
-	                                <a href="/News/NewsAllDetail?siteid=6167">
-	                                    <img src="http://website.rompy.cn/images/rompycenter/2018/06/11/598x464_20180611103020040.jpg" date-class="animated pulse" width="598" height="464" class="">
-	                                    <div class="date">
-	                                        <p class="day">11</p>
-	                                        <p class="week">Jun</p>
-	                                        <p class="month" style="margin-top:-2px;">2018</p>
-	                                    </div>
-	                                    <div class="big-txt">悦宝园又有新中心即将在山东盛大开业啦！|</div>
-	                                </a>
-	                            </li><li class="slidesjs-slide" slidesjs-index="2" style="position: absolute; top: 0px; left: 598px; width: 100%; z-index: 0; display: block; backface-visibility: hidden;">
-	                                <a href="/News/NewsAllDetail?siteid=6166">
-	                                    <img src="http://website.rompy.cn/images/rompycenter/2018/06/11/598x464_20180611100257762.jpg" date-class="animated pulse" width="598" height="464">
-	                                    <div class="date">
-	                                        <p class="day">11</p>
-	                                        <p class="week">Jun</p>
-	                                        <p class="month" style="margin-top:-2px;">2018</p>
-	                                    </div>
-	                                    <div class="big-txt">爬爬赛招募 | 儿童版“速度与激情”即将上演，动作要快，姿势要帅！</div>
-	                                </a>
-	                            </li><li class="slidesjs-slide" slidesjs-index="3" style="position: absolute; top: 0px; left: 0px; width: 100%; z-index: 0; display: none; backface-visibility: hidden;">
-	                                <a href="/News/NewsAllDetail?siteid=6165">
-	                                    <img src="http://website.rompy.cn/images/rompycenter/2018/06/10/598x464_20180610040243323.jpg" date-class="animated pulse" width="598" height="464">
-	                                    <div class="date">
-	                                        <p class="day">10</p>
-	                                        <p class="week">Jun</p>
-	                                        <p class="month" style="margin-top:-2px;">2018</p>
-	                                    </div>
-	                                    <div class="big-txt">悦宝园早教苏州圆融中心6月明星宝宝王语涵</div>
-	                                </a>
-	                            </li><li class="slidesjs-slide" slidesjs-index="4" style="position: absolute; top: 0px; left: 0px; width: 100%; z-index: 0; display: none; backface-visibility: hidden;">
-	                                <a href="/News/NewsAllDetail?siteid=6163">
-	                                    <img src="http://website.rompy.cn/images/rompycenter/2018/06/08/598x464_20180608104455831.jpg" date-class="animated pulse" width="598" height="464" class="">
-	                                    <div class="date">
-	                                        <p class="day">8</p>
-	                                        <p class="week">Jun</p>
-	                                        <p class="month" style="margin-top:-2px;">2018</p>
-	                                    </div>
-	                                    <div class="big-txt">悦宝园常营中心开业盛典圆满成功</div>
-	                                </a>
-	                            </li><li class="slidesjs-slide" slidesjs-index="5" style="position: absolute; top: 0px; left: 0px; width: 100%; z-index: 0; display: none; backface-visibility: hidden;">
-	                                <a href="/News/NewsAllDetail?siteid=6137">
-	                                    <img src="http://website.rompy.cn/images/rompycenter/2018/06/01/598x464_20180601054636053.jpg" date-class="animated pulse" width="598" height="464" class="">
-	                                    <div class="date">
-	                                        <p class="day">1</p>
-	                                        <p class="week">Jun</p>
-	                                        <p class="month" style="margin-top:-2px;">2018</p>
-	                                    </div>
-	                                    <div class="big-txt">分享10首私藏的英文儿歌神曲让宝贝认识身体部位和器官的名称及功能</div>
-	                                </a>
-	                            </li><li class="slidesjs-slide" slidesjs-index="6" style="position: absolute; top: 0px; left: 0px; width: 100%; z-index: 0; display: none; backface-visibility: hidden;">
-	                                <a href="/News/NewsAllDetail?siteid=6112">
-	                                    <img src="http://website.rompy.cn/images/rompycenter/2018/05/26/598x464_20180526024122645.jpg" date-class="animated pulse" width="598" height="464">
-	                                    <div class="date">
-	                                        <p class="day">26</p>
-	                                        <p class="week">May</p>
-	                                        <p class="month" style="margin-top:-2px;">2018</p>
-	                                    </div>
-	                                    <div class="big-txt">[悦宝预告】 Blast Off【太空】课程预告！</div>
-	                                </a>
-	                            </li><li class="slidesjs-slide" slidesjs-index="7" style="position: absolute; top: 0px; left: 0px; width: 100%; z-index: 0; display: none; backface-visibility: hidden;">
-	                                <a href="/News/NewsAllDetail?siteid=6111">
-	                                    <img src="http://website.rompy.cn/images/rompycenter/2018/05/23/598x464_20180523044938357.jpg" date-class="animated pulse" width="598" height="464">
-	                                    <div class="date">
-	                                        <p class="day">23</p>
-	                                        <p class="week">May</p>
-	                                        <p class="month" style="margin-top:-2px;">2018</p>
-	                                    </div>
-	                                    <div class="big-txt">【悦宝活动】五月佩奇生日会开始招募啦！</div>
-	                                </a>
-	                            </li><li class="slidesjs-slide" slidesjs-index="8" style="position: absolute; top: 0px; left: 0px; width: 100%; z-index: 0; display: none; backface-visibility: hidden;">
-	                                <a href="/News/NewsAllDetail?siteid=6110">
-	                                    <img src="http://website.rompy.cn/images/rompycenter/2018/05/22/598x464_20180522093117709.jpg" date-class="animated pulse" width="598" height="464">
-	                                    <div class="date">
-	                                        <p class="day">22</p>
-	                                        <p class="week">May</p>
-	                                        <p class="month" style="margin-top:-2px;">2018</p>
-	                                    </div>
-	                                    <div class="big-txt">5月26日悦宝园常营中心盛大开业</div>
-	                                </a>
-	                            </li><li class="slidesjs-slide" slidesjs-index="9" style="position: absolute; top: 0px; left: 0px; width: 100%; z-index: 0; display: none; backface-visibility: hidden;">
-	                                <a href="/News/NewsAllDetail?siteid=6109">
-	                                    <img src="http://website.rompy.cn/images/rompycenter/2018/05/17/598x464_20180517053837246.jpg" date-class="animated pulse" width="598" height="464" class="">
-	                                    <div class="date">
-	                                        <p class="day">17</p>
-	                                        <p class="week">May</p>
-	                                        <p class="month" style="margin-top:-2px;">2018</p>
-	                                    </div>
-	                                    <div class="big-txt">早教中心的母亲节活动就是与众不同！</div>
-	                                </a>
-	                            </li></div></div>
-	                            
-	                            
-	                            
-	                            
-	                            
-	                            
-	                            
-	                            
-	                            
-	
-	
-	            <a class="slidesjs-previous slidesjs-navigation" href="#" title="Previous">Previous</a><a class="slidesjs-next slidesjs-navigation" href="#" title="Next">Next</a></ul>
-	
-	
-	        </div>
+                    <div class="slidesjs-container" style="overflow: hidden; position: relative; width: 598px; height: 500px;">
+                    	<div class="slidesjs-control" style="position: relative; left: 0px; width: 598px; height: 500px;">
+                    		<li class="slidesjs-slide" slidesjs-index="0" style="position: absolute; top: 0px; left: -598px; width: 100%; z-index: 0; backface-visibility: hidden; display: block;">
+		                        <a href="html/News.html">
+		                            <img src="http://website.rompy.cn/images/rompycenter/2018/06/13/598x464_20180613102609051.jpg" date-class="animated pulse" width="598" height="464" class="">
+		                            <div class="date">
+		                                <p class="day">13</p>
+		                                <p class="week">Jun</p>
+		                                <p class="month" style="margin-top:-2px;">2018</p>
+		                            </div>
+		                            <div class="big-txt">悦宝园子品牌芭迪熊亲幼馆再获“全国优秀早教（托育）机构”大奖|</div>
+		                        </a>
+                    		</li>
+                    		<li class="slidesjs-slide" slidesjs-index="1" style="position: absolute; top: 0px; left: 0px; width: 100%; z-index: 10; display: block; backface-visibility: hidden;">
+		                        <a href="html/News.html">
+		                            <img src="http://website.rompy.cn/images/rompycenter/2018/06/11/598x464_20180611103020040.jpg" date-class="animated pulse" width="598" height="464" class="">
+		                            <div class="date">
+		                                <p class="day">11</p>
+		                                <p class="week">Jun</p>
+		                                <p class="month" style="margin-top:-2px;">2018</p>
+		                            </div>
+		                            <div class="big-txt">悦宝园又有新中心即将在山东盛大开业啦！|</div>
+		                        </a>
+                    		</li>
+                    		<li class="slidesjs-slide" slidesjs-index="2" style="position: absolute; top: 0px; left: 598px; width: 100%; z-index: 0; display: block; backface-visibility: hidden;">
+		                        <a href="html/News.html">
+		                            <img src="http://website.rompy.cn/images/rompycenter/2018/06/11/598x464_20180611100257762.jpg" date-class="animated pulse" width="598" height="464">
+		                            <div class="date">
+		                                <p class="day">11</p>
+		                                <p class="week">Jun</p>
+		                                <p class="month" style="margin-top:-2px;">2018</p>
+		                            </div>
+		                            <div class="big-txt">爬爬赛招募 | 儿童版“速度与激情”即将上演，动作要快，姿势要帅！</div>
+		                        </a>
+                    		</li>
+                    		<li class="slidesjs-slide" slidesjs-index="3" style="position: absolute; top: 0px; left: 0px; width: 100%; z-index: 0; display: none; backface-visibility: hidden;">
+		                        <a href="html/News.html">
+		                            <img src="http://website.rompy.cn/images/rompycenter/2018/06/10/598x464_20180610040243323.jpg" date-class="animated pulse" width="598" height="464">
+		                            <div class="date">
+		                                <p class="day">10</p>
+		                                <p class="week">Jun</p>
+		                                <p class="month" style="margin-top:-2px;">2018</p>
+		                            </div>
+		                            <div class="big-txt">悦宝园早教苏州圆融中心6月明星宝宝王语涵</div>
+		                        </a>
+                    		</li>
+                    		<li class="slidesjs-slide" slidesjs-index="4" style="position: absolute; top: 0px; left: 0px; width: 100%; z-index: 0; display: none; backface-visibility: hidden;">
+		                        <a href="html/News.html">
+		                            <img src="http://website.rompy.cn/images/rompycenter/2018/06/08/598x464_20180608104455831.jpg" date-class="animated pulse" width="598" height="464" class="">
+		                            <div class="date">
+		                                <p class="day">8</p>
+		                                <p class="week">Jun</p>
+		                                <p class="month" style="margin-top:-2px;">2018</p>
+		                            </div>
+		                            <div class="big-txt">悦宝园常营中心开业盛典圆满成功</div>
+		                        </a>
+                    		</li>
+                    		<li class="slidesjs-slide" slidesjs-index="5" style="position: absolute; top: 0px; left: 0px; width: 100%; z-index: 0; display: none; backface-visibility: hidden;">
+		                        <a href="html/News.html">
+		                            <img src="http://website.rompy.cn/images/rompycenter/2018/06/01/598x464_20180601054636053.jpg" date-class="animated pulse" width="598" height="464" class="">
+		                            <div class="date">
+		                                <p class="day">1</p>
+		                                <p class="week">Jun</p>
+		                                <p class="month" style="margin-top:-2px;">2018</p>
+		                            </div>
+		                            <div class="big-txt">分享10首私藏的英文儿歌神曲让宝贝认识身体部位和器官的名称及功能</div>
+		                        </a>
+                    		</li>
+                    		<li class="slidesjs-slide" slidesjs-index="6" style="position: absolute; top: 0px; left: 0px; width: 100%; z-index: 0; display: none; backface-visibility: hidden;">
+		                        <a href="html/News.html">
+		                            <img src="http://website.rompy.cn/images/rompycenter/2018/05/26/598x464_20180526024122645.jpg" date-class="animated pulse" width="598" height="464">
+		                            <div class="date">
+		                                <p class="day">26</p>
+		                                <p class="week">May</p>
+		                                <p class="month" style="margin-top:-2px;">2018</p>
+		                            </div>
+		                            <div class="big-txt">[悦宝预告】 Blast Off【太空】课程预告！</div>
+		                        </a>
+                    		</li>
+                    		<li class="slidesjs-slide" slidesjs-index="7" style="position: absolute; top: 0px; left: 0px; width: 100%; z-index: 0; display: none; backface-visibility: hidden;">
+		                        <a href="html/News.html">
+		                            <img src="http://website.rompy.cn/images/rompycenter/2018/05/23/598x464_20180523044938357.jpg" date-class="animated pulse" width="598" height="464">
+		                            <div class="date">
+		                                <p class="day">23</p>
+		                                <p class="week">May</p>
+		                                <p class="month" style="margin-top:-2px;">2018</p>
+		                            </div>
+		                            <div class="big-txt">【悦宝活动】五月佩奇生日会开始招募啦！</div>
+		                        </a>
+                    		</li>
+                    		<li class="slidesjs-slide" slidesjs-index="8" style="position: absolute; top: 0px; left: 0px; width: 100%; z-index: 0; display: none; backface-visibility: hidden;">
+		                        <a href="html/News.html">
+		                            <img src="http://website.rompy.cn/images/rompycenter/2018/05/22/598x464_20180522093117709.jpg" date-class="animated pulse" width="598" height="464">
+		                            <div class="date">
+		                                <p class="day">22</p>
+		                                <p class="week">May</p>
+		                                <p class="month" style="margin-top:-2px;">2018</p>
+		                            </div>
+		                            <div class="big-txt">5月26日悦宝园常营中心盛大开业</div>
+		                        </a>
+                    		</li>
+		                    <li class="slidesjs-slide" slidesjs-index="9" style="position: absolute; top: 0px; left: 0px; width: 100%; z-index: 0; display: none; backface-visibility: hidden;">
+		                        <a href="html/News.html">
+		                            <img src="http://website.rompy.cn/images/rompycenter/2018/05/17/598x464_20180517053837246.jpg" date-class="animated pulse" width="598" height="464" class="">
+		                            <div class="date">
+		                                <p class="day">17</p>
+		                                <p class="week">May</p>
+		                                <p class="month" style="margin-top:-2px;">2018</p>
+		                            </div>
+		                            <div class="big-txt">早教中心的母亲节活动就是与众不同！</div>
+		                        </a>
+                    		</li>
+                    	</div>
+                    </div>
+                </ul>
+			</div>
 	        <div class="news-li animated" date-class="flipInY">
-	                            <dl class="clearfix">
-	                                <a href="/News/NewsAllDetail?siteid=6168">
-	                                    <dt>
-	                                        <img src="http://website.rompy.cn/images/rompycenter/2018/06/13/598x464_20180613102609051.jpg" date-class="animated pulse" class="">
-	                                        <div class="date">
-	                                            <p class="day">13</p>
-	                                            <p class="week">Jun</p>
-	                                            <p class="month" style="margin-top:-2px;">2018</p>
-	                                        </div>
-	                                    </dt>
-	                                    <dd>
-	                                        悦宝园子品牌芭迪熊亲幼馆再获“全国优秀早教（托育）机构”大奖|
-	                                    </dd>
-	                                </a>
-	                            </dl>
-	                            <dl class="clearfix">
-	                                <a href="/News/NewsAllDetail?siteid=6167">
-	                                    <dt>
-	                                        <img src="http://website.rompy.cn/images/rompycenter/2018/06/11/598x464_20180611103020040.jpg" date-class="animated pulse" class="">
-	                                        <div class="date">
-	                                            <p class="day">11</p>
-	                                            <p class="week">Jun</p>
-	                                            <p class="month" style="margin-top:-2px;">2018</p>
-	                                        </div>
-	                                    </dt>
-	                                    <dd>
-	                                        悦宝园又有新中心即将在山东盛大开业啦！|
-	                                    </dd>
-	                                </a>
-	                            </dl>
-	                            <dl class="clearfix">
-	                                <a href="/News/NewsAllDetail?siteid=6166">
-	                                    <dt>
-	                                        <img src="http://website.rompy.cn/images/rompycenter/2018/06/11/598x464_20180611100257762.jpg" date-class="animated pulse" class="">
-	                                        <div class="date">
-	                                            <p class="day">11</p>
-	                                            <p class="week">Jun</p>
-	                                            <p class="month" style="margin-top:-2px;">2018</p>
-	                                        </div>
-	                                    </dt>
-	                                    <dd>
-	                                        爬爬赛招募 | 儿童版“速度与激情”即将上演，动作要快，姿势要帅！
-	                                    </dd>
-	                                </a>
-	                            </dl>
-	                            <dl class="clearfix">
-	                                <a href="/News/NewsAllDetail?siteid=6165">
-	                                    <dt>
-	                                        <img src="http://website.rompy.cn/images/rompycenter/2018/06/10/598x464_20180610040243323.jpg" date-class="animated pulse" class="">
-	                                        <div class="date">
-	                                            <p class="day">10</p>
-	                                            <p class="week">Jun</p>
-	                                            <p class="month" style="margin-top:-2px;">2018</p>
-	                                        </div>
-	                                    </dt>
-	                                    <dd>
-	                                        悦宝园早教苏州圆融中心6月明星宝宝王语涵
-	                                    </dd>
-	                                </a>
-	                            </dl>
-	
+                <dl class="clearfix">
+                    <a href="html/News.html">
+                        <dt>
+                            <img src="http://website.rompy.cn/images/rompycenter/2018/06/13/598x464_20180613102609051.jpg" date-class="animated pulse" class="">
+                            <div class="date">
+                                <p class="day">13</p>
+                                <p class="week">Jun</p>
+                                <p class="month" style="margin-top:-2px;">2018</p>
+                            </div>
+                        </dt>
+                        <dd>
+                            悦宝园子品牌芭迪熊亲幼馆再获“全国优秀早教（托育）机构”大奖|
+                        </dd>
+                    </a>
+                </dl>
+                <dl class="clearfix">
+                    <a href="html/News.html">
+                        <dt>
+                            <img src="http://website.rompy.cn/images/rompycenter/2018/06/11/598x464_20180611103020040.jpg" date-class="animated pulse" class="">
+                            <div class="date">
+                                <p class="day">11</p>
+                                <p class="week">Jun</p>
+                                <p class="month" style="margin-top:-2px;">2018</p>
+                            </div>
+                        </dt>
+                        <dd>
+                            悦宝园又有新中心即将在山东盛大开业啦！|
+                        </dd>
+                    </a>
+                </dl>
+                <dl class="clearfix">
+                    <a href="html/News.html">
+                        <dt>
+                            <img src="http://website.rompy.cn/images/rompycenter/2018/06/11/598x464_20180611100257762.jpg" date-class="animated pulse" class="">
+                            <div class="date">
+                                <p class="day">11</p>
+                                <p class="week">Jun</p>
+                                <p class="month" style="margin-top:-2px;">2018</p>
+                            </div>
+                        </dt>
+                        <dd>
+                            	爬爬赛招募 | 儿童版“速度与激情”即将上演，动作要快，姿势要帅！
+                        </dd>
+                    </a>
+                </dl>
+                <dl class="clearfix">
+                    <a href="html/News.html">
+                        <dt>
+                            <img src="http://website.rompy.cn/images/rompycenter/2018/06/10/598x464_20180610040243323.jpg" date-class="animated pulse" class="">
+                            <div class="date">
+                                <p class="day">10</p>
+                                <p class="week">Jun</p>
+                                <p class="month" style="margin-top:-2px;">2018</p>
+                            </div>
+                        </dt>
+                        <dd>
+                            	悦宝园早教苏州圆融中心6月明星宝宝王语涵
+                        </dd>
+                    </a>
+                </dl>
+
 	        </div>
 	    </div>
-	</div>-->
+	</div>
 	
 	<!--第五层-->
 	<div class="floor-five">
 	    <div class="floor-five-box">
-	        <div class="box-left">
+	        <div class="box-left wow animated rotateInDownLeft">
 	            <div class="join_tit">
 	                <h3>加盟爱灵格</h3>
 	                <span>成功从爱灵格开始</span>
@@ -357,48 +386,48 @@
 	            </div>
 	            <div class="tips">那就别犹豫了，爱灵格是你最好的选择！</div>
 	            <div class="number">133-5080-8830</div>
-	            <a style="cursor:pointer" class="join-btn"><span class="icon"></span>申请加盟</a>
+	            <a style="cursor:pointer" class="join-btn" href="html/JoinUs.html"><span class="icon"></span>申请加盟</a>
 	        </div>
 	        <div class="box-right">
 	        	<img class="zs1" src="images/index/88.png">
 	        	<img class="zs2" src="images/index/lu.png">
-	            <div class="name">查找您身边的悦宝园</div>
+	            <div class="name">查找您身边的爱灵格</div>
 	            <div class="tips">让您第一时间找到我们！</div>
 	            <div class="city-mn">
 	                
 	                <div class="city-li">
 	                	<div class="city-til">请选择您的城市</div>
 	                    <ul>
-	                        <li><a class="active" href="/Center?pro=%E5%8C%97%E4%BA%AC%E5%B8%82">北京</a></li>
-	                        <li><a href="/Center?pro=%E5%B1%B1%E4%B8%9C%E7%9C%81">山东</a></li>
-	                        <li><a href="/Center?pro=%E6%B1%9F%E8%8B%8F%E7%9C%81">江苏</a></li>
-	                        <li><a href="/Center?pro=%E5%AE%89%E5%BE%BD%E7%9C%81">安徽</a></li>
+	                        <li><a class="active" href="html/AlgCenter.html">北京</a></li>
+	                        <li><a href="html/AlgCenter.html">山东</a></li>
+	                        <li><a href="html/AlgCenter.html">江苏</a></li>
+	                        <li><a href="html/AlgCenter.html">安徽</a></li>
 	                        
-	                        <li><a href="/Center?pro=%E5%B1%B1%E8%A5%BF%E7%9C%81">山西</a></li>
-	                        <li><a href="/Center?pro=%E7%A6%8F%E5%BB%BA%E7%9C%81">福建</a></li>
-	                        <li><a href="/Center?pro=%E4%B8%8A%E6%B5%B7%E5%B8%82">上海</a></li>
-	                        <li><a href="/Center?pro=%E6%B5%B7%E5%8D%97%E7%9C%81">海南</a></li>
-	                        <li><a href="/Center?pro=%E5%9B%9B%E5%B7%9D%E7%9C%81">四川</a></li>
-	                        <li><a href="/Center?pro=%E6%B5%99%E6%B1%9F%E7%9C%81">浙江</a></li>
-	                        <li><a href="/Center?pro=%E6%B2%B3%E5%8C%97%E7%9C%81">河北</a></li>
+	                        <li><a href="html/AlgCenter.html">山西</a></li>
+	                        <li><a href="html/AlgCenter.html">福建</a></li>
+	                        <li><a href="html/AlgCenter.html">上海</a></li>
+	                        <li><a href="html/AlgCenter.html">海南</a></li>
+	                        <li><a href="html/AlgCenter.html">四川</a></li>
+	                        <li><a href="html/AlgCenter.html">浙江</a></li>
+	                        <li><a href="html/AlgCenter.html">河北</a></li>
 	                        
-	                        <li><a href="/Center?pro=%E8%BE%BD%E5%AE%81%E7%9C%81">辽宁</a></li>
-	                        <li><a href="/Center?pro=%E5%B9%BF%E4%B8%9C%E7%9C%81">广东</a></li>
-	                        <li><a href="/Center?pro=%E5%A4%A9%E6%B4%A5%E5%B8%82">天津</a></li>
-	                        <li><a href="/Center?pro=%E8%B4%B5%E5%B7%9E%E7%9C%81">贵州</a></li>
-	                        <li><a href="/Center?pro=%E7%94%98%E8%82%83%E7%9C%81">甘肃</a></li>
-	                        <li><a href="/Center?pro=%E6%B2%B3%E5%8D%97%E7%9C%81">河南</a></li>
-	                        <li><a href="/Center?pro=%E9%9D%92%E6%B5%B7%E7%9C%81">青海</a></li>
-	                        <li><a href="/Center?pro=%E5%90%89%E6%9E%97%E7%9C%81">吉林</a></li>
-	                        <li><a href="/Center?pro=%E4%BA%91%E5%8D%97%E7%9C%81">云南</a></li>
-	                        <li><a href="/Center?pro=%E6%B1%9F%E8%A5%BF%E7%9C%81">江西</a></li>
-	                        <li><a href="/Center?pro=%E6%B9%96%E5%8D%97%E7%9C%81">湖南</a></li>
-	                        <li><a href="/Center?pro=%E9%87%8D%E5%BA%86%E5%B8%82">重庆</a></li>
-	                        <li><a href="/Center?pro=%E6%B9%96%E5%8C%97%E7%9C%81">湖北</a></li>
-	                        <li><a href="/Center?pro=%E6%96%B0%E7%96%86%E7%BB%B4%E5%90%BE%E5%B0%94%E6%97%8F%E8%87%AA%E6%B2%BB%E5%8C%BA">新疆</a></li>
-	                        <li><a href="/Center?pro=%E9%99%95%E8%A5%BF%E7%9C%81">陕西</a></li>
-	                        <li><a href="/Center?pro=%E9%BB%91%E9%BE%99%E6%B1%9F%E7%9C%81">黑龙江</a></li>
-	                        <li><a href="/Center?pro=%E5%86%85%E8%92%99%E5%8F%A4%E8%87%AA%E6%B2%BB%E5%8C%BA">内蒙古</a></li>
+	                        <li><a href="html/AlgCenter.html">辽宁</a></li>
+	                        <li><a href="html/AlgCenter.html">广东</a></li>
+	                        <li><a href="html/AlgCenter.html">天津</a></li>
+	                        <li><a href="html/AlgCenter.html">贵州</a></li>
+	                        <li><a href="html/AlgCenter.html">甘肃</a></li>
+	                        <li><a href="html/AlgCenter.html">河南</a></li>
+	                        <li><a href="html/AlgCenter.html">青海</a></li>
+	                        <li><a href="html/AlgCenter.html">吉林</a></li>
+	                        <li><a href="html/AlgCenter.html">云南</a></li>
+	                        <li><a href="html/AlgCenter.html">江西</a></li>
+	                        <li><a href="html/AlgCenter.html">湖南</a></li>
+	                        <li><a href="html/AlgCenter.html">重庆</a></li>
+	                        <li><a href="html/AlgCenter.html">湖北</a></li>
+	                        <li><a href="html/AlgCenter.html">新疆</a></li>
+	                        <li><a href="html/AlgCenter.html">陕西</a></li>
+	                        <li><a href="html/AlgCenter.html">黑龙江</a></li>
+	                        <li><a href="html/AlgCenter.html">内蒙古</a></li>
 	                    </ul>
 	                </div>
 	            </div>
@@ -411,23 +440,24 @@
     <div class="b_footer">
 	<div class="s_footer">
 		<div class="menu">
+			<div class="icons"></div>
 			<ul>
 	            <li>
-	                <a href="http://www.rompy.cn/Apply/Index">
+	                <a href="html/JoinUs.html">
 	                    <p class="st-icon"></p>
 	                    <p class="txt">免费试听</p>
 	                </a>
 	            </li>
 	
 	            <li style="margin-left: 30px;">
-	                <a id="zixun1" style="cursor:pointer">
+	                <a id="zixun1" style="cursor:pointer" href="tencent://message/?uin=2810037561&Site=Sambow&Menu=yes">
 	                    <p class="jm-icon"></p>
 	                    <p class="txt">加盟咨询</p>
 	                </a>
 	            </li>
 	
 	            <li>
-	                <a href="http://www.rompy.cn/Center/Index">
+	                <a href="html/AlgCenter.html">
 	                    <p class="cx-icon"></p>
 	                    <p class="txt">门店查找</p>
 	                </a>
@@ -450,16 +480,16 @@
 	                    <p class="txt">APP下载</p>
 	                </a>
 	                <p class="pop-img">
-	                    <img src="images/codes.png">
+	                    <img src="images/code.png">
 	                    <span class="roow"></span>
 	                </p>
 	            </li>
-	            <li>
-	                <a href="http://www.rompykids.cn" target="_blank">
+	            <!--<li>
+	                <a href="#" target="_blank">
 	                    <p class="zj-icon"></p>
 	                    <p class="txt">幼儿园</p>
 	                </a>
-	            </li>
+	            </li>-->
 	            <li>
 	                <a href="javascript:" class="return_top">
 	                    <p class="re-back"></p>
@@ -473,65 +503,79 @@
 				<dl>
                     <dt><img src="images/codes.png"></dt>
                     
-                    <dd>关注“悦宝园教育”美式早教get起来</dd>
+                    <dd>扫描二维码，关注“爱灵格”公众号</dd>
                 </dl>
                 <dl>
-                    <dt><img src="images/codes.png"></dt>
+                    <dt><img src="images/code.png"></dt>
                     
-                    <dd>关注“悦宝园教育”美式早教get起来</dd>
+                    <dd>扫描二维码，下载“爱灵格”APP</dd>
                 </dl>
 			</div>
 			<div class="more">
                 <dl>
-                    <dt><a href="http://www.rompy.cn/AboutUs/Index">关于我们</a></dt>
-                    <dd><a onclick="location.href='http://www.rompy.cn/AboutUs/Index#jieshao'" style="cursor: pointer">公司介绍</a></dd>
-                    <dd><a onclick="location.href='http://www.rompy.cn/AboutUs/Index#pingpai'" style="cursor: pointer">爱灵格特色</a></dd>
-                    <dd><a onclick="location.href='http://www.rompy.cn/AboutUs/Index#zhexue'" style="cursor: pointer">科学早教</a></dd>
-                    <dd><a onclick="location.href='http://www.rompy.cn/AboutUs/Index#jiangxiang'" style="cursor: pointer">荣誉奖项</a></dd>
+                    <dt><a href="html/ContactUs.html">关于我们</a></dt>
+                    <dd><a onclick="location.href='html/ContactUs.html'" style="cursor: pointer">公司介绍</a></dd>
+                    <dd><a onclick="location.href='html/ContactUs.html'" style="cursor: pointer">爱灵格特色</a></dd>
+                    <dd><a onclick="location.href='html/ContactUs.html'" style="cursor: pointer">科学早教</a></dd>
+                    <dd><a onclick="location.href='html/ContactUs.html'" style="cursor: pointer">荣誉奖项</a></dd>
                 </dl>
                 <dl>
-                    <dt><a href="http://www.rompy.cn/ClassRoom/Index">爱灵格特色</a></dt>
-                    <dd><a href="http://www.rompy.cn/ClassRoom/lingdong">ETAR多语</a></dd>
-                    <dd><a href="http://www.rompy.cn/ClassRoom/yunlv">ETAR汉语</a></dd>
-                    <dd><a href="http://www.rompy.cn/ClassRoom/chuangyi">ETAR英语</a></dd>
+                    <dt><a href="html/AlgCourse.html">爱灵格特色</a></dt>
+                    <dd><a href="html/AlgCourse.html">ETAR多语</a></dd>
+                    <dd><a href="html/AlgCourse.html">ETAR汉语</a></dd>
+                    <dd><a href="html/AlgCourse.html">ETAR英语</a></dd>
                 </dl>
                 <dl>
-                    <dt><a href="http://www.rompy.cn/Teacher/Index">专家师资</a></dt>
-                    <dd><a href="http://www.rompy.cn/Teacher/Index">专家团队</a></dd>
-                    <dd><a onclick="location.href='http://www.rompy.cn/Teacher/Index#tea-renzhen'" style="cursor: pointer">认证教师</a></dd>
+                    <dt><a href="html/Teacher.html">专家师资</a></dt>
+                    <dd><a href="html/Teacher.html">专家团队</a></dd>
+                    <dd><a onclick="location.href='html/Teacher.html'" style="cursor: pointer">认证教师</a></dd>
                 </dl>
                 <dl>
-                    <dt><a href="http://www.rompy.cn/News/Index">新闻动态</a></dt>
-                    <dd><a href="http://www.rompy.cn/News/Index">早教新闻</a></dd>
-                    <dd><a href="http://www.rompy.cn/News/XuZhi">行业动态</a></dd>
-                    <dd><a href="http://www.rompy.cn/News/MeiTi">企业动态</a></dd>
-                    <dd><a href="http://www.rompy.cn/News/BoShi">精彩博文</a></dd>
+                    <dt><a href="html/News.html">新闻动态</a></dt>
+                    <dd><a href="html/News.html">早教新闻</a></dd>
+                    <dd><a href="html/News.html">行业动态</a></dd>
+                    <dd><a href="html/News.html">企业动态</a></dd>
+                    <dd><a href="html/News.html">精彩博文</a></dd>
                 </dl>
                 <dl>
-                    <dt><a href="http://www.rompy.cn/Join/Index">加盟我们</a></dt>
-                    <dd><a onclick="location.href='http://www.rompy.cn/Join/Index#qianjing'" style="cursor: pointer">市场前景</a></dd>
-                    <dd><a onclick="location.href='http://www.rompy.cn/Join/Index#youshi'" style="cursor: pointer">品牌优势</a></dd>
-                    <dd><a onclick="location.href='http://www.rompy.cn/Join/Index#yunying'" style="cursor: pointer">运营支持</a></dd>
-                    <dd><a onclick="location.href='http://www.rompy.cn/Join/Index#zixun'" style="cursor: pointer">加盟资讯</a></dd>
+                    <dt><a href="html/JoinUs.html">加盟我们</a></dt>
+                    <dd><a onclick="location.href='html/JoinUs.html'" style="cursor: pointer">市场前景</a></dd>
+                    <dd><a onclick="location.href='html/JoinUs.html'" style="cursor: pointer">品牌优势</a></dd>
+                    <dd><a onclick="location.href='html/JoinUs.html'" style="cursor: pointer">运营支持</a></dd>
+                    <dd><a onclick="location.href='html/JoinUs.html'" style="cursor: pointer">加盟资讯</a></dd>
                 </dl>
                 <dl>
-                    <dt><a href="http://www.rompy.cn/Contact/Index">联系我们</a></dt>
-                    <dd><a href="http://www.rompy.cn/Contact/Index">联系方式</a></dd>
-                    <dd><a href="http://www.rompy.cn/Center/Index">中心查询</a></dd>
-                    <dd><a href="http://www.rompy.cn/Recruite/Index">招聘信息</a></dd>
-                    <dd><a href="http://www.rompy.cn/Apply/Index">免费试听</a></dd>
+                    <dt><a href="html/ContactUs.html">联系我们</a></dt>
+                    <dd><a href="html/ContactUs.html">联系方式</a></dd>
+                    <dd><a href="html/ContactUs.html">中心查询</a></dd>
+                    <dd><a href="html/ContactUs.html">招聘信息</a></dd>
+                    <dd><a href="html/ContactUs.html">免费试听</a></dd>
                 </dl>
-            </div>
-			<!--<div class="call">
-                <dl>
-                    <dt>课程咨询、加盟咨询</dt>
-                    <dd>400-960-8188</dd>
-                </dl>
-            </div>-->
+           </div>
 		</div>
 	</div>
 </div>
    
 </body>
+<script type="text/javascript" src="js/common.js" ></script>
+<script type="text/javascript" src="js/index.js" ></script>
 
+<script type="text/javascript" src="js/wow.min.js" ></script>
+<script>
+	new WOW().init();
+</script>
+<script type="text/javascript" src="js/swiper/swiper.min.js"></script>
+<script>
+        var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        paginationClickable: true,
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: 3000,
+        autoplayDisableOnInteraction: false
+    });
+    
+  </script>
 </html>

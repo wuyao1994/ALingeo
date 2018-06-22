@@ -7,12 +7,12 @@
 		<link rel="stylesheet" type="text/css" href="../css/common.css" />
 		<link rel="stylesheet" type="text/css" href="../css/include.css" />
 		<link rel="stylesheet" type="text/css" href="../css/News.css" />
-		
+		<link rel="stylesheet" type="text/css" href="../css/animate.min.css" />
 		<script type="text/javascript" src="../js/jquery.min.js" ></script>
 		
 	</head>
 <body>
-	<!--<a href="tencent://message/?uin=785719553&Site=Sambow&Menu=yes">QQ在线咨询</a>-->
+	
 
 	
 	<!--top-->
@@ -27,7 +27,6 @@
 			<ul>
 				<li><a href="/index">首页</a></li>
 				<li><a href="##">企业入口</a></li>
-				<li><a href="/AboutUs">关于我们</a></li>
 				<li><a href="/AlgCourse">爱灵格课程</a></li>
 				<li><a href="/Teacher">专家师资</a></li>
 				<li><a href="/News">新闻动态</a></li>
@@ -56,8 +55,8 @@
 		                <ul class="show">
 		                    <li class="zxdt"><a href="#"><img style="width: 180px; height: 180px;" src="../images/news/1.png"></a></li>
 		                    <li class="hyxz"><a href="#"><img style="width: 180px; height: 180px;" src="../images/news/2.png"></a></li>
-		                    <li class="mtbd"><a href="#"><img style="width: 180px; height: 180px;" src="../images/news/4.png" ></a></li>
-		                    <li class="bszl"><a href="#"><img style="width: 180px; height: 180px;" src="../images/news/4.png" ></a></li>
+		                    <li class="mtbd"><a href="#"><img style="width: 180px; height: 180px;" src="../images/news/3.png"></a></li>
+		                    <li class="bszl"><a href="#"><img style="width: 180px; height: 180px;" src="../images/news/4.png"></a></li>
 		                </ul>
 		            </div>
 		    		<div class="newsli">
@@ -116,9 +115,9 @@
 		        <div class="name">更多爱灵格</div>
 		        <div class="txt">了解更多关于爱灵格的内容</div>
 		        <div class="mode">
-		            <ul class="show">
+		            <ul class="show wow flipInX animated">
 		                <li>
-		                    <a href="http://www.rompy.cn/ClassRoom/Index">
+		                    <a href="AlgCourse.html">
 		                        <span class="icon"><img src="../images/contact/1.png"></span>
 		                        <div class="mode-info">
 		                            <h3>爱灵格课程</h3>
@@ -130,7 +129,7 @@
 		                </li>
 		
 		                <li>
-		                    <a href="http://www.rompy.cn/Center/Index">
+		                    <a href="AlgCenter.html">
 		                        <span class="icon"><img src="../images/contact/2.png"></span>
 		                        <div class="mode-info">
 		                            <h3>中心查询</h3>
@@ -141,7 +140,7 @@
 		                </li>
 		
 		                <li>
-		                    <a href="http://www.rompy.cn/Apply/Index">
+		                    <a href="JoinUs.html">
 		                        <span class="icon"><img src="../images/contact/3.png"></span>
 		                        <div class="mode-info">
 		                            <h3>免费试听</h3>
@@ -154,28 +153,29 @@
 		        </div>
 		    </div>
 		</div>
-	</div>    
-	     <!--footer-->
-    <div class="b_footer">
+	</div>   
+	
+<div class="b_footer">
 	<div class="s_footer">
 		<div class="menu">
+			<div class="icons"></div>
 			<ul>
 	            <li>
-	                <a href="http://www.rompy.cn/Apply/Index">
+	                <a href="JoinUs.html">
 	                    <p class="st-icon"></p>
 	                    <p class="txt">免费试听</p>
 	                </a>
 	            </li>
 	
 	            <li style="margin-left: 30px;">
-	                <a id="zixun1" style="cursor:pointer">
+	                <a id="zixun1" style="cursor:pointer" href="tencent://message/?uin=2810037561&Site=Sambow&Menu=yes">
 	                    <p class="jm-icon"></p>
 	                    <p class="txt">加盟咨询</p>
 	                </a>
 	            </li>
 	
 	            <li>
-	                <a href="http://www.rompy.cn/Center/Index">
+	                <a href="html/AlgCenter.html">
 	                    <p class="cx-icon"></p>
 	                    <p class="txt">门店查找</p>
 	                </a>
@@ -187,7 +187,7 @@
 	                    <p class="txt">关注微信</p>
 	                </a>
 	                <p class="pop-img">
-	                    <img src="images/codes.png">
+	                    <img src="../images/codes.png">
 	                    <span class="roow"></span>
 	                </p>
 	            </li>
@@ -198,16 +198,16 @@
 	                    <p class="txt">APP下载</p>
 	                </a>
 	                <p class="pop-img">
-	                    <img src="images/codes.png">
+	                    <img src="../images/code.png">
 	                    <span class="roow"></span>
 	                </p>
 	            </li>
-	            <li>
-	                <a href="http://www.rompykids.cn" target="_blank">
+	            <!--<li>
+	                <a href="#" target="_blank">
 	                    <p class="zj-icon"></p>
 	                    <p class="txt">幼儿园</p>
 	                </a>
-	            </li>
+	            </li>-->
 	            <li>
 	                <a href="javascript:" class="return_top">
 	                    <p class="re-back"></p>
@@ -221,58 +221,64 @@
 				<dl>
                     <dt><img src="../images/codes.png"></dt>
                     
-                    <dd>关注“悦宝园教育”美式早教get起来</dd>
+                    <dd>扫描二维码，关注“爱灵格”公众号</dd>
                 </dl>
                 <dl>
-                    <dt><img src="../images/codes.png"></dt>
+                    <dt><img src="../images/code.png"></dt>
                     
-                    <dd>关注“悦宝园教育”美式早教get起来</dd>
+                    <dd>扫描二维码，下载“爱灵格”APP</dd>
                 </dl>
 			</div>
 			<div class="more">
                 <dl>
-                    <dt><a href="http://www.rompy.cn/AboutUs/Index">关于我们</a></dt>
-                    <dd><a onclick="location.href='http://www.rompy.cn/AboutUs/Index#jieshao'" style="cursor: pointer">公司介绍</a></dd>
-                    <dd><a onclick="location.href='http://www.rompy.cn/AboutUs/Index#pingpai'" style="cursor: pointer">爱灵格特色</a></dd>
-                    <dd><a onclick="location.href='http://www.rompy.cn/AboutUs/Index#zhexue'" style="cursor: pointer">科学早教</a></dd>
-                    <dd><a onclick="location.href='http://www.rompy.cn/AboutUs/Index#jiangxiang'" style="cursor: pointer">荣誉奖项</a></dd>
+                    <dt><a href="ContactUs.html">关于我们</a></dt>
+                    <dd><a onclick="location.href='ContactUs.html'" style="cursor: pointer">公司介绍</a></dd>
+                    <dd><a onclick="location.href='ContactUs.html'" style="cursor: pointer">爱灵格特色</a></dd>
+                    <dd><a onclick="location.href='ContactUs.html'" style="cursor: pointer">科学早教</a></dd>
+                    <dd><a onclick="location.href='ContactUs.html'" style="cursor: pointer">荣誉奖项</a></dd>
                 </dl>
                 <dl>
-                    <dt><a href="http://www.rompy.cn/ClassRoom/Index">爱灵格特色</a></dt>
-                    <dd><a href="http://www.rompy.cn/ClassRoom/lingdong">ETAR多语</a></dd>
-                    <dd><a href="http://www.rompy.cn/ClassRoom/yunlv">ETAR汉语</a></dd>
-                    <dd><a href="http://www.rompy.cn/ClassRoom/chuangyi">ETAR英语</a></dd>
+                    <dt><a href="AlgCourse.html">爱灵格特色</a></dt>
+                    <dd><a href="AlgCourse.html">ETAR多语</a></dd>
+                    <dd><a href="AlgCourse.html">ETAR汉语</a></dd>
+                    <dd><a href="AlgCourse.html">ETAR英语</a></dd>
                 </dl>
                 <dl>
-                    <dt><a href="http://www.rompy.cn/Teacher/Index">专家师资</a></dt>
-                    <dd><a href="http://www.rompy.cn/Teacher/Index">专家团队</a></dd>
-                    <dd><a onclick="location.href='http://www.rompy.cn/Teacher/Index#tea-renzhen'" style="cursor: pointer">认证教师</a></dd>
+                    <dt><a href="Teacher.html">专家师资</a></dt>
+                    <dd><a href="Teacher.html">专家团队</a></dd>
+                    <dd><a onclick="location.href='Teacher.html'" style="cursor: pointer">认证教师</a></dd>
                 </dl>
                 <dl>
-                    <dt><a href="http://www.rompy.cn/News/Index">新闻动态</a></dt>
-                    <dd><a href="http://www.rompy.cn/News/Index">早教新闻</a></dd>
-                    <dd><a href="http://www.rompy.cn/News/XuZhi">行业动态</a></dd>
-                    <dd><a href="http://www.rompy.cn/News/MeiTi">企业动态</a></dd>
-                    <dd><a href="http://www.rompy.cn/News/BoShi">精彩博文</a></dd>
+                    <dt><a href="News.html">新闻动态</a></dt>
+                    <dd><a href="News.html">早教新闻</a></dd>
+                    <dd><a href="News.html">行业动态</a></dd>
+                    <dd><a href="News.html">企业动态</a></dd>
+                    <dd><a href="News.html">精彩博文</a></dd>
                 </dl>
                 <dl>
-                    <dt><a href="http://www.rompy.cn/Join/Index">加盟我们</a></dt>
-                    <dd><a onclick="location.href='http://www.rompy.cn/Join/Index#qianjing'" style="cursor: pointer">市场前景</a></dd>
-                    <dd><a onclick="location.href='http://www.rompy.cn/Join/Index#youshi'" style="cursor: pointer">品牌优势</a></dd>
-                    <dd><a onclick="location.href='http://www.rompy.cn/Join/Index#yunying'" style="cursor: pointer">运营支持</a></dd>
-                    <dd><a onclick="location.href='http://www.rompy.cn/Join/Index#zixun'" style="cursor: pointer">加盟资讯</a></dd>
+                    <dt><a href="JoinUs.html">加盟我们</a></dt>
+                    <dd><a onclick="location.href='JoinUs.html'" style="cursor: pointer">市场前景</a></dd>
+                    <dd><a onclick="location.href='JoinUs.html'" style="cursor: pointer">品牌优势</a></dd>
+                    <dd><a onclick="location.href='JoinUs.html'" style="cursor: pointer">运营支持</a></dd>
+                    <dd><a onclick="location.href='JoinUs.html'" style="cursor: pointer">加盟资讯</a></dd>
                 </dl>
                 <dl>
-                    <dt><a href="http://www.rompy.cn/Contact/Index">联系我们</a></dt>
-                    <dd><a href="http://www.rompy.cn/Contact/Index">联系方式</a></dd>
-                    <dd><a href="http://www.rompy.cn/Center/Index">中心查询</a></dd>
-                    <dd><a href="http://www.rompy.cn/Recruite/Index">招聘信息</a></dd>
-                    <dd><a href="http://www.rompy.cn/Apply/Index">免费试听</a></dd>
+                    <dt><a href="ContactUs.html">联系我们</a></dt>
+                    <dd><a href="ContactUs.html">联系方式</a></dd>
+                    <dd><a href="ContactUs.html">中心查询</a></dd>
+                    <dd><a href="ContactUs.html">招聘信息</a></dd>
+                    <dd><a href="ContactUs.html">免费试听</a></dd>
                 </dl>
          </div>
 		</div>
 	</div>
 </div>
 </body>
+<script type="text/javascript" src="../js/common.js" ></script>
+<script type="text/javascript" src="../js/news.js" ></script>
+<script type="text/javascript" src="../js/wow.min.js" ></script>
+<script>
+	new WOW().init();
+</script>
 </html>
 

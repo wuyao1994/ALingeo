@@ -4,7 +4,30 @@
 }
 .main .screen{
 	width: 100%;
-	height: 700px;
+	height: 600px;
+}
+/*轮播图样式*/
+.swiper-container {
+      width: 100%;
+      height: 100%;
+
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
 }
 .main .screen img{
 	width: 100%;
@@ -41,6 +64,7 @@
     width: 540px;
     padding-top: 154px;
 }
+
 .main .floor-one .floor-one-box .floor-one-box3{
 	width: 570px;
     float: left;
@@ -55,8 +79,32 @@
 }
 .main .floor-one .floor-one-box .floor-one-box3 p{
 	margin-left: 35px;
+	font-size: 17px;
 }
-
+.main .floor-one .floor-one-box .floor-one-box3 .p1{
+	-webkit-animation-delay: 0.8s;
+    -moz-animation-delay: 0.8s;
+    -ms-animation-delay: 0.8s;
+    -o-animation-delay: 0.8s;
+}
+.main .floor-one .floor-one-box .floor-one-box3 .p2{
+	-webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    -ms-animation-delay: 1s;
+    -o-animation-delay: 1s;
+}
+.main .floor-one .floor-one-box .floor-one-box3 .p3{
+	-webkit-animation-delay: 1.2s;
+    -moz-animation-delay: 1.2s;
+    -ms-animation-delay: 1.2s;
+    -o-animation-delay: 1.2s;
+}
+.main .floor-one .floor-one-box .floor-one-box3 .p4{
+	-webkit-animation-delay: 1.5s;
+    -moz-animation-delay: 1.5s;
+    -ms-animation-delay: 1.5s;
+    -o-animation-delay: 1.5s;
+}
 
 .main .floor-two{
 	position: relative;
@@ -216,6 +264,7 @@
     font-size: 20px;
     color: #fff;
     text-align: left;
+    height: 72px
 }
 .main .floor-two .floor-two-box .server-title .information .a-icon{
     width: 80px;
@@ -444,4 +493,127 @@
     width: 85px;
     float: left;
     text-align: left;
+}
+
+/*新闻*/
+h2 {
+    text-align: center;
+    color: #333;
+    font-size: 100%;
+    font-weight: normal;
+}
+.main .floor-news{
+    height: 737px;
+}
+.main .floor-news .ct{
+    width: 1200px;
+    margin: 0 auto;
+}
+.floor-news h2 .title-img {
+    padding: 0 0 20px;
+    margin-top: -18px;
+}
+h2 .name {
+    font-weight: bold;
+    font-size: 36px;
+}
+h2 .tips {
+    font-size: 16px;
+    margin: 20px 0 40px;
+}
+.floor-news .news-bigpic {
+    float: left;
+    width: 598px;
+    height: 505px;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+}
+.floor-news .news-bigpic ul {
+    position: relative;
+    z-index: 10;
+}
+.floor-news .news-bigpic ul li {
+    width: 598px;
+    height: 499px;
+    position: relative;
+    overflow: hidden;
+}
+.news-bigpic .slidesjs-previous, .news-bigpic .slidesjs-next {
+    width: 44px;
+    height: 44px;
+    position: absolute;
+    overflow: hidden;
+    right: 55px;
+    bottom: 45px;
+    line-height: 40px;
+    display: inline-block;
+  
+    text-align: center;
+    margin-left: -2px;
+    z-index: 30;
+    text-indent: -9999px;
+}
+.news-bigpic .slidesjs-next {
+    right: 10px;
+    background-position: -678px -71px;
+}
+.floor-news .news-li {
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+}
+.floor-news .news-li dl {
+    width: 283px;
+    height: 248px;
+    float: left;
+    margin: 0 0 6px 16px;
+}
+.floor-news .news-li dl dt {
+    width: 283px;
+    height: 211px;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+}
+.floor-news .news-li dl dt img {
+    width: 283px;
+    height: 211px;
+}
+.floor-news .news-li dl dd, .news-bigpic .big-txt {
+    line-height: 35px;
+    font-size: 16px;
+    color: #333;
+    overflow: hidden;
+}
+.floor-news .news-li dl dd, .news-bigpic .big-txt {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.floor-news .date {
+    background: #36a8bf;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: #fff;
+    text-align: left;
+    padding: 5px 20px;
+}
+.floor-news .day {
+    font-size: 28px;
+}
+.floor-news .week {
+    font-size: 12px;
+}
+.floor-news .month {
+    font-size: 14px;
+}
+.floor-news .news-bigpic ul li img {
+    width: 598px;
+    height: 464px;
+    vertical-align: middle;
+}
+.floor-news .news-bigpic .date {
+    bottom: 35px;
 }
