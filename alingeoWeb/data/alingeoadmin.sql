@@ -1,16 +1,16 @@
 /*
 Navicat MySQL Data Transfer
 
-Source Server         : mysql
-Source Server Version : 50717
-Source Host           : localhost:3306
-Source Database       : alingeoadmin
+Source Server         : 111.231.191.63
+Source Server Version : 50640
+Source Host           : 111.231.191.63:3306
+Source Database       : alingeoAdmin
 
 Target Server Type    : MYSQL
-Target Server Version : 50717
+Target Server Version : 50640
 File Encoding         : 65001
 
-Date: 2018-06-24 00:11:36
+Date: 2018-06-24 00:33:38
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -112,12 +112,8 @@ CREATE TABLE `t_news` (
 -- ----------------------------
 -- Records of t_news
 -- ----------------------------
-INSERT INTO `t_news` VALUES ('1', '这是一条测试新闻', '2018-06-23 16:26:23', '/news/25d3d31373f08202c952756549fbfbeda9641bc4.jpg', '夏至古装pa!');
 INSERT INTO `t_news` VALUES ('2', '这是一条测试新闻', '2018-06-23 16:26:23', 'http://website.rompy.cn/images/rompycenter/2018/06/15/598x464_20180615032616615.jpg', '夏至古装pa!');
 INSERT INTO `t_news` VALUES ('3', '这是一条测试新闻', '2018-06-23 16:26:23', 'http://website.rompy.cn/images/rompycenter/2018/06/15/598x464_20180615032616615.jpg', '夏至古装pa!');
-INSERT INTO `t_news` VALUES ('18', '城宁愿', '2018-06-23 18:26:46', '/news/7.jpg', '天空之城');
-INSERT INTO `t_news` VALUES ('19', '12111', '2018-06-23 18:31:49', '/news/9d82d158ccbf6c81ca6e46e3bd3eb13533fa405b.jpg', '12123');
-INSERT INTO `t_news` VALUES ('26', '1111', '2018-06-23 23:13:41', '/news/1d52d3c8a786c917213ab563cb3d70cf3ac757c3.jpg', '1111');
 
 -- ----------------------------
 -- Table structure for t_teacher
@@ -136,5 +132,4 @@ CREATE TABLE `t_teacher` (
 INSERT INTO `t_teacher` VALUES ('1', 'images/teacher/b.png', '尚老师从教三十余年，从事“对外汉语教学”及“多语种教育研究”；近二十年专注于通过培养儿童超常学习能力，改革教材教法、学法，实现儿童身心解放的事业，是教育改革的实践家。');
 INSERT INTO `t_teacher` VALUES ('2', 'images/teacher/c.png', '尚老师是目前国内少数几位能同时培养孩子成功掌握几门语言的老师，国内多位能用英语写作诗歌、散文、小说的儿童少年出自他的门下。');
 INSERT INTO `t_teacher` VALUES ('3', 'images/teacher/d.png', '在早教领域深度耕耘25年，创造了多个早教界的传奇，可能是为数不多的为英语国家编英语教材的中国老师。');
-INSERT INTO `t_teacher` VALUES ('21', '/teacher/4b56c1fdfc039245a68106558594a4c27c1e25c8.jpg', '1111111111111111111111111111111111111111111111111111111111');
 SET FOREIGN_KEY_CHECKS=1;
