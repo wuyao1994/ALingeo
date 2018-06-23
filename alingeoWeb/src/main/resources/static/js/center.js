@@ -1,12 +1,9 @@
 $(function() {
-    $("#btnserch").click(function () {
+    $("#btnserch").click(function (e) {
         var data = {},
-            url = "/AlgCenter";
-        data = {
-            "city": $('#centername').val()
-        }
-        $.post(url,data,function (result) {
-        });
+            url = "/AlgCenter",
+            city= $('#centername').val();
+        window.location.href="/AlgCenter?city="+city;
 
     });
 

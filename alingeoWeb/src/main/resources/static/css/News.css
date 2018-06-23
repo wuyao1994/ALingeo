@@ -19,7 +19,7 @@
 .main .news .news-box{
 	width: 1200px;
     margin: 0 auto;
-    height: 1500px;
+    height: auto;
 }
 .main .news .news-box .contents{
 	background: none;

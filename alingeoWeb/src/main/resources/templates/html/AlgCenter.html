@@ -89,14 +89,14 @@
 		                <form id="form1">
 		                    <div class="search">
 		                        <input type="text" name="city" class="search-inp" id="centername" placeholder="请输入中心名称或关键字" value="" autocomplete="off">
-		                        <a id="btnserch" style="cursor: pointer" class="search-btn"><span class="search-btn-icon"></span>搜索</a>
+		                        <a id="btnserch" style="cursor: pointer" class="search-btn">搜索</a>
 		                    </div>
 		                </form>
 		                <div class="title" id="pro" th:text="${city}">北京</div>
 		            </h3>
 		            <ul class="clearfix" id="centerlist">
 						<div th:if="${#lists.isEmpty(centerList)}">
-							<h1 style="text-align:  center;padding: 20px;">该地区暂时没有分部</h1>
+							<h1 style="text-align:  center;padding: 20px;">该地区暂时没有早教中心</h1>
 						</div>
 		                <li th:each="center : ${centerList}">
 		                    <a href="#">
