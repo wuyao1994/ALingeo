@@ -61,8 +61,8 @@
 		                </ul>
 		            </div>
 		    		<div class="newsli">
-	    				<ul th:each="newsItem : ${news}">
-	    					<li>
+	    				<ul>
+	    					<li th:each="newsItem : ${news}">
                                 <a href="#">
                                     <div class="newimg">
                                         <img th:attr="src=${newsItem.getImagePath()}" />

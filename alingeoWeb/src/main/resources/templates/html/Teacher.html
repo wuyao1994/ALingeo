@@ -72,8 +72,8 @@
 		      <div class="testim-ovl">
 		      </div>
 		      <div class="testimonials-wrapper" style="padding-top: 270px;">
-		        <ul th:each="teacher : ${TeacherList}" class="testimonials-line" style="height: 120px!important;">
-		          <li class="customer fadeOutLeft">
+		        <ul class="testimonials-line" style="height: 120px!important;">
+		          <li th:each="teacher : ${TeacherList}" th:class="${teacher.id eq '1' ? 'customer fadeInRight' : 'customer fadeOutLeft'}">
 		            <div class="testimonial-bubble">
 		              <p th:text="${teacher.introduce}">
 		              </p>
@@ -84,9 +84,9 @@
 		              </span>
 		            </div>
 		          </li>
-				  <span id="prev" th:if="${teacher.id} eq 1">
+				  <span id="prev">
 				  </span>
-				  <span id="next" th:if="${teacher.id} eq 1">
+				  <span id="next">
 				  </span>
 		        </ul>
 				  <!-- .testimonials-line -->
@@ -101,7 +101,7 @@
 		      $(document).ready(function() {
 		          $('#testimonials').alpha({
 		              layout: 'alt',
-		              delay: 6000
+		              delay: 6
 //		              	每隔6秒换一张
 		          });
 		      });
