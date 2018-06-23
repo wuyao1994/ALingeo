@@ -65,7 +65,7 @@
 	    					<li th:each="newsItem : ${news}">
                                 <a href="#">
                                     <div class="newimg">
-                                        <img th:attr="src=${newsItem.getImagePath()}" />
+                                        <img th:src="${newsItem.imagePath}" />
                                     </div>
                                     <div class="newinfo">
 										<h3 th:text="【中心趣闻】+${newsItem.title}"></h3>

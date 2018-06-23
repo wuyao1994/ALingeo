@@ -33,11 +33,4 @@ public class HomeController {
 		return "html/AlgCourse";
 	}
 
-
-
-	@RequestMapping(value = "/AlgCenter", method = RequestMethod.GET)
-	public String getAlgCenterPage(Model model) {
-		return "html/AlgCenter";
-	}
-
 }

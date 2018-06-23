@@ -1,7 +1,5 @@
 package com.alingeo.controller;
 
-import java.text.ParsePosition;
-import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -149,7 +147,8 @@ public class AdminController {
 
 
 	@RequestMapping(value = "/admin/addTeacher", method = RequestMethod.POST)
-	private String addTeacher(Model model, @RequestParam("introduce") String introduce, @RequestParam("file") MultipartFile file) {
+	private String addTeacher(Model model, @RequestParam("introduce") String introduce,
+			@RequestParam("file") MultipartFile file) {
 		Teacher teacher = new Teacher();
 		teacher.setIntroduce(introduce);
 		if (!file.isEmpty()) {
@@ -205,7 +204,7 @@ public class AdminController {
 			try {
 				FileUtil.uploadFile(file.getBytes(), centerImageLocation, fileName);
 				String imagePath = centerImageLocation + fileName;
-				center.setImagePath(imagePath);
+				center.setImagePath("/center/" + fileName);
 			} catch (Exception e) {
 				e.printStackTrace();
 			}

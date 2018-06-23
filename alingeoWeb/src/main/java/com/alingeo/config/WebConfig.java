@@ -15,6 +15,7 @@ public class WebConfig extends WebMvcConfigurerAdapter {
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry.addResourceHandler("/news/**").addResourceLocations("file:c:/alingeo/image/news/");
         registry.addResourceHandler("/teacher/**").addResourceLocations("file:c:/alingeo/image/teacher/");
+        registry.addResourceHandler("/center/**").addResourceLocations("file:c:/alingeo/image/center/");
         registry.addResourceHandler("/**").addResourceLocations("classpath:/static/");
     }
 }
