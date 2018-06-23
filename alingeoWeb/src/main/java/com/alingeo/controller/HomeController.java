@@ -35,13 +35,6 @@ public class HomeController {
 
 
 
-	@RequestMapping(value = "/Teacher", method = RequestMethod.GET)
-	public String getTeacherPage(Model model) {
-		return "html/Teacher";
-	}
-
-
-
 	@RequestMapping(value = "/AlgCenter", method = RequestMethod.GET)
 	public String getAlgCenterPage(Model model) {
 		return "html/AlgCenter";

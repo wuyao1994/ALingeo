@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+	  xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
 	<head>
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
@@ -71,61 +72,24 @@
 		      <div class="testim-ovl">
 		      </div>
 		      <div class="testimonials-wrapper" style="padding-top: 270px;">
-		        <ul class="testimonials-line" style="height: 120px!important;">
-		          <li class="customer active fadeInRight">
-		            <div class="testimonial-bubble">
-		              <p>
-		                                        中科院心理所认知神经科学博士，成都早慧堂教育咨询有限公司的创办人，从事教育行业多年，教育方法独特有效，在行业中被誉为“江南怪才”
-		              </p>
-		            </div>
-		            <div class="cus-profile">
-		              <span class="cus-image">
-		                <img src="../images/teacher/a.png">
-		              </span>
-		            </div>
-		          </li>
+		        <ul th:each="teacher : ${TeacherList}" class="testimonials-line" style="height: 120px!important;">
 		          <li class="customer fadeOutLeft">
 		            <div class="testimonial-bubble">
-		              <p>
-		              	尚老师从教三十余年，从事“对外汉语教学”及“多语种教育研究”；近二十年专注于通过培养儿童超常学习能力，改革教材教法、学法，实现儿童身心解放的事业，是教育改革的实践家。
+		              <p th:text="${teacher.introduce}">
 		              </p>
 		            </div>
 		            <div class="cus-profile">
 		              <span class="cus-image">
-		                <img src="../images/teacher/d.png">
+		                <img th:attr="src=${teacher.getImagePath()}">
 		              </span>
 		            </div>
 		          </li>
-		          <li class="customer fadeOutLeft">
-		            <div class="testimonial-bubble">
-		              <p>
-		                                       尚老师是目前国内少数几位能同时培养孩子成功掌握几门语言的老师，国内多位能用英语写作诗歌、散文、小说的儿童少年出自他的门下。
-		              </p>
-		            </div>
-		            <div class="cus-profile">
-		              <span class="cus-image">
-		                <img src="../images/teacher/c.png">
-		              </span>
-		            </div>
-		          </li>
-		          <li class="customer fadeOutLeft">
-		            <div class="testimonial-bubble">
-		              <p>
-		                                       在早教领域深度耕耘25年，创造了多个早教界的传奇，可能是为数不多的为英语国家编英语教材的中国老师。
-		              </p>
-		            </div>
-		            <div class="cus-profile">
-		              <span class="cus-image">
-		                <img src="../images/teacher/d.png">
-		              </span>
-		            </div>
-		          </li>
-		          <span id="prev">
-		          </span>
-		          <span id="next">
-		          </span>
+				  <span id="prev" th:if="${teacher.id} eq 1">
+				  </span>
+				  <span id="next" th:if="${teacher.id} eq 1">
+				  </span>
 		        </ul>
-		        <!-- .testimonials-line -->
+				  <!-- .testimonials-line -->
 		      </div>
 		      <!-- .testimonials-wrapper -->
 		    </section>

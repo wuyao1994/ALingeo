@@ -16,27 +16,6 @@
 <h2>添加讲师</h2>
 <form name="addTeacher" action="" th:action="@{/admin/addTeacher}" th:method="post" class="from-box" style="width: 100%;max-width: 330px;padding: 15px;" enctype="multipart/form-data">
     <div class="form-group">
-        <label for="chineseName">中文姓名</label>
-        <input type="chineseName" name="chineseName" id="chineseName" class="form-control" required/>
-    </div>
-    <div class="form-group">
-        <label for="englishName">英文姓名</label>
-        <input type="englishName" name="englishName" id="englishName" class="form-control" required/>
-    </div>
-    <div class="form-group">
-        <label for="serviceCenter">服务中心</label>
-        <input type="serviceCenter" name="serviceCenter" id="serviceCenter" class="form-control" required/>
-    </div>
-    <div class="form-group">
-        <label for="joinTime">加入时间</label>
-        <div class="input-group date form_datetime" data-date="1979-09-16T05:25:07Z" data-date-format="yyyy MM dd HH:mm:ss" data-link-field="dtp_input1">
-            <input class="form-control" size="16" type="text" value="" readonly>
-            <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
-            <span class="input-group-addon"><span class="glyphicon glyphicon-th"></span></span>
-            <input type="hidden" id="joinTime" name="joinTime" value="" /><br/>
-        </div>
-    </div>
-    <div class="form-group">
         <label for="introduce">自我介绍</label>
         <textarea class="form-control" rows="3" name="introduce" id="introduce" required></textarea>
     </div>

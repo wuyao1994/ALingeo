@@ -149,25 +149,15 @@ public class AdminController {
 
 
 	@RequestMapping(value = "/admin/addTeacher", method = RequestMethod.POST)
-	private String addTeacher(Model model, @RequestParam("chineseName") String chineseName,
-			@RequestParam("englishName") String englishName, @RequestParam("serviceCenter") String serviceCenter,
-			@RequestParam("introduce") String introduce, @RequestParam("joinTime") String joinTime,
-			@RequestParam("file") MultipartFile file) {
+	private String addTeacher(Model model, @RequestParam("introduce") String introduce, @RequestParam("file") MultipartFile file) {
 		Teacher teacher = new Teacher();
-		teacher.setChineseName(chineseName);
-		teacher.setEnglishName(englishName);
 		teacher.setIntroduce(introduce);
-		SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-		ParsePosition pos = new ParsePosition(0);
-		Date strtodate = formatter.parse(joinTime, pos);
-		teacher.setJoinTime(strtodate);
-		teacher.setServiceCenter(serviceCenter);
 		if (!file.isEmpty()) {
 			String fileName = file.getOriginalFilename();
 			try {
 				FileUtil.uploadFile(file.getBytes(), teacherImageLocation, fileName);
 				String imagePath = teacherImageLocation + fileName;
-				teacher.setImagePath(imagePath);
+				teacher.setImagePath("/teacher/" + fileName);
 			} catch (Exception e) {
 				e.printStackTrace();
 			}

@@ -62,10 +62,6 @@ xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
                     <thead>
                     <tr>
                         <th>ID</th>
-                        <th>中文姓名</th>
-                        <th>英文姓名</th>
-                        <th>入职时间</th>
-                        <th>服务中心</th>
                         <th>自我介绍</th>
                         <th>头像路径</th>
                         <th>action</th>
@@ -74,10 +70,6 @@ xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
                     <tbody>
                     <tr th:each="teacher : ${teacherList}">
                         <td th:each="entry : ${teacher}" th:text="${teacher.id}" ></td>
-                        <td th:each="entry : ${teacher}" th:text="${teacher.chineseName}"></td>
-                        <td th:each="entry : ${teacher}" th:text="${teacher.englishName}"></td>
-                        <td th:each="entry : ${teacher}" th:text="${teacher.joinTime}"></td>
-                        <td th:each="entry : ${teacher}" th:text="${teacher.serviceCenter}"></td>
                         <td th:each="entry : ${teacher}" th:text="${teacher.imagePath}"></td>
                         <td th:each="entry : ${teacher}" th:text="${teacher.introduce}"></td>
                         <td><a th:href="'/admin/deleteTeacher/' + ${teacher.id}">删除</a></td>
