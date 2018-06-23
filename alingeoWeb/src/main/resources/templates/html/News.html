@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+	  xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
 	<head>
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
@@ -60,46 +61,17 @@
 		                </ul>
 		            </div>
 		    		<div class="newsli">
-	    				<ul>
+	    				<ul th:each="newsItem : ${news}">
 	    					<li>
-                                <a href="/News/NewsAllDetail?siteid=6171">
+                                <a href="#">
                                     <div class="newimg">
-                                        <img src="http://website.rompy.cn/images/rompycenter/2018/06/15/598x464_20180615060833239.jpg">
+                                        <img th:attr="src=${newsItem.getImagePath()}" />
                                     </div>
                                     <div class="newinfo">
-                                        <h3>【中心趣闻】父亲节我与宝贝一起在抖音尬舞，领取宝贝赠送的第一份父亲节礼物</h3>
-                                        <span>
-                                        	这是一条测试新闻
+										<h3 th:text="【中心趣闻】+${newsItem.title}"></h3>
+                                        <span th:text="*{newsItem.content}">
 										</span>
-                                        <div>2018年6月15日&emsp;&emsp;来源：爱灵格</div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/News/NewsAllDetail?siteid=6171">
-                                    <div class="newimg">
-                                        <img src="http://website.rompy.cn/images/rompycenter/2018/06/15/598x464_20180615032616615.jpg">
-                                    </div>
-                                    <div class="newinfo">
-                                        <h3>【中心趣闻】夏至古装pa!</h3>
-                                        <span>
-                                        	这是一条测试新闻
-										</span>
-                                        <div>2018年6月15日&emsp;&emsp;来源：爱灵格</div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/News/NewsAllDetail?siteid=6171">
-                                    <div class="newimg">
-                                        <img src="http://website.rompy.cn/images/rompycenter/2018/06/15/598x464_20180615032616615.jpg">
-                                    </div>
-                                    <div class="newinfo">
-                                        <h3>【中心趣闻】夏至古装pa!</h3>
-                                        <span>
-                                        	这是一条测试新闻
-										</span>
-                                        <div>2018年6月15日&emsp;&emsp;来源：爱灵格</div>
+                                        <div th:text="${newsItem.date} + '&emsp;'+ 来源：爱灵格"></div>
                                     </div>
                                 </a>
                             </li>

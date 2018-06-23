@@ -14,7 +14,7 @@
 .main .news{
     position: relative;
     padding-top: 66px;
-    height: 900px;
+    height: auto;
 }
 .main .news .news-box{
 	width: 1200px;
@@ -24,7 +24,7 @@
 .main .news .news-box .contents{
 	background: none;
     padding-top: 0;
-    height: 1500px;
+    height: auto;
 }
 .main .news .news-box .contents .content{
    	margin-top: -200px;

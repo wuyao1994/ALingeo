@@ -1,15 +1,9 @@
 package com.alingeo.controller;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-
-import com.alingeo.domin.Join;
-import com.alingeo.service.JoinService;
-import com.alingeo.util.MailManager;
 
 @Controller
 public class HomeController {
@@ -44,13 +38,6 @@ public class HomeController {
 	@RequestMapping(value = "/Teacher", method = RequestMethod.GET)
 	public String getTeacherPage(Model model) {
 		return "html/Teacher";
-	}
-
-
-
-	@RequestMapping(value = "/News", method = RequestMethod.GET)
-	public String getNewsPage(Model model) {
-		return "html/News";
 	}
 
 

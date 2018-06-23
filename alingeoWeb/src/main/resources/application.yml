@@ -17,4 +17,4 @@ server:
 img:
   newsImageLocation: c:/alingeo/image/news/
   centerImageLocation: c:/alingeo/image/center/
-  teacherImageLocation: c:/alingeo/iamge/teacher/
+  teacherImageLocation: c:/alingeo/image/teacher/

@@ -76,7 +76,7 @@ public class AdminController {
 			FileUtil.uploadFile(file.getBytes(), newsImageLocation, fileName);
 			String imagePath = newsImageLocation + fileName;
 			News news = newsService.findNewsById(id);
-			news.setImagePath(imagePath);
+			news.setImagePath("/news/" + fileName);
 			newsService.udpateNews(news);
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -114,7 +114,7 @@ public class AdminController {
 			try {
 				FileUtil.uploadFile(file.getBytes(), newsImageLocation, fileName);
 				String imagePath = newsImageLocation + fileName;
-				news.setImagePath(imagePath);
+				news.setImagePath("/news/" + fileName);
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
@@ -157,9 +157,9 @@ public class AdminController {
 		teacher.setChineseName(chineseName);
 		teacher.setEnglishName(englishName);
 		teacher.setIntroduce(introduce);
-        SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-        ParsePosition pos = new ParsePosition(0);
-        Date strtodate = formatter.parse(joinTime, pos);
+		SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+		ParsePosition pos = new ParsePosition(0);
+		Date strtodate = formatter.parse(joinTime, pos);
 		teacher.setJoinTime(strtodate);
 		teacher.setServiceCenter(serviceCenter);
 		if (!file.isEmpty()) {
