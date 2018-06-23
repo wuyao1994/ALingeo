@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+	  xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
 <html>
 	<head>
 		<meta charset="UTF-8">
@@ -9,7 +11,8 @@
 		<link rel="stylesheet" type="text/css" href="../css/ContactUs.css" />
 		<link rel="stylesheet" type="text/css" href="../css/animate.min.css" />
 		<script type="text/javascript" src="../js/jquery.min.js" ></script>
-		
+		<script type="text/javascript" src="../js/all.js" ></script>
+
 	</head>
 <body>
 	<!--top-->
@@ -57,38 +60,40 @@
 		    <div class="join-box">
 		    	<img src="../images/contact/4.png" class="sun">
 		    	<img src="../images/contact/5.png" class="umbrella">
-		        <div class="content wow animated flipInX" id="divform">
-		            <dl>
-		                <dt>姓名</dt>
-		                <dd><input type="text" class="info" name="" id="name" value=""></dd>
-		            </dl>
-		
-		            <dl>
-		                <dt>手机号</dt>
-		                <dd><input type="text" class="info" name="" id="mobile" value=""></dd>
-		            </dl>
-		
-		            <dl>
-		                <dt>电子邮箱</dt>
-		                <dd><input type="text" class="info" name="" id="email" value=""></dd>
-		            </dl>
-		
-		            <dl>
-		                <dt>内容</dt>
-		                <dd><textarea class="area" id="comment"></textarea></dd>
-		            </dl>
-		            <dl>
-		                <dt><a class="refer" data-loading-text="正在提交..." style="cursor: pointer" id="formsubmit">提交</a></dt>
-		            </dl>
-		            <div class="title">
-		                <div class="t-name">在线留言</div>
-		                <div class="t-e-name">ONLINE MESSAGE</div>
-		            </div>
-		            <div class="pic">
-		            	<img src="../images/contact/dq.png">
-		            </div>
-		        </div>
-		
+				<form class="join-form" name="join" th:action="@{/JoinUs/create}" th:method="post">
+					<div class="content wow animated flipInX" id="divform">
+						<dl>
+							<dt>姓名</dt>
+							<dd><input type="text" class="info" name="name" id="name" value=""></dd>
+						</dl>
+
+						<dl>
+							<dt>手机号</dt>
+							<dd><input type="text" class="info" name="telephone" id="telephone" value=""></dd>
+						</dl>
+
+						<dl>
+							<dt>电子邮箱</dt>
+							<dd><input type="text" class="info" name="email" id="email" value=""></dd>
+						</dl>
+
+						<dl>
+							<dt>内容</dt>
+							<dd><textarea class="area" id="content" name="content"></textarea></dd>
+						</dl>
+						<dl>
+							<dt><a class="refer" data-loading-text="正在提交..." style="cursor: pointer" id="formsubmit">提交</a></dt>
+						</dl>
+						<input type="text" name="type" id="type" value="联系我们" hidden>
+						<div class="title">
+							<div class="t-name">在线留言</div>
+							<div class="t-e-name">ONLINE MESSAGE</div>
+						</div>
+						<div class="pic">
+							<img src="../images/contact/dq.png">
+						</div>
+					</div>
+				</form>
 		    </div>
 		</div>
 		<!--更多功能-->

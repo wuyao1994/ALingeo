@@ -13,11 +13,6 @@ import com.alingeo.util.MailManager;
 
 @Controller
 public class HomeController {
-	@Autowired
-	private JoinService joinService;
-
-
-
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String homePage(Model model) {
 		return "index";
@@ -41,7 +36,7 @@ public class HomeController {
 
 	@RequestMapping(value = "/AlgCourse", method = RequestMethod.GET)
 	public String getAlgCoursePage(Model model) {
-		return "html/AboutUs";
+		return "html/AlgCourse";
 	}
 
 
@@ -65,33 +60,4 @@ public class HomeController {
 		return "html/AlgCenter";
 	}
 
-
-
-	@RequestMapping(value = "/JoinUs", method = RequestMethod.GET)
-	public String getJoinUsPage(Model model) {
-		return "html/JoinUs";
-	}
-
-
-
-	@RequestMapping(value = "/ContactUs", method = RequestMethod.GET)
-	public String getContactUsPage(Model model) {
-		return "html/ContactUs";
-	}
-
-
-
-	@RequestMapping(value = "/join/index", method = RequestMethod.GET)
-	public String joinIndex(Model model) {
-		return "join";
-	}
-
-
-
-	@RequestMapping(value = "/join/create", method = RequestMethod.POST)
-	public String join(@ModelAttribute Join join, Model model) {
-		joinService.create(join);
-		MailManager.SendEmail();
-		return "redirect:/";
-	}
 }
