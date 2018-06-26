@@ -104,13 +104,14 @@ public class AdminController {
 	@RequestMapping(value = "/admin/addNews", method = RequestMethod.POST)
 	public String addNews(Model model, @RequestParam("file") MultipartFile file,@RequestParam("brief") String brief,
 			@RequestParam("content1") String content1,@RequestParam("content2") String content2,
-						  @RequestParam("imageTitle") String imageTitle,@RequestParam("title") String title) {
+						  @RequestParam("imageTitle") String imageTitle,@RequestParam("type") String type,@RequestParam("title") String title) {
 		News news = new News();
 		news.setContent1(content1);
 		news.setContent2(content2);
 		news.setBrief(brief);
 		news.setImageTitle(imageTitle);
 		news.setTitle(title);
+		news.setType(type);
 		Calendar cal = Calendar.getInstance();
 		news.setDate(new Date());
 		news.setYear(cal.get(Calendar.YEAR));
