@@ -11,4 +11,19 @@ $(function() {
 
        })
     });
+    $("#telephone").keyup(function () {
+
+        var phone_v = $(this).val();
+
+        if (phone_v.length >= 11) {
+
+            $(this).val(phone_v.substr(0, 11));
+
+        }
+
+        $(this).val($(this).val().replace(/[^0-9.]/g, ''));
+
+    });
+
+
 });

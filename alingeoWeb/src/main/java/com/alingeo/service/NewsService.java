@@ -19,7 +19,7 @@ public interface NewsService {
 
 	News findNewsById(Long id);
 
-
+	List<News> findNewsByType(String type);
 
 	List<News> findAll();
 }

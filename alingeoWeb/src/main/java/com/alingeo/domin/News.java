@@ -15,8 +15,15 @@ public class News {
 	private Long	id;
 	private String	title;
 	private Date	date;
-	private String	content;
+	private String	brief;
+	private String	content1;
+	private String	content2;
+	private String	type;
 	private String	imagePath;
+	private String	imageTitle;
+	private int		year;
+	private int		month;
+	private int		day;
 
 
 
@@ -56,14 +63,50 @@ public class News {
 
 
 
-	public String getContent() {
-		return content;
+	public String getBrief() {
+		return brief;
 	}
 
 
 
-	public void setContent(String content) {
-		this.content = content;
+	public void setBrief(String brief) {
+		this.brief = brief;
+	}
+
+
+
+	public String getContent1() {
+		return content1;
+	}
+
+
+
+	public void setContent1(String content1) {
+		this.content1 = content1;
+	}
+
+
+
+	public String getContent2() {
+		return content2;
+	}
+
+
+
+	public void setContent2(String content2) {
+		this.content2 = content2;
+	}
+
+
+
+	public String getType() {
+		return type;
+	}
+
+
+
+	public void setType(String type) {
+		this.type = type;
 	}
 
 
@@ -76,5 +119,53 @@ public class News {
 
 	public void setImagePath(String imagePath) {
 		this.imagePath = imagePath;
+	}
+
+
+
+	public String getImageTitle() {
+		return imageTitle;
+	}
+
+
+
+	public void setImageTitle(String imageTitle) {
+		this.imageTitle = imageTitle;
+	}
+
+
+
+	public int getYear() {
+		return year;
+	}
+
+
+
+	public void setYear(int year) {
+		this.year = year;
+	}
+
+
+
+	public int getMonth() {
+		return month;
+	}
+
+
+
+	public void setMonth(int month) {
+		this.month = month;
+	}
+
+
+
+	public int getDay() {
+		return day;
+	}
+
+
+
+	public void setDay(int day) {
+		this.day = day;
 	}
 }

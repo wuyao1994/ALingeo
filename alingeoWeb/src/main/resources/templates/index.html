@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+	  xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
 <head>
 	<meta charset="UTF-8" />
 	<!--<meta name="viewport" content="width=device-width, initial-scale=1.0"/>-->
@@ -185,114 +186,15 @@
 	            <ul id="news-bigpic" style="overflow: hidden;">
                     <div class="slidesjs-container" style="overflow: hidden; position: relative; width: 598px; height: 500px;">
                     	<div class="slidesjs-control" style="position: relative; left: 0px; width: 598px; height: 500px;">
-                    		<li class="slidesjs-slide" slidesjs-index="0" style="position: absolute; top: 0px; left: -598px; width: 100%; z-index: 0; backface-visibility: hidden; display: block;">
-		                        <a href="/News">
-		                            <img src="http://website.rompy.cn/images/rompycenter/2018/06/13/598x464_20180613102609051.jpg" date-class="animated pulse" width="598" height="464" class="">
+                    		<li th:each="news,iterStat  : ${newsList}" th:if="${iterStat.index eq 0}" class="slidesjs-slide" slidesjs-index="1" style="position: absolute; top: 0px; left: 0px; width: 100%; z-index: 10; display: block; backface-visibility: hidden;">
+		                        <a th:href="'/News/Details/'+${news.id}">
+		                            <img th:src="${news.imagePath}" date-class="animated pulse" width="598" height="464" class="">
 		                            <div class="date">
-		                                <p class="day">13</p>
-		                                <p class="week">Jun</p>
-		                                <p class="month" style="margin-top:-2px;">2018</p>
+		                                <p class="day" th:text="${news.day}"></p>
+		                                <p class="week" th:text="${news.month}"></p>
+		                                <p class="month" style="margin-top:-2px;" th:text="${news.year}"></p>
 		                            </div>
-		                            <div class="big-txt">悦宝园子品牌芭迪熊亲幼馆再获“全国优秀早教（托育）机构”大奖|</div>
-		                        </a>
-                    		</li>
-                    		<li class="slidesjs-slide" slidesjs-index="1" style="position: absolute; top: 0px; left: 0px; width: 100%; z-index: 10; display: block; backface-visibility: hidden;">
-		                        <a href="/News">
-		                            <img src="http://website.rompy.cn/images/rompycenter/2018/06/11/598x464_20180611103020040.jpg" date-class="animated pulse" width="598" height="464" class="">
-		                            <div class="date">
-		                                <p class="day">11</p>
-		                                <p class="week">Jun</p>
-		                                <p class="month" style="margin-top:-2px;">2018</p>
-		                            </div>
-		                            <div class="big-txt">悦宝园又有新中心即将在山东盛大开业啦！|</div>
-		                        </a>
-                    		</li>
-                    		<li class="slidesjs-slide" slidesjs-index="2" style="position: absolute; top: 0px; left: 598px; width: 100%; z-index: 0; display: block; backface-visibility: hidden;">
-		                        <a href="/News">
-		                            <img src="http://website.rompy.cn/images/rompycenter/2018/06/11/598x464_20180611100257762.jpg" date-class="animated pulse" width="598" height="464">
-		                            <div class="date">
-		                                <p class="day">11</p>
-		                                <p class="week">Jun</p>
-		                                <p class="month" style="margin-top:-2px;">2018</p>
-		                            </div>
-		                            <div class="big-txt">爬爬赛招募 | 儿童版“速度与激情”即将上演，动作要快，姿势要帅！</div>
-		                        </a>
-                    		</li>
-                    		<li class="slidesjs-slide" slidesjs-index="3" style="position: absolute; top: 0px; left: 0px; width: 100%; z-index: 0; display: none; backface-visibility: hidden;">
-		                        <a href="/News">
-		                            <img src="http://website.rompy.cn/images/rompycenter/2018/06/10/598x464_20180610040243323.jpg" date-class="animated pulse" width="598" height="464">
-		                            <div class="date">
-		                                <p class="day">10</p>
-		                                <p class="week">Jun</p>
-		                                <p class="month" style="margin-top:-2px;">2018</p>
-		                            </div>
-		                            <div class="big-txt">悦宝园早教苏州圆融中心6月明星宝宝王语涵</div>
-		                        </a>
-                    		</li>
-                    		<li class="slidesjs-slide" slidesjs-index="4" style="position: absolute; top: 0px; left: 0px; width: 100%; z-index: 0; display: none; backface-visibility: hidden;">
-		                        <a href="/News">
-		                            <img src="http://website.rompy.cn/images/rompycenter/2018/06/08/598x464_20180608104455831.jpg" date-class="animated pulse" width="598" height="464" class="">
-		                            <div class="date">
-		                                <p class="day">8</p>
-		                                <p class="week">Jun</p>
-		                                <p class="month" style="margin-top:-2px;">2018</p>
-		                            </div>
-		                            <div class="big-txt">悦宝园常营中心开业盛典圆满成功</div>
-		                        </a>
-                    		</li>
-                    		<li class="slidesjs-slide" slidesjs-index="5" style="position: absolute; top: 0px; left: 0px; width: 100%; z-index: 0; display: none; backface-visibility: hidden;">
-		                        <a href="/News">
-		                            <img src="http://website.rompy.cn/images/rompycenter/2018/06/01/598x464_20180601054636053.jpg" date-class="animated pulse" width="598" height="464" class="">
-		                            <div class="date">
-		                                <p class="day">1</p>
-		                                <p class="week">Jun</p>
-		                                <p class="month" style="margin-top:-2px;">2018</p>
-		                            </div>
-		                            <div class="big-txt">分享10首私藏的英文儿歌神曲让宝贝认识身体部位和器官的名称及功能</div>
-		                        </a>
-                    		</li>
-                    		<li class="slidesjs-slide" slidesjs-index="6" style="position: absolute; top: 0px; left: 0px; width: 100%; z-index: 0; display: none; backface-visibility: hidden;">
-		                        <a href="/News">
-		                            <img src="http://website.rompy.cn/images/rompycenter/2018/05/26/598x464_20180526024122645.jpg" date-class="animated pulse" width="598" height="464">
-		                            <div class="date">
-		                                <p class="day">26</p>
-		                                <p class="week">May</p>
-		                                <p class="month" style="margin-top:-2px;">2018</p>
-		                            </div>
-		                            <div class="big-txt">[悦宝预告】 Blast Off【太空】课程预告！</div>
-		                        </a>
-                    		</li>
-                    		<li class="slidesjs-slide" slidesjs-index="7" style="position: absolute; top: 0px; left: 0px; width: 100%; z-index: 0; display: none; backface-visibility: hidden;">
-		                        <a href="/News">
-		                            <img src="http://website.rompy.cn/images/rompycenter/2018/05/23/598x464_20180523044938357.jpg" date-class="animated pulse" width="598" height="464">
-		                            <div class="date">
-		                                <p class="day">23</p>
-		                                <p class="week">May</p>
-		                                <p class="month" style="margin-top:-2px;">2018</p>
-		                            </div>
-		                            <div class="big-txt">【悦宝活动】五月佩奇生日会开始招募啦！</div>
-		                        </a>
-                    		</li>
-                    		<li class="slidesjs-slide" slidesjs-index="8" style="position: absolute; top: 0px; left: 0px; width: 100%; z-index: 0; display: none; backface-visibility: hidden;">
-		                        <a href="/News">
-		                            <img src="http://website.rompy.cn/images/rompycenter/2018/05/22/598x464_20180522093117709.jpg" date-class="animated pulse" width="598" height="464">
-		                            <div class="date">
-		                                <p class="day">22</p>
-		                                <p class="week">May</p>
-		                                <p class="month" style="margin-top:-2px;">2018</p>
-		                            </div>
-		                            <div class="big-txt">5月26日悦宝园常营中心盛大开业</div>
-		                        </a>
-                    		</li>
-		                    <li class="slidesjs-slide" slidesjs-index="9" style="position: absolute; top: 0px; left: 0px; width: 100%; z-index: 0; display: none; backface-visibility: hidden;">
-		                        <a href="/News">
-		                            <img src="http://website.rompy.cn/images/rompycenter/2018/05/17/598x464_20180517053837246.jpg" date-class="animated pulse" width="598" height="464" class="">
-		                            <div class="date">
-		                                <p class="day">17</p>
-		                                <p class="week">May</p>
-		                                <p class="month" style="margin-top:-2px;">2018</p>
-		                            </div>
-		                            <div class="big-txt">早教中心的母亲节活动就是与众不同！</div>
+		                            <div class="big-txt" th:text="${news.brief}"></div>
 		                        </a>
                     		</li>
                     	</div>
@@ -300,67 +202,20 @@
                 </ul>
 			</div>
 	        <div class="news-li animated" date-class="flipInY">
-                <dl class="clearfix">
-                    <a href="/News">
+                <dl class="clearfix" th:each="news,iterStat  : ${newsList}" th:if="${iterStat.index ge 1 && iterStat.index le 4}">
+                    <a th:href="'/News/Details/'+${news.id}">
                         <dt>
-                            <img src="http://website.rompy.cn/images/rompycenter/2018/06/13/598x464_20180613102609051.jpg" date-class="animated pulse" class="">
+                            <img th:src="${news.imagePath}" date-class="animated pulse" class="">
                             <div class="date">
-                                <p class="day">13</p>
-                                <p class="week">Jun</p>
-                                <p class="month" style="margin-top:-2px;">2018</p>
+								<p class="day" th:text="${news.day}"></p>
+								<p class="week" th:text="${news.month}"></p>
+								<p class="month" style="margin-top:-2px;" th:text="${news.year}"></p>
                             </div>
                         </dt>
-                        <dd>
-                            悦宝园子品牌芭迪熊亲幼馆再获“全国优秀早教（托育）机构”大奖|
+                        <dd th:text="${news.brief}">
                         </dd>
                     </a>
                 </dl>
-                <dl class="clearfix">
-                    <a href="/News">
-                        <dt>
-                            <img src="http://website.rompy.cn/images/rompycenter/2018/06/11/598x464_20180611103020040.jpg" date-class="animated pulse" class="">
-                            <div class="date">
-                                <p class="day">11</p>
-                                <p class="week">Jun</p>
-                                <p class="month" style="margin-top:-2px;">2018</p>
-                            </div>
-                        </dt>
-                        <dd>
-                            悦宝园又有新中心即将在山东盛大开业啦！|
-                        </dd>
-                    </a>
-                </dl>
-                <dl class="clearfix">
-                    <a href="/News">
-                        <dt>
-                            <img src="http://website.rompy.cn/images/rompycenter/2018/06/11/598x464_20180611100257762.jpg" date-class="animated pulse" class="">
-                            <div class="date">
-                                <p class="day">11</p>
-                                <p class="week">Jun</p>
-                                <p class="month" style="margin-top:-2px;">2018</p>
-                            </div>
-                        </dt>
-                        <dd>
-                            	爬爬赛招募 | 儿童版“速度与激情”即将上演，动作要快，姿势要帅！
-                        </dd>
-                    </a>
-                </dl>
-                <dl class="clearfix">
-                    <a href="/News">
-                        <dt>
-                            <img src="http://website.rompy.cn/images/rompycenter/2018/06/10/598x464_20180610040243323.jpg" date-class="animated pulse" class="">
-                            <div class="date">
-                                <p class="day">10</p>
-                                <p class="week">Jun</p>
-                                <p class="month" style="margin-top:-2px;">2018</p>
-                            </div>
-                        </dt>
-                        <dd>
-                            	悦宝园早教苏州圆融中心6月明星宝宝王语涵
-                        </dd>
-                    </a>
-                </dl>
-
 	        </div>
 	    </div>
 	</div>

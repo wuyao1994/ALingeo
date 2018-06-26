@@ -175,6 +175,9 @@
     color: #9a5aa4;
     padding: 8px 0 0 12px;
 }
+.b_header .s_header .nav ul li a:hover{
+    color: #9a5aa4;
+}
 
 /*楼层图标*/
 .sy-icon,.zx-icon,.jm-icon,.gz-icon,.xz-icon,.zj-icon,.re-back,.st-icon,.cx-icon{width:30px; height:30px; background:url(../images/icon.png) no-repeat; display:inline-block; margin-top:8px;}

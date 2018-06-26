@@ -617,3 +617,6 @@ h2 .tips {
 .floor-news .news-bigpic .date {
     bottom: 35px;
 }
+.b_header .s_header .nav ul li:nth-child(1) a{
+    color: #9a5aa4;
+}

@@ -261,3 +261,6 @@
     bottom: -40px;
     opacity: 1;
 }
+.b_header .s_header .nav ul li:nth-child(3) a{
+    color: #9a5aa4;
+}

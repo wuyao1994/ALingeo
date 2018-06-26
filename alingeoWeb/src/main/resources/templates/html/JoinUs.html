@@ -92,16 +92,13 @@
 						记忆方式：路径记忆，图像记忆，韵律记忆，体觉记忆（记忆舞蹈）<br>
 						效果：第一步，26个场景，26首歌，26支舞，740个单词，略差小学词汇量<br>
 						第二步，通过26歌场景740个动作学会740句话<br>
-						原价16.8万现价3.8万
 					</div>
 					<div class="point2">
-						<span class="ti">2、汉字源流</span><br>
 						<span class="ti">3、ETAR   phonics</span><br>
 						4个场景4首歌，速记小学初中英语词汇<br>
 						内容：小学到初中的常见词汇<br>
 						记忆方式：路径记忆，图像记忆，韵律记忆，<br>
 						效果：10-25节课，学会常见单词的拼法，并能按照顺序背下来<br>
-						原价：3.8万现价：0.8万
 					</div>
 					<div class="point3">
 						<span class="ti">4、ETAR  单词演唱会</span><br>
@@ -109,11 +106,8 @@
 						内容：小学到高中常见词汇<br>
 						记忆方式：韵文（英文诗歌）记忆，路径记忆、图像记忆、韵律记忆、体觉记忆（记忆操）<br>
 						效果：第一步，10-20节课，9首歌26段用102句韵文诗（1833个高频词）、102句话，达到4000以上词汇（高考词汇）<br>
-						原价9.8万，现价1.8万
 					</div>
 					<div class="point4">
-
-					<span class="ti">5、ETAR多学科</span>
 				</div>
 				</div>
 				<div class="np">
@@ -127,39 +121,16 @@
 		        <div class="name">爱灵格加盟资讯</div>
 		        <div class="j-news-mn wow animated fadeInUp">
 		            <ul class="clearfix">
-		                    <li>
-		                        <a href="#">
-		                            <p class="pic">
-		                                <img width="407" height="250" src="../images/join/j1.png">
-		                            </p>
-		                            <p class="txt">
-		                                <span>成都爱灵格沈涛：让教育重返“初心”</span>
-		                            </p>
-		                            </a><p class="link"><a href="/News"></a><a href="/News">查看详情&gt;</a></p>
-		                    </li>
-		                    <li>
-		                        <a href="#">
-		                            <p class="pic">
-		                                <img width="407" height="250" src="../images/join/j2.png">
-		                            </p>
-		                            <p class="txt">
-		                                <span>爱灵格教育登录中央电视台——让孩子爱上学习</span>
-		                            </p>
-		                            </a><p class="link"><a href="/News"></a><a href="/News">查看详情&gt;</a></p>
-		                        
-		                    </li>
-		                    <li>
-		                        <a href="#">
-		                            <p class="pic">
-		                                <img width="407" height="250" src="../images/join/j3.png">
-		                            </p>
-		                            <p class="txt">
-		                                <span>哈哈界的实力担当！爱灵格再度入围中国高成长连锁企业100强！</span>
-		                            </p>
-		                            </a><p class="link"><a href="/News"></a><a href="/News">查看详情&gt;</a></p>
-		  
-		                    </li>
-		
+						<li th:each="news,iterStat : ${newsList}" th:if="${iterStat.index ge 0 && iterStat.index le 2}">
+							<a th:href="'/News/Details/'+${news.id}">
+								<p class="pic">
+									<img width="407" height="250" th:src="${news.imagePath}">
+								</p>
+								<p class="txt">
+									<span th:text="${news.brief}"></span>
+								</p>
+								</a><p class="link"><a href="/News"></a><a href="/News">查看详情&gt;</a></p>
+						</li>
 		            </ul>
 		        </div>
 		    </div>
@@ -193,7 +164,7 @@
                         <dl>
                             <dt><a class="refer" data-loading-text="正在提交..." style="cursor: pointer" id="formsubmit">提交</a></dt>
                         </dl>
-                        <input type="text" name="type" id="type" value="加盟咨询" hidden>
+                        <input type="text" name="type" id="type" value="加盟咨询" style="display: none">
                         <div class="title">
                             <div class="t-name">在线留言</div>
                             <div class="t-e-name">ONLINE MESSAGE</div>

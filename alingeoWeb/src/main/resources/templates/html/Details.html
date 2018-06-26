@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+	  xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+		<title>新闻详情</title>
+		<link rel="stylesheet" type="text/css" href="../css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../css/include.css" />
+		<link rel="stylesheet" type="text/css" href="../css/Details.css" />
+		<link rel="stylesheet" type="text/css" href="../css/animate.min.css" />
+		<script type="text/javascript" src="../js/jquery.min.js" ></script>
+		
+	</head>
+<body>
+	<!--top-->
+	<div class="b_header">
+	<div class="s_header">
+		<div class="logo">
+			<a href="#">
+				<img src="../images/index/logo.png">
+			</a>
+		</div>
+		<div class="nav">
+			<ul>
+				<li><a href="/index">首页</a></li>
+				<li><a href="##">企业入口</a></li>
+				<li><a href="/AlgCourse">爱灵格课程</a></li>
+				<li><a href="/Teacher">专家师资</a></li>
+				<li><a href="/News">新闻动态</a></li>
+				<li><a href="/AlgCenter">爱灵格中心</a></li>
+				<li><a href="/JoinUs">加盟我们</a></li>
+				<li><a href="/ContactUs">联系我们</a></li>
+			</ul>
+			<div class="phone">
+				<span class="call"></span>
+				13350808830
+			</div>
+		</div>
+	</div>
+	</div>	
+    <!--main-->
+    <div class="main">
+    	 <!--新闻内容-->
+    	 <div class="box">
+    	 	
+	        <div class="b-title" th:text="${news.title}"></div>
+	        <div class="b-date">
+				发表时间：<span class="date-icon" th:text="${news.date}"></span></div>
+	        <div class="b-centent" id="dcon">
+				<p th:text="${news.content1}"></p>
+	        	<p align="center">
+					<img alt="" th:src="${news.imagePath}">
+				</p>
+				<p align="center" th:text="'(' + ${news.imageTitle} + ')'">
+				</p>
+	        	<p th:text="${news.content2}"></p>
+	        </div>
+	        
+    	 </div>
+	</div>    
+	     <!--footer-->
+    <div class="b_footer">
+	<div class="s_footer">
+		<div class="menu">
+			<div class="icons"></div>
+			<ul>
+	            <li>
+	                <a href="JoinUs.html">
+	                    <p class="st-icon"></p>
+	                    <p class="txt">免费试听</p>
+	                </a>
+	            </li>
+	
+	            <li style="margin-left: 30px;">
+	                <a id="zixun1" style="cursor:pointer" href="tencent://message/?uin=2810037561&Site=Sambow&Menu=yes">
+	                    <p class="jm-icon"></p>
+	                    <p class="txt">加盟咨询</p>
+	                </a>
+	            </li>
+	
+	            <li>
+	                <a href="html/AlgCenter.html">
+	                    <p class="cx-icon"></p>
+	                    <p class="txt">门店查找</p>
+	                </a>
+	            </li>
+	
+	            <li>
+	                <a href="javascript:">
+	                    <p class="gz-icon"></p>
+	                    <p class="txt">关注微信</p>
+	                </a>
+	                <p class="pop-img">
+	                    <img src="../images/codes.png">
+	                    <span class="roow"></span>
+	                </p>
+	            </li>
+	
+	            <li>
+	                <a href="javascript:">
+	                    <p class="xz-icon"></p>
+	                    <p class="txt">APP下载</p>
+	                </a>
+	                <p class="pop-img">
+	                    <img src="../images/code.png">
+	                    <span class="roow"></span>
+	                </p>
+	            </li>
+	            <!--<li>
+	                <a href="#" target="_blank">
+	                    <p class="zj-icon"></p>
+	                    <p class="txt">幼儿园</p>
+	                </a>
+	            </li>-->
+	            <li>
+	                <a href="javascript:" class="return_top">
+	                    <p class="re-back"></p>
+	                    <p class="txt">返回顶部</p>
+	                </a>
+	            </li>
+	        </ul>
+		</div>
+		<div class="write">
+			<div class="code">
+				<dl>
+                    <dt><img src="../images/codes.png"></dt>
+                    
+                    <dd>扫描二维码，关注“爱灵格”公众号</dd>
+                </dl>
+                <dl>
+                    <dt><img src="../images/code.png"></dt>
+                    
+                    <dd>扫描二维码，下载“爱灵格”APP</dd>
+                </dl>
+			</div>
+			<div class="more">
+				<dl>
+					<dt><a href="/ContactUs">关于我们</a></dt>
+					<dd><a onclick="location.href='/ContactUs'" style="cursor: pointer">公司介绍</a></dd>
+					<dd><a onclick="location.href='/ContactUs'" style="cursor: pointer">爱灵格特色</a></dd>
+					<dd><a onclick="location.href='/ContactUs'" style="cursor: pointer">科学早教</a></dd>
+					<dd><a onclick="location.href='/ContactUs'" style="cursor: pointer">荣誉奖项</a></dd>
+				</dl>
+				<dl>
+					<dt><a href="/AlgCourse">爱灵格特色</a></dt>
+					<dd><a href="/AlgCourse">ETAR多语</a></dd>
+					<dd><a href="/AlgCourse">ETAR汉语</a></dd>
+					<dd><a href="/AlgCourse">ETAR英语</a></dd>
+				</dl>
+				<dl>
+					<dt><a href="/Teacher">专家师资</a></dt>
+					<dd><a href="/Teacher">专家团队</a></dd>
+					<dd><a onclick="location.href='/Teacher'" style="cursor: pointer">认证教师</a></dd>
+				</dl>
+				<dl>
+					<dt><a href="/News">新闻动态</a></dt>
+					<dd><a href="/News">早教新闻</a></dd>
+					<dd><a href="/News">行业动态</a></dd>
+					<dd><a href="/News">企业动态</a></dd>
+					<dd><a href="/News">精彩博文</a></dd>
+				</dl>
+				<dl>
+					<dt><a href="/JoinUs">加盟我们</a></dt>
+					<dd><a onclick="location.href='/JoinUs'" style="cursor: pointer">市场前景</a></dd>
+					<dd><a onclick="location.href='/JoinUs'" style="cursor: pointer">品牌优势</a></dd>
+					<dd><a onclick="location.href='/JoinUs'" style="cursor: pointer">运营支持</a></dd>
+					<dd><a onclick="location.href='/JoinUs'" style="cursor: pointer">加盟资讯</a></dd>
+				</dl>
+				<dl>
+					<dt><a href="/ContactUs">联系我们</a></dt>
+					<dd><a href="/ContactUs">联系方式</a></dd>
+					<dd><a href="/ContactUs">中心查询</a></dd>
+					<dd><a href="/ContactUs">招聘信息</a></dd>
+					<dd><a href="/ContactUs">免费试听</a></dd>
+				</dl>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+<script type="text/javascript" src="../js/common.js" ></script>
+<script type="text/javascript" src="../js/wow.min.js" ></script>
+<script>
+	new WOW().init();
+</script>
+</html>
+
+
+

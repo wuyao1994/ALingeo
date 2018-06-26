@@ -1,5 +1,7 @@
 package com.alingeo.controller;
 
+import com.alingeo.domin.News;
+import com.alingeo.service.NewsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -12,15 +14,20 @@ import com.alingeo.domin.Join;
 import com.alingeo.service.JoinService;
 import com.alingeo.util.MailManager;
 
+import java.util.List;
+
 @Controller
 public class JoinUsController {
 	@Autowired
 	private JoinService joinService;
-
+	@Autowired
+	private NewsService newsService;
 
 
 	@RequestMapping(value = "/JoinUs", method = RequestMethod.GET)
 	public String getJoinUsPage(Model model) {
+		List<News> newsList = newsService.findNewsByType("加盟资讯");
+		model.addAttribute("newsList", newsList);
 		return "html/JoinUs";
 	}
 

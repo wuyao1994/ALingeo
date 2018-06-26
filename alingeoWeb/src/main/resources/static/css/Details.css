@@ -1,0 +1,49 @@
+.main{
+	width: 100%;
+	position: relative;
+}
+.main .box{
+	width: 1200px;
+	margin: 0 auto;
+	background: ghostwhite;
+	min-height:640px;
+	height: auto;
+}
+.main .box .b-title{
+	padding: 30px 0 10px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+}
+.main .box .b-date{
+	font-size: 16px;
+    color: #666;
+    text-align: center;
+    vertical-align: middle;	
+}
+.main .box .b-date .data-icon{
+	width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    vertical-align: middle;
+    display: inline-block;
+}
+.main .box .b-centent{
+	width: 968px;
+    margin: 0 auto;
+    padding-top: 40px;
+    font-size: 16px;
+    line-height: 30px;
+    color: #666;
+}
+.main .box .b-centent p{
+	margin-bottom: 15px;
+}
+.main .box .b-centent img{
+	max-width: 968px;
+}
+.b_header .s_header .nav ul li:nth-child(5) a{
+	color: #9a5aa4;
+}
+    

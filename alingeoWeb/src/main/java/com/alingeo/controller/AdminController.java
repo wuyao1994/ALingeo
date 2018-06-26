@@ -1,5 +1,6 @@
 package com.alingeo.controller;
 
+import java.util.Calendar;
 import java.util.Date;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -101,12 +102,20 @@ public class AdminController {
 
 
 	@RequestMapping(value = "/admin/addNews", method = RequestMethod.POST)
-	public String addNews(Model model, @RequestParam("file") MultipartFile file,
-			@RequestParam("content") String content, @RequestParam("title") String title) {
+	public String addNews(Model model, @RequestParam("file") MultipartFile file,@RequestParam("brief") String brief,
+			@RequestParam("content1") String content1,@RequestParam("content2") String content2,
+						  @RequestParam("imageTitle") String imageTitle,@RequestParam("title") String title) {
 		News news = new News();
-		news.setContent(content);
+		news.setContent1(content1);
+		news.setContent2(content2);
+		news.setBrief(brief);
+		news.setImageTitle(imageTitle);
 		news.setTitle(title);
+		Calendar cal = Calendar.getInstance();
 		news.setDate(new Date());
+		news.setYear(cal.get(Calendar.YEAR));
+		news.setMonth(cal.get(Calendar.MONTH));
+		news.setDay(cal.get(Calendar.DATE));
 		if (!file.isEmpty()) {
 			String fileName = file.getOriginalFilename();
 			try {

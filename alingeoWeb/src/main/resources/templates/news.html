@@ -63,10 +63,11 @@ xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
                     <tr>
                         <th>ID</th>
                         <th>Title</th>
-                        <th>内容</th>
+                        <th>简要</th>
+                        <th>内容Part1</th>
+                        <th>内容Part2</th>
                         <th>图片路径</th>
                         <th>发布时间</th>
-                        <th>action</th>
                         <th>action</th>
                     </tr>
                     </thead>
@@ -74,10 +75,12 @@ xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
                     <tr th:each="newsItem : ${news}">
                         <td th:each="entry : ${newsItem}" th:text="${newsItem.id}" ></td>
                         <td th:each="entry : ${newsItem}" th:text="${newsItem.title}"></td>
-                        <td th:each="entry : ${newsItem}" th:text="${newsItem.content}"></td>
+                        <td th:each="entry : ${newsItem}" th:text="${newsItem.brief}"></td>
+                        <td th:each="entry : ${newsItem}" th:text="${newsItem.content1}"></td>
+                        <td th:each="entry : ${newsItem}" th:text="${newsItem.content2}"></td>
                         <td th:each="entry : ${newsItem}" th:text="${newsItem.imagePath}"></td>
                         <td th:each="entry : ${newsItem}" th:text="${newsItem.date}"></td>
-                        <td><button class="btn btn-primary btn-lg uploadImage" data-toggle="modal" data-target="#myModal" th:attr="data-id=${newsItem.getId()}">上传图片</button></td>
+
                         <td><a th:href="'/admin/deleteNews/' + ${newsItem.id}">删除</a></td>
                     </tr>
                     </tbody>

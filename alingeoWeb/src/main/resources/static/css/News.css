@@ -155,4 +155,7 @@
     color: #9a5aa4;
     font-family: "arial";
     display: block;
-}         
+}
+.b_header .s_header .nav ul li:nth-child(5) a{
+    color: #9a5aa4;
+}

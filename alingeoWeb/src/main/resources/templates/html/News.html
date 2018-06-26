@@ -63,13 +63,13 @@
 		    		<div class="newsli">
 	    				<ul>
 	    					<li th:each="newsItem : ${news}">
-                                <a href="#">
+                                <a th:href="'/News/Details/'+${newsItem.id}">
                                     <div class="newimg">
                                         <img th:src="${newsItem.imagePath}" />
                                     </div>
                                     <div class="newinfo">
-										<h3 th:text="【中心趣闻】+${newsItem.title}"></h3>
-                                        <span th:text="*{newsItem.content}">
+										<h3 th:text="'【'+${newsItem.type}+'】'+${newsItem.title}"></h3>
+                                        <span th:text="*{newsItem.brief}">
 										</span>
                                         <div th:text="${newsItem.date} + '&emsp;'+ 来源：爱灵格"></div>
                                     </div>

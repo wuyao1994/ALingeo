@@ -58,3 +58,6 @@
 	left: 200px;
 	color: deepskyblue;	
 }
+.b_header .s_header .nav ul li:nth-child(7) a{
+	color: #9a5aa4;
+}

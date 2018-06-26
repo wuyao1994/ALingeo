@@ -15,7 +15,8 @@ public class MailManager {
 	public static String	myEmailAccount		= "2810037561@qq.com";
 	public static String	myEmailPassword		= "qczwrbmbgzihdgfh";
 	public static String	myEmailSMTPHost		= "smtp.qq.com";
-	public static String	receiveMailAccount	= "shentao_yx@163.com";
+//	public static String	receiveMailAccount	= "shentao_yx@163.com";
+	public static String	receiveMailAccount	= "wuyaoiot@163.com";
 
 
 
@@ -50,10 +51,10 @@ public class MailManager {
 	public static MimeMessage createMimeMessage(Session session, String sendMail, String receiveMail, Join join) throws Exception {
 		MimeMessage message = new MimeMessage(session);
 
-		message.setFrom(new InternetAddress(sendMail, "wuyuoiot@163.com", "UTF-8"));
+		message.setFrom(new InternetAddress(sendMail, "2810037561@qq.com", "UTF-8"));
 
 		message.setRecipient(MimeMessage.RecipientType.TO,
-				new InternetAddress(receiveMail, "wuyuoiot@163.com", "UTF-8"));
+				new InternetAddress(receiveMail, "shentao_yx@163.com", "UTF-8"));
 
 		message.setSubject(join.getType(), "UTF-8");
 
