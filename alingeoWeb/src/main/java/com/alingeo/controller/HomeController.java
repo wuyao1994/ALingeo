@@ -40,4 +40,9 @@ public class HomeController {
 		return "html/AlgCourse";
 	}
 
+    @RequestMapping(value = "/AboutUs", method = RequestMethod.GET)
+    public String getAboutUsPage(Model model) {
+        return "html/AboutUs";
+    }
+
 }
