@@ -15,8 +15,7 @@ public class MailManager {
 	public static String	myEmailAccount		= "2810037561@qq.com";
 	public static String	myEmailPassword		= "qczwrbmbgzihdgfh";
 	public static String	myEmailSMTPHost		= "smtp.qq.com";
-//	public static String	receiveMailAccount	= "shentao_yx@163.com";
-	public static String	receiveMailAccount	= "wuyaoiot@163.com";
+	public static String	receiveMailAccount	= "shentao_yx@163.com";
 
 
 
