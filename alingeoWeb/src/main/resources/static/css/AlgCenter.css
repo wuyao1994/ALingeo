@@ -152,6 +152,7 @@
     height: 54px;
     padding: 2px;
     background: #7bbbe7;
+    margin-right: 15px;
 }
 .main .center-proli .ct .proli-mn h3 .search-inp {
     height: 54px;
@@ -183,11 +184,11 @@
     vertical-align: middle;
 }
 .main .center-proli .ct .proli-mn ul{
-    width: 110%; 
+    width: 100%;
 }
 .main .center-proli .ct .proli-mn ul li {
     float: left;
-    width: 285px;
+    width: 280px;
     height: 265px;
     text-align: center;
     margin: 20px 20px 0 0;

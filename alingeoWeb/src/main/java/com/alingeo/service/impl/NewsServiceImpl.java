@@ -47,7 +47,8 @@ public class NewsServiceImpl implements NewsService {
 
 	@Override
 	public List<News> findAll() {
-		return newsRepository.findAll();
+		Sort sort = new Sort(Sort.Direction.DESC, "id");
+		return newsRepository.findAll(sort);
 	}
 
 
