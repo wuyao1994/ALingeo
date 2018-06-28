@@ -620,3 +620,65 @@ h2 .tips {
 .b_header .s_header .nav ul li:nth-child(1) a{
     color: #9a5aa4;
 }
+/*关于我们*/
+.main .about{
+    width: 100%;
+    height: 1545px;
+    position: relative;
+}
+.main .about .about-box{
+    width: 1200px;
+    margin: 0 auto;
+}
+.main .about .about-box h2 .title-img{
+    padding: 0 0 20px;
+    margin-top: -18px;
+}
+.main .about .about-box h2 .name{
+    font-weight: bold;
+    font-size: 36px;
+}
+.main .about .about-box h2 .tips{
+    font-size: 16px;
+    margin: 20px 0 40px;
+}
+.main .about .about-box .cap{
+    width: 100%;
+}
+.main .about .photo{
+    width: 100%;
+    height: 330px;
+    padding-top: 80px;
+}
+.main .about .photo ul li{
+    float: left;
+    width: 25%;
+    height: 330px;
+}
+.main .about .photo ul li img{
+    width: 100%;
+    height: 100%;
+}
+.main .about .besides{
+    background: #f2f5f5;
+    width: 100%;
+    height: 330px;
+}
+.main .about .besides p{
+    text-align: center;
+    font-size: 24px;
+    padding-top: 90px;
+}
+.main .about .besides .about-btn{
+    width: 272px;
+    height: 60px;
+    text-align: center;
+    margin-left: 41.5%;
+    margin-top: 75px;
+    line-height: 60px;
+    display: inline-block;
+    background: #36a8c0;
+    border-radius: 30px;
+    font-size: 24px;
+    color: #fff;
+}

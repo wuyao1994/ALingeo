@@ -5,17 +5,21 @@
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
 		<title>新闻动态</title>
+		<meta name="keywords" content="爱灵格,早慧堂,好学堂,早教">
+		<meta name="description" content="爱灵格是一家专业从事潜能发展及教学研究的机构。">
+		<link rel="icon" href="img/favicon.ico" type="image/x-icon">
 		<link rel="stylesheet" type="text/css" href="../css/common.css" />
 		<link rel="stylesheet" type="text/css" href="../css/include.css" />
 		<link rel="stylesheet" type="text/css" href="../css/News.css" />
 		<link rel="stylesheet" type="text/css" href="../css/animate.min.css" />
 		<script type="text/javascript" src="../js/jquery.min.js" ></script>
-		
+		<link rel="stylesheet" type="text/css" href="../css/pagination.css" />
+		<script type="text/javascript" src="../js/jquery.pagination.js" ></script>
+        <script type="text/javascript" src="../js/news.js" ></script>
 	</head>
-<body>
-	
+	<body>
 
-	
+
 	<!--top-->
 	<div class="b_header">
 	<div class="s_header">
@@ -60,23 +64,25 @@
 		                    <li class="bszl"><a href="#"><img style="width: 180px; height: 180px;" src="../images/news/4.png"></a></li>
 		                </ul>
 		            </div>
-		    		<div class="newsli">
-	    				<ul>
-	    					<li th:each="newsItem : ${news}">
+                    <div id="Searchresult" class="newsli"><ul></ul></div>
+                    <div id="Pagination" class="pagination" style="display:  block;text-align:  center;margin: 20px;"></div>
+                    <div id="hiddenresult" style="display:none;">
+                        <ul>
+                            <li th:each="newsItem : ${news}" class="show">
                                 <a th:href="'/News/Details/'+${newsItem.id}">
                                     <div class="newimg">
                                         <img th:src="${newsItem.imagePath}" />
                                     </div>
                                     <div class="newinfo">
-										<h3 th:text="'【'+${newsItem.type}+'】'+${newsItem.title}"></h3>
+                                        <h3 th:text="'【'+${newsItem.type}+'】'+${newsItem.title}"></h3>
                                         <span th:text="*{newsItem.brief}">
 										</span>
                                         <div th:text="${newsItem.date} + '&emsp;'+ 来源：爱灵格"></div>
                                     </div>
                                 </a>
                             </li>
-	    				</ul>
-		    		</div>
+                        </ul>
+                    </div>
 	    		</div>
 	    	</div>
 	    </div>
@@ -112,7 +118,7 @@
 		                </li>
 		
 		                <li>
-		                    <a href="/JoinUs">
+		                    <a href="/ContactUs#join">
 		                        <span class="icon"><img src="../images/contact/3.png"></span>
 		                        <div class="mode-info">
 		                            <h3>免费试听</h3>
@@ -133,7 +139,7 @@
 			<div class="icons"></div>
 			<ul>
 	            <li>
-	                <a href="/JoinUs">
+	                <a href="/ContactUs#join">
 	                    <p class="st-icon"></p>
 	                    <p class="txt">免费试听</p>
 	                </a>
@@ -247,7 +253,6 @@
 </div>
 </body>
 <script type="text/javascript" src="../js/common.js" ></script>
-<script type="text/javascript" src="../js/news.js" ></script>
 <script type="text/javascript" src="../js/wow.min.js" ></script>
 <script>
 	new WOW().init();
