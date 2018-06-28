@@ -446,3 +446,6 @@ a, a:link, a:visited, a:active {
     text-decoration: none;
     color: #333;
 }
+.b_header .s_header .nav ul li:nth-child(7) a{
+    color: #9a5aa4;
+}
