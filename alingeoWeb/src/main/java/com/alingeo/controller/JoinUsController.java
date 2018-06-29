@@ -14,6 +14,7 @@ import com.alingeo.domin.Join;
 import com.alingeo.service.JoinService;
 import com.alingeo.util.MailManager;
 
+import java.util.Date;
 import java.util.List;
 
 @Controller
@@ -36,8 +37,9 @@ public class JoinUsController {
 	@RequestMapping(value = "/JoinUs/create", method = RequestMethod.POST)
 	@ResponseBody
 	public String joinUsCreate(@ModelAttribute Join join, Model model) {
+	    join.setDate(new Date());
 		joinService.create(join);
-		MailManager.SendEmail(join);
+//		MailManager.SendEmail(join);
 		return "success";
 	}
 

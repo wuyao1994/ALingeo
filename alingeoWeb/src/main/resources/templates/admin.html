@@ -63,6 +63,8 @@
                         <th>ID</th>
                         <th>姓名</th>
                         <th>电话</th>
+                        <th>邮箱</th>
+                        <th>时间</th>
                         <th>留言</th>
                     </tr>
                     </thead>
@@ -71,6 +73,8 @@
                         <td th:each="entry : ${join}" th:text="${join.id}" ></td>
                         <td th:each="entry : ${join}" th:text="${join.name}"></td>
                         <td th:each="entry : ${join}" th:text="${join.telephone}"></td>
+                        <td th:each="entry : ${join}" th:text="${join.email}"></td>
+                        <td th:each="entry : ${join}" th:text="${join.date}"></td>
                         <td th:each="entry : ${join}" th:text="${join.content}"></td>
                     </tr>
                     </tbody>

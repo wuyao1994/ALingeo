@@ -4,18 +4,20 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import java.util.Date;
 
 @Entity
 @Table(name = "t_join")
 public class Join {
 	@Id
 	@GeneratedValue
-	private Long	id;
-	private String	name;
-	private String	telephone;
-	private String	email;
-	private String	type;
-	private String	content;
+	private Long   id;
+	private String name;
+	private String telephone;
+	private String email;
+	private String type;
+	private String content;
+	private Date   date;
 
 
 
@@ -88,4 +90,16 @@ public class Join {
 	public void setEmail(String email) {
 		this.email = email;
 	}
+
+
+
+    public Date getDate() {
+        return date;
+    }
+
+
+
+    public void setDate(Date pDate) {
+        date = pDate;
+    }
 }
