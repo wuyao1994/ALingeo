@@ -13,7 +13,7 @@ spring:
     encoding: UTF-8
     cache: false
 server:
-  port: 9000
+  port: 8080
 img:
   newsImageLocation: c:/alingeo/image/news/
   centerImageLocation: c:/alingeo/image/center/
