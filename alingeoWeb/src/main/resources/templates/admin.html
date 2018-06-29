@@ -69,8 +69,8 @@
                     </tr>
                     </thead>
                     <tbody>
-                    <tr th:each="join : ${joins}">
-                        <td th:each="entry : ${join}" th:text="${join.id}" ></td>
+                    <tr th:each="join,iterStat  : ${joins}">
+                        <td th:text="${iterStat.count}"></td>
                         <td th:each="entry : ${join}" th:text="${join.name}"></td>
                         <td th:each="entry : ${join}" th:text="${join.telephone}"></td>
                         <td th:each="entry : ${join}" th:text="${join.email}"></td>

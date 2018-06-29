@@ -3,6 +3,7 @@ package com.alingeo.service.impl;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 import com.alingeo.domin.Join;
@@ -25,6 +26,7 @@ public class JoinServiceImpl implements JoinService {
 
 	@Override
 	public List<Join> findAll() {
-		return joinRepository.findAll();
+        Sort sort = new Sort(Sort.Direction.DESC, "id");
+		return joinRepository.findAll(sort);
 	}
 }
