@@ -13,4 +13,6 @@ public interface OrderService {
 	List<Order> findAll();
 
 	void deleteOrderById(Long id);
+
+	Order findByOrderNumber(String id);
 }

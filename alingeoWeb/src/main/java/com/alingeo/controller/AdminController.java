@@ -47,7 +47,7 @@ public class AdminController {
 
 	@RequestMapping(value = "/admin", method = RequestMethod.GET)
 	public String homePage(Model model) {
-		model.addAttribute("joins", joinService.findAll());
+		model.addAttribute("orders", mOrderService.findAll());
 		return "admin";
 	}
 
