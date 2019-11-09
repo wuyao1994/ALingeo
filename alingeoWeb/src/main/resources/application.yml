@@ -1,13 +1,17 @@
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/alingeoAdmin
+    url: jdbc:mysql://111.231.191.63:3306/alingeoAdmin
     username: root
-    password: password
+    password: 123abcABC
   jpa:
     hibernate:
       ddl-auto: update
     show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+
   thymeleaf:
     mode: HTML5
     encoding: UTF-8
@@ -18,3 +22,4 @@ img:
   newsImageLocation: c:/alingeo/image/news/
   centerImageLocation: c:/alingeo/image/center/
   teacherImageLocation: c:/alingeo/image/teacher/
+  orderImageLocation: pansd/image/

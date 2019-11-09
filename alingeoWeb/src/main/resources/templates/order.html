@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
-      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/admin.js"></script>
 <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
 <head>
     <title>盘丝洞创意手工</title>
 </head>
@@ -36,7 +36,7 @@
         </nav>
         <main role="main" class="col-md-11 ml-sm-auto px-4">
             <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                <h1 class="h2">订单</h1>
+                <h1 class="h2">订单列表</h1>
                 <button class="btn"><a href="/admin/addOrder">添加</a></button>
             </div>
             <div class="table-responsive">
@@ -55,13 +55,13 @@
                     </thead>
                     <tbody>
                     <tr th:each="order : ${orders}">
-                        <td th:each="entry : ${id}" th:text="${order.id}"></td>
-                        <td th:each="entry : ${orderPhone}" th:text="${order.orderPhone}"></td>
-                        <td th:each="entry : ${orderNumber}" th:text="${order.orderNumber}"></td>
-                        <td th:each="entry : ${orderPins}" th:text="${order.orderPins}" ></td>
-                        <td th:each="entry : ${orderLines}" th:text="${order.orderLines}"></td>
-                        <td th:each="entry : ${orderWeight}" th:text="${order.orderWeight}"></td>
-                        <td th:each="entry : ${imagePath}" th:text="${order.imagePath}"></td>
+                        <td th:each="entry : ${order}" th:text="${order.id}"></td>
+                        <td th:each="entry : ${order}" th:text="${order.orderPhone}"></td>
+                        <td th:each="entry : ${order}" th:text="${order.orderNumber}"></td>
+                        <td th:each="entry : ${order}" th:text="${order.orderPins}" ></td>
+                        <td th:each="entry : ${order}" th:text="${order.orderLines}"></td>
+                        <td th:each="entry : ${order}" th:text="${order.orderWeight}"></td>
+                        <td th:each="entry : ${order}" th:text="${order.imagePath}"></td>
                         <td><a th:href="'/admin/deleteOrder/' + ${order.id}">删除</a></td>
                     </tr>
                     </tbody>

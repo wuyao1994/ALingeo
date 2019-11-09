@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<head>
+    <meta charset="UTF-8">
+    <title>盘丝洞创意手工</title>
+</head>
+<body>
+<h2>添加订单</h2>
+<form name="addOrder" action="" th:action="@{/admin/addOrder}" th:method="post" class="from-box" style="width: 100%;max-width: 330px;padding: 15px;" enctype="multipart/form-data">
+    <div class="form-group">
+        <label for="pins">Number of Pins</label>
+        <input type="name" name="pins" id="pins" class="form-control" required/>
+    </div>
+    <div class="form-group">
+        <label for="lines">Number of Lines</label>
+        <input type="name" name="lines" id="lines" class="form-control" required/>
+    </div>
+    <div class="form-group">
+        <label for="weight">Line Weight</label>
+        <input type="name" name="weight" id="weight" class="form-control" required/>
+    </div>
+    <div class="form-group">
+        <label for="phone">orderPhone</label>
+        <input type="name" name="phone" id="phone" class="form-control" required/>
+    </div>
+    <div class="form-group">
+        <label for="orderNumber">Order Number</label>
+        <input type="name" name="orderNumber" id="orderNumber" class="form-control" required/>
+    </div>
+    <div class="form-group">
+        <label for="uploadImage">上传图片</label>
+        <input type="file" name="file" id="uploadImage">
+    </div>
+    <button type="submit" class="btn btn-lg btn-primary btn-block">提交</button>
+</form>
+</body>
+</html>
