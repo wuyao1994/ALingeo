@@ -1,5 +1,6 @@
 package com.alingeo.controller;
 
+import com.alingeo.domin.BaseRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -13,8 +14,8 @@ public class OrderController {
     @Autowired
     private OrderService mOrderService;
     @PostMapping("/getOrder")
-    public Object getOrder(@RequestParam("id") String id) {
-        Order order = mOrderService.findByOrderNumber(id);
+    public Object getOrder(@RequestBody BaseRequest request) {
+        Order order = mOrderService.findByOrderNumber(request.getId());
         return order;
     }
 
