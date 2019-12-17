@@ -17,6 +17,7 @@ public class Order {
 	private String orderPhone;
 	private String orderNumber;
 	private String imagePath;
+	private String orderData;
 
 	public Long getId() {
 		return id;
@@ -72,5 +73,13 @@ public class Order {
 
 	public void setImagePath(String imagePath) {
 		this.imagePath = imagePath;
+	}
+
+	public String getOrderData() {
+		return orderData;
+	}
+
+	public void setOrderData(String orderData) {
+		this.orderData = orderData;
 	}
 }
