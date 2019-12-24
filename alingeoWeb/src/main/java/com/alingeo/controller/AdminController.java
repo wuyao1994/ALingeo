@@ -227,6 +227,7 @@ public class AdminController {
 	private String addOrder(Model model, @RequestParam("pins") String pins,
 							 @RequestParam("lines") String lines,
 							 @RequestParam("weight") String weight,
+							 @RequestParam("pinsOutput") String orderData,
 							 @RequestParam("phone") String phone, @RequestParam("orderNumber") String orderNumber, @RequestParam("file") MultipartFile file) {
 		Order order = new Order();
 		order.setOrderLines(lines);
@@ -234,6 +235,7 @@ public class AdminController {
 		order.setOrderWeight(weight);
 		order.setOrderPhone(phone);
 		order.setOrderNumber(orderNumber);
+		order.setOrderData(orderData);
 		if (!file.isEmpty()) {
 			String fileName = file.getOriginalFilename();
 			try {
